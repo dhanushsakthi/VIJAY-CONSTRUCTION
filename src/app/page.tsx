@@ -11,6 +11,7 @@ import { ServiceCard } from "@/components/UI/ServiceCard";
 import { ProjectCard } from "@/components/UI/ProjectCard";
 import { TestimonialCard } from "@/components/UI/TestimonialCard";
 import { ProcessStep } from "@/components/UI/ProcessStep";
+import { projects as projectsData } from "@/lib/data/projects";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,36 +47,7 @@ const services = [
     },
 ];
 
-const projects = [
-    {
-        id: 1,
-        title: "Modern Villa Complex",
-        category: "Residential",
-        image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
-        location: "Yercaud",
-    },
-    {
-        id: 2,
-        title: "Commercial Plaza",
-        category: "Commercial",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop",
-        location: "Salem",
-    },
-    {
-        id: 3,
-        title: "Luxury Apartments",
-        category: "Residential",
-        image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop",
-        location: "Yercaud",
-    },
-    {
-        id: 4,
-        title: "Office Complex",
-        category: "Commercial",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop",
-        location: "Salem",
-    },
-];
+const projects = projectsData.slice(0, 4);
 
 const testimonials = [
     {
@@ -174,11 +146,11 @@ export default function HomePage() {
     return (
         <>
             {/* Hero Section */}
-            <section ref={heroRef} className="relative min-h-screen overflow-hidden">
+            <section ref={heroRef} className="relative min-h-[100dvh] lg:overflow-hidden">
                 <DynamicBackground variant="hero" />
 
                 {/* Hero Content */}
-                <div className="container relative flex min-h-screen items-center">
+                <div className="container relative flex min-h-[100dvh] items-center">
                     <div
                         ref={heroContentRef}
                         className="max-w-4xl pb-20 pt-32 lg:pb-24 lg:pt-40"
@@ -335,7 +307,7 @@ export default function HomePage() {
             </section>
 
             {/* Stats Section */}
-            <section className="relative -mt-20 z-10">
+            <section className="relative z-10 lg:-mt-20">
                 <div className="container">
                     <div className="grid gap-4 rounded-sm bg-white p-6 shadow-elevated sm:grid-cols-2 lg:grid-cols-4 lg:p-8">
                         {stats.map((stat, index) => (

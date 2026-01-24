@@ -6,93 +6,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import { DynamicBackground } from "@/components/DynamicBackground/DynamicBackground";
 import { AnimatedSection } from "@/components/UI/AnimatedSection";
+import { projects } from "@/lib/data/projects";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const categories = ["All", "Residential", "Commercial", "Renovation"];
 
-const projects = [
-    {
-        id: 1,
-        title: "Modern Villa Complex",
-        category: "Residential",
-        description: "Luxurious 5-villa complex with contemporary design and premium amenities.",
-        image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
-        location: "Yercaud",
-        year: "2024",
-        area: "12,000 sq.ft",
-    },
-    {
-        id: 2,
-        title: "Commercial Plaza",
-        category: "Commercial",
-        description: "Multi-story commercial complex with modern office spaces and retail outlets.",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop",
-        location: "Salem",
-        year: "2023",
-        area: "25,000 sq.ft",
-    },
-    {
-        id: 3,
-        title: "Luxury Apartments",
-        category: "Residential",
-        description: "Premium apartment complex with 24 units featuring modern amenities.",
-        image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop",
-        location: "Yercaud",
-        year: "2023",
-        area: "35,000 sq.ft",
-    },
-    {
-        id: 4,
-        title: "Office Complex",
-        category: "Commercial",
-        description: "State-of-the-art office building with sustainable design features.",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop",
-        location: "Salem",
-        year: "2022",
-        area: "18,000 sq.ft",
-    },
-    {
-        id: 5,
-        title: "Heritage Home Renovation",
-        category: "Renovation",
-        description: "Complete restoration of a traditional home with modern upgrades.",
-        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
-        location: "Yercaud",
-        year: "2022",
-        area: "4,500 sq.ft",
-    },
-    {
-        id: 6,
-        title: "Family Residence",
-        category: "Residential",
-        description: "Custom-designed family home with open-plan living and landscaped gardens.",
-        image: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&h=600&fit=crop",
-        location: "Salem",
-        year: "2021",
-        area: "3,200 sq.ft",
-    },
-    {
-        id: 7,
-        title: "Retail Shopping Center",
-        category: "Commercial",
-        description: "Modern shopping center with multiple retail spaces and parking facilities.",
-        image: "https://images.unsplash.com/photo-1567449303078-57ad995bd329?w=800&h=600&fit=crop",
-        location: "Salem",
-        year: "2021",
-        area: "42,000 sq.ft",
-    },
-    {
-        id: 8,
-        title: "Bungalow Remodeling",
-        category: "Renovation",
-        description: "Complete interior and exterior renovation of a 20-year-old bungalow.",
-        image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop",
-        location: "Yercaud",
-        year: "2020",
-        area: "2,800 sq.ft",
-    },
-];
+
 
 export function ProjectsContent() {
     const [activeFilter, setActiveFilter] = useState("All");
@@ -188,9 +108,10 @@ export function ProjectsContent() {
                         className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
                     >
                         {filteredProjects.map((project) => (
-                            <div
+                            <Link
                                 key={project.id}
-                                className="project-item group relative overflow-hidden rounded-sm bg-white shadow-sm transition-all duration-300 hover:shadow-xl"
+                                href={`/projects/${project.id}`}
+                                className="project-item group relative block overflow-hidden rounded-sm bg-white shadow-sm transition-all duration-300 hover:shadow-xl"
                             >
                                 {/* Image */}
                                 <div className="aspect-[4/3] overflow-hidden">
@@ -212,7 +133,7 @@ export function ProjectsContent() {
                                     <h3 className="mb-2 font-display text-xl font-bold text-steel-dark group-hover:text-brand-red">
                                         {project.title}
                                     </h3>
-                                    <p className="mb-4 text-sm text-concrete-dark">{project.description}</p>
+                                    <p className="mb-4 line-clamp-2 text-sm text-concrete-dark">{project.description}</p>
 
                                     {/* Meta info */}
                                     <div className="flex flex-wrap gap-4 text-xs text-concrete">
@@ -227,20 +148,20 @@ export function ProjectsContent() {
                                             <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                                             </svg>
-                                            {project.year}
+                                            {project.year || (project.details && project.details.year)}
                                         </span>
                                         <span className="flex items-center gap-1">
                                             <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
                                             </svg>
-                                            {project.area}
+                                            {project.area || (project.details && project.details.area)}
                                         </span>
                                     </div>
                                 </div>
 
                                 {/* Bottom accent */}
                                 <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-brand-red to-brand-green transition-all duration-500 group-hover:w-full" />
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </div>
