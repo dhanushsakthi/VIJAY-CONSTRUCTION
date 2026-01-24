@@ -137,7 +137,7 @@ export default function HomePage() {
                     end: "bottom top",
                     scrub: 1,
                 },
-                y: 200,
+                y: -150,
                 opacity: 0.5,
             });
         }
@@ -153,7 +153,7 @@ export default function HomePage() {
                 <div className="container relative flex min-h-[100dvh] items-center">
                     <div
                         ref={heroContentRef}
-                        className="max-w-4xl pb-20 pt-32 lg:pb-24 lg:pt-40"
+                        className="max-w-4xl pb-32 pt-32 lg:pb-24 lg:pt-40"
                     >
                         {/* Badge */}
                         <div className="hero-animate mb-6 inline-flex items-center gap-3 rounded-full bg-white/10 px-4 py-2 backdrop-blur-sm">
@@ -295,15 +295,7 @@ export default function HomePage() {
                     </div>
                 </div>
 
-                {/* Scroll Indicator */}
-                <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-                    <div className="flex flex-col items-center gap-2 text-white/50">
-                        <span className="text-xs uppercase tracking-widest">Scroll</span>
-                        <div className="h-12 w-6 rounded-full border-2 border-white/30 p-1">
-                            <div className="h-2 w-1.5 animate-bounce rounded-full bg-white/50" />
-                        </div>
-                    </div>
-                </div>
+
             </section>
 
             {/* Stats Section */}
