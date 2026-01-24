@@ -1,0 +1,507 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================
+   VIJAY CONSTRUCTIONS - DESIGN SYSTEM
+   Enterprise Construction Website
+   ======================================== */
+
+/* CSS Custom Properties */
+:root {
+  /* Brand Colors */
+  --color-brand-red: #C62828;
+  --color-brand-red-light: #EF5350;
+  --color-brand-red-dark: #B71C1C;
+  --color-brand-green: #2E7D32;
+  --color-brand-green-light: #66BB6A;
+  --color-brand-green-dark: #1B5E20;
+  --color-white: #FFFFFF;
+  
+  /* Neutral Construction Tones */
+  --color-concrete: #9E9E9E;
+  --color-concrete-light: #E0E0E0;
+  --color-concrete-dark: #616161;
+  --color-steel: #37474F;
+  --color-steel-light: #546E7A;
+  --color-steel-dark: #263238;
+  --color-steel-black: #1A1F23;
+  --color-asphalt: #2C2C2C;
+  --color-asphalt-dark: #1A1A1A;
+  --color-asphalt-darker: #0D0D0D;
+  
+  /* Typography */
+  --font-display: var(--font-outfit), system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), monospace;
+  
+  /* Spacing */
+  --section-padding: 6rem;
+  --container-max: 1400px;
+  
+  /* Animation Timing */
+  --ease-construction: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 200ms;
+  --duration-normal: 400ms;
+  --duration-slow: 600ms;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+  --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.2);
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-white);
+  color: var(--color-steel-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--color-brand-green);
+  color: var(--color-white);
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-brand-green);
+  outline-offset: 2px;
+}
+
+/* ========================================
+   TYPOGRAPHY SYSTEM
+   ======================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-steel-dark);
+}
+
+.heading-xl {
+  font-size: clamp(2.5rem, 5vw + 1rem, 5rem);
+  letter-spacing: -0.02em;
+}
+
+.heading-lg {
+  font-size: clamp(2rem, 4vw + 0.5rem, 3.5rem);
+  letter-spacing: -0.015em;
+}
+
+.heading-md {
+  font-size: clamp(1.5rem, 3vw + 0.25rem, 2.5rem);
+  letter-spacing: -0.01em;
+}
+
+.heading-sm {
+  font-size: clamp(1.25rem, 2vw + 0.25rem, 1.75rem);
+}
+
+.body-lg {
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.body-md {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.body-sm {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* ========================================
+   CONSTRUCTION-THEMED COMPONENTS
+   ======================================== */
+
+/* Blueprint Grid Background */
+.blueprint-grid {
+  background-image: 
+    linear-gradient(to right, rgba(46, 125, 50, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(46, 125, 50, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Steel beam accent lines */
+.steel-beam {
+  position: relative;
+}
+
+.steel-beam::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-brand-red), var(--color-brand-green));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--duration-slow) var(--ease-construction);
+}
+
+.steel-beam:hover::before {
+  transform: scaleX(1);
+}
+
+/* Construction section divider */
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-concrete-light) 20%,
+    var(--color-concrete-light) 80%,
+    transparent
+  );
+  margin: 4rem 0;
+}
+
+/* Concrete texture overlay */
+.concrete-texture {
+  position: relative;
+}
+
+.concrete-texture::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* ========================================
+   BUTTON STYLES
+   ======================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-construction);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: var(--color-brand-red);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background: var(--color-brand-red-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-steel-dark);
+  border: 2px solid var(--color-steel-dark);
+}
+
+.btn-secondary:hover {
+  background: var(--color-steel-dark);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.btn-success {
+  background: var(--color-brand-green);
+  color: var(--color-white);
+}
+
+.btn-success:hover {
+  background: var(--color-brand-green-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Button construction animation */
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left var(--duration-slow) var(--ease-construction);
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+/* ========================================
+   CARD STYLES
+   ======================================== */
+
+.card {
+  background: var(--color-white);
+  border-radius: 4px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--duration-normal) var(--ease-construction);
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.card-steel {
+  background: var(--color-steel);
+  color: var(--color-white);
+}
+
+.card-bordered {
+  border: 1px solid var(--color-concrete-light);
+}
+
+/* ========================================
+   ANIMATION UTILITIES
+   ======================================== */
+
+.animate-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.animate-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all var(--duration-slow) var(--ease-construction);
+}
+
+.animate-slide-left {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.animate-slide-left.revealed {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all var(--duration-slow) var(--ease-construction);
+}
+
+.animate-slide-right {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.animate-slide-right.revealed {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all var(--duration-slow) var(--ease-construction);
+}
+
+.animate-scale {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.animate-scale.revealed {
+  opacity: 1;
+  transform: scale(1);
+  transition: all var(--duration-normal) var(--ease-construction);
+}
+
+/* Stagger animation delays */
+.stagger-1 { transition-delay: 0.1s; }
+.stagger-2 { transition-delay: 0.2s; }
+.stagger-3 { transition-delay: 0.3s; }
+.stagger-4 { transition-delay: 0.4s; }
+.stagger-5 { transition-delay: 0.5s; }
+
+/* ========================================
+   LAYOUT UTILITIES
+   ======================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 3rem;
+  }
+}
+
+.section {
+  padding: var(--section-padding) 0;
+}
+
+.section-sm {
+  padding: 3rem 0;
+}
+
+.section-lg {
+  padding: 8rem 0;
+}
+
+/* ========================================
+   LOADER STYLES
+   ======================================== */
+
+.loader-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--color-asphalt-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.loader-blueprint {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.loader-blueprint svg {
+  width: 100%;
+  height: 100%;
+}
+
+.loader-blueprint .blueprint-line {
+  stroke: var(--color-brand-green);
+  stroke-width: 2;
+  fill: none;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLine 1.5s ease-out forwards;
+}
+
+.loader-beam {
+  position: absolute;
+  background: linear-gradient(90deg, var(--color-brand-red), var(--color-brand-red-light));
+  height: 8px;
+  border-radius: 2px;
+}
+
+.loader-beam-h {
+  width: 0;
+  animation: beamGrow 0.8s var(--ease-construction) forwards;
+}
+
+.loader-beam-v {
+  width: 8px;
+  height: 0;
+  animation: beamGrowV 0.8s var(--ease-construction) forwards;
+}
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes beamGrow {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes beamGrowV {
+  to {
+    height: 100%;
+  }
+}
+
+/* ========================================
+   SCROLLBAR STYLING
+   ======================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-concrete-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-steel);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-steel-dark);
+}
+
+/* ========================================
+   RESPONSIVE UTILITIES
+   ======================================== */
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 4rem;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

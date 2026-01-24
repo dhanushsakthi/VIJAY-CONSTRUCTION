@@ -1,0 +1,77 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+interface StatsCounterProps {
+    value: number;
+    suffix?: string;
+    label: string;
+    delay?: number;
+    decimals?: number;
+}
+
+export function StatsCounter({
+    value,
+    suffix = "",
+    label,
+    delay = 0,
+    decimals = 0,
+}: StatsCounterProps) {
+    const [count, setCount] = useState(0);
+    const containerRef = useRef<HTMLDivElement>(null);
+    const hasAnimated = useRef(false);
+
+    useEffect(() => {
+        if (!containerRef.current) return;
+
+        const trigger = ScrollTrigger.create({
+            trigger: containerRef.current,
+            start: "top 90%",
+            onEnter: () => {
+                if (hasAnimated.current) return;
+                hasAnimated.current = true;
+
+                const target = { value: 0 };
+                gsap.to(target, {
+                    value: value,
+                    duration: 2,
+                    delay: delay,
+                    ease: "power2.out",
+                    onUpdate: () => {
+                        setCount(
+                            decimals > 0
+                                ? parseFloat(target.value.toFixed(decimals))
+                                : Math.round(target.value)
+                        );
+                    },
+                });
+            },
+        });
+
+        return () => {
+            trigger.kill();
+        };
+    }, [value, delay, decimals]);
+
+    return (
+        <div
+            ref={containerRef}
+            className="group relative overflow-hidden rounded-sm p-6 text-center transition-all duration-300 hover:bg-concrete-50"
+        >
+            {/* Animated border */}
+            <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-brand-red to-brand-green transition-all duration-500 group-hover:w-full" />
+
+            <div className="mb-2 font-display text-4xl font-bold text-steel-dark lg:text-5xl">
+                {decimals > 0 ? count.toFixed(decimals) : count}
+                <span className="text-brand-green">{suffix}</span>
+            </div>
+            <p className="text-sm font-medium uppercase tracking-wider text-concrete-dark">
+                {label}
+            </p>
+        </div>
+    );
+}
