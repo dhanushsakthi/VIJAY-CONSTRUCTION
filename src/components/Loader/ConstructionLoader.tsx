@@ -8,8 +8,6 @@ export function ConstructionLoader() {
     const [progress, setProgress] = useState(0);
     const loaderRef = useRef<HTMLDivElement>(null);
     const blueprintRef = useRef<SVGSVGElement>(null);
-    const beamsRef = useRef<HTMLDivElement>(null);
-    const foundationRef = useRef<HTMLDivElement>(null);
     const textRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -60,35 +58,7 @@ export function ConstructionLoader() {
             );
         }
 
-        // Steel beams sliding in
-        if (beamsRef.current) {
-            const beams = beamsRef.current.querySelectorAll(".steel-beam-loader");
-            tl.fromTo(
-                beams,
-                { scaleX: 0, transformOrigin: "left center" },
-                {
-                    scaleX: 1,
-                    duration: 0.6,
-                    stagger: 0.15,
-                    ease: "power3.out",
-                },
-                0.3
-            );
-        }
 
-        // Foundation rising
-        if (foundationRef.current) {
-            tl.fromTo(
-                foundationRef.current,
-                { scaleY: 0, transformOrigin: "bottom center" },
-                {
-                    scaleY: 1,
-                    duration: 0.8,
-                    ease: "power2.out",
-                },
-                0.6
-            );
-        }
 
         // Text reveal
         if (textRef.current) {
@@ -298,48 +268,6 @@ export function ConstructionLoader() {
                         strokeWidth="2"
                     />
                 </svg>
-
-                {/* Steel Beams */}
-                <div
-                    ref={beamsRef}
-                    className="absolute inset-0 flex flex-col items-center justify-center"
-                >
-                    <div
-                        className="steel-beam-loader absolute left-[15%] top-[40%] h-2 w-[70%] rounded-sm"
-                        style={{
-                            background:
-                                "linear-gradient(90deg, #C62828 0%, #EF5350 50%, #C62828 100%)",
-                            boxShadow: "0 2px 10px rgba(198, 40, 40, 0.4)",
-                        }}
-                    />
-                    <div
-                        className="steel-beam-loader absolute left-[20%] top-[55%] h-2 w-[60%] rounded-sm"
-                        style={{
-                            background:
-                                "linear-gradient(90deg, #C62828 0%, #EF5350 50%, #C62828 100%)",
-                            boxShadow: "0 2px 10px rgba(198, 40, 40, 0.4)",
-                        }}
-                    />
-                    <div
-                        className="steel-beam-loader absolute left-[25%] top-[70%] h-2 w-[50%] rounded-sm"
-                        style={{
-                            background:
-                                "linear-gradient(90deg, #C62828 0%, #EF5350 50%, #C62828 100%)",
-                            boxShadow: "0 2px 10px rgba(198, 40, 40, 0.4)",
-                        }}
-                    />
-                </div>
-
-                {/* Foundation Slab */}
-                <div
-                    ref={foundationRef}
-                    className="absolute bottom-0 h-4 w-[85%] rounded-t-sm"
-                    style={{
-                        background:
-                            "linear-gradient(180deg, #616161 0%, #424242 50%, #212121 100%)",
-                        boxShadow: "0 -2px 15px rgba(0, 0, 0, 0.3)",
-                    }}
-                />
             </div>
 
             {/* Company Name and Progress */}
