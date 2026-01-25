@@ -69,11 +69,11 @@ export function ProjectsContent() {
                 <DynamicBackground variant="hero" />
                 <div className="container relative flex min-h-[60vh] items-center">
                     <div ref={heroContentRef} className="max-w-3xl pb-16 pt-32 lg:pt-40">
-                        <span className="hero-animate mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
+                        <span className="hero-animate mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">
                             Our Portfolio
                         </span>
                         <h1 className="hero-animate heading-xl mb-6 text-steel-dark">
-                            Projects That <span className="text-brand-green">Speak</span> Quality
+                            Projects That <span className="text-brand-red">Speak</span> Quality
                         </h1>
                         <p className="hero-animate body-lg text-concrete-dark">
                             Explore our collection of completed projects across residential, commercial,
@@ -122,7 +122,7 @@ export function ProjectsContent() {
                                     />
                                     {/* Category Badge */}
                                     <div className="absolute left-4 top-4">
-                                        <span className="inline-block rounded-sm bg-brand-green px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">
+                                        <span className="inline-block rounded-sm bg-brand-red px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">
                                             {project.category}
                                         </span>
                                     </div>
@@ -160,7 +160,7 @@ export function ProjectsContent() {
                                 </div>
 
                                 {/* Bottom accent */}
-                                <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-brand-red to-brand-green transition-all duration-500 group-hover:w-full" />
+                                <div className="absolute bottom-0 left-0 h-1 w-0 bg-brand-red transition-all duration-500 group-hover:w-full" />
                             </Link>
                         ))}
                     </div>

@@ -91,11 +91,11 @@ export function AboutContent() {
                 <DynamicBackground variant="hero" />
                 <div className="container relative flex min-h-[60vh] items-center">
                     <div ref={heroContentRef} className="max-w-3xl pb-16 pt-32 lg:pt-40">
-                        <span className="hero-animate mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
+                        <span className="hero-animate mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">
                             About Us
                         </span>
                         <h1 className="hero-animate heading-xl mb-6 text-steel-dark">
-                            Building Trust, <span className="text-brand-green">Brick by Brick</span>
+                            Building Trust, <span className="text-brand-red">Brick by Brick</span>
                         </h1>
                         <p className="hero-animate body-lg text-concrete-dark">
                             With over 30 years of experience, Vijay Constructions has been transforming
@@ -110,7 +110,7 @@ export function AboutContent() {
                 <div className="container">
                     <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
                         <div>
-                            <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
+                            <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">
                                 Our Story
                             </span>
                             <h2 className="heading-md mb-6 text-steel-dark">
@@ -155,7 +155,7 @@ export function AboutContent() {
             <AnimatedSection className="section bg-concrete-50">
                 <div className="container">
                     <div className="mb-12 text-center lg:mb-16">
-                        <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
+                        <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">
                             What Drives Us
                         </span>
                         <h2 className="heading-lg mb-4 text-steel-dark">
@@ -168,7 +168,7 @@ export function AboutContent() {
                                 key={value.title}
                                 className="group rounded-sm bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-lg"
                             >
-                                <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-full bg-brand-green/10 text-brand-green transition-colors group-hover:bg-brand-green group-hover:text-white">
+                                <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-full bg-brand-red/10 text-brand-red transition-colors group-hover:bg-brand-red group-hover:text-white">
                                     {icons[value.icon]}
                                 </div>
                                 <h3 className="mb-2 font-display text-lg font-bold text-steel-dark">
@@ -199,7 +199,7 @@ export function AboutContent() {
                     <div className="flex justify-center">
                         <div className="group relative overflow-hidden rounded-lg bg-gradient-to-br from-concrete-50 to-white p-2 shadow-xl transition-all duration-500 hover:shadow-2xl">
                             {/* Decorative corner accents */}
-                            <div className="absolute left-0 top-0 h-20 w-20 border-l-4 border-t-4 border-brand-green/30 rounded-tl-lg" />
+                            <div className="absolute left-0 top-0 h-20 w-20 border-l-4 border-t-4 border-brand-red/30 rounded-tl-lg" />
                             <div className="absolute bottom-0 right-0 h-20 w-20 border-b-4 border-r-4 border-brand-red/30 rounded-br-lg" />
 
                             {/* Visiting Card Image */}
@@ -214,7 +214,7 @@ export function AboutContent() {
                             </div>
 
                             {/* Glow effect on hover */}
-                            <div className="absolute -inset-1 -z-10 rounded-lg bg-gradient-to-r from-brand-green/20 via-transparent to-brand-red/20 opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100" />
+                            <div className="absolute -inset-1 -z-10 rounded-lg bg-gradient-to-r from-brand-red/20 via-transparent to-brand-red/20 opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100" />
                         </div>
                     </div>
                     <div className="mt-8 text-center">
@@ -229,7 +229,7 @@ export function AboutContent() {
             <AnimatedSection className="section bg-concrete-100">
                 <div className="container">
                     <div className="mb-12 text-center lg:mb-16">
-                        <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
+                        <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">
                             Our Journey
                         </span>
                         <h2 className="heading-lg mb-4 text-steel-dark">
@@ -238,7 +238,7 @@ export function AboutContent() {
                     </div>
                     <div className="relative">
                         {/* Timeline line */}
-                        <div className="absolute left-4 top-0 h-full w-0.5 bg-white/20 md:left-1/2 md:-translate-x-1/2" />
+                        <div className="absolute left-4 top-0 h-full w-0.5 bg-concrete-200 md:left-1/2 md:-translate-x-1/2" />
 
                         <div className="space-y-8">
                             {timeline.map((item, index) => (
@@ -250,14 +250,14 @@ export function AboutContent() {
                                     {/* Content */}
                                     <div className={`ml-12 flex-1 md:ml-0 ${index % 2 === 0 ? "md:pr-16 md:text-right" : "md:pl-16"}`}>
                                         <div className="rounded-sm bg-white p-6 shadow-sm">
-                                            <span className="text-2xl font-bold text-brand-green">{item.year}</span>
+                                            <span className="text-2xl font-bold text-brand-red">{item.year}</span>
                                             <h3 className="mb-2 font-display text-lg font-bold text-steel-dark">{item.title}</h3>
                                             <p className="text-sm text-concrete-dark">{item.description}</p>
                                         </div>
                                     </div>
                                     {/* Dot */}
-                                    <div className="absolute left-4 flex h-8 w-8 items-center justify-center rounded-full border-2 border-brand-green bg-steel-dark md:left-1/2 md:-translate-x-1/2">
-                                        <div className="h-3 w-3 rounded-full bg-brand-green" />
+                                    <div className="absolute left-4 flex h-8 w-8 items-center justify-center rounded-full border-2 border-brand-red bg-steel-dark md:left-1/2 md:-translate-x-1/2">
+                                        <div className="h-3 w-3 rounded-full bg-brand-red" />
                                     </div>
                                     {/* Empty space for alignment */}
                                     <div className="hidden flex-1 md:block" />

@@ -100,11 +100,11 @@ export function ServicesContent() {
                 <DynamicBackground variant="hero" />
                 <div className="container relative flex min-h-[60vh] items-center">
                     <div ref={heroContentRef} className="max-w-3xl pb-16 pt-32 lg:pt-40">
-                        <span className="hero-animate mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
+                        <span className="hero-animate mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">
                             Our Services
                         </span>
                         <h1 className="hero-animate heading-xl mb-6 text-steel-dark">
-                            Comprehensive <span className="text-brand-green">Construction</span> Solutions
+                            Comprehensive <span className="text-brand-red">Construction</span> Solutions
                         </h1>
                         <p className="hero-animate body-lg text-concrete-dark">
                             From concept to completion, we offer end-to-end construction and civil engineering
@@ -133,7 +133,7 @@ export function ServicesContent() {
                                 </div>
                             </div>
                             <div className={`order-1 flex flex-col justify-center ${index % 2 !== 0 ? "lg:order-2" : "lg:order-1"}`}>
-                                <span className="mb-2 text-sm font-semibold uppercase tracking-wider text-brand-green">
+                                <span className="mb-2 text-sm font-semibold uppercase tracking-wider text-brand-red">
                                     {service.subtitle}
                                 </span>
                                 <h2 className="heading-md mb-4 text-steel-dark">{service.title}</h2>
@@ -142,7 +142,7 @@ export function ServicesContent() {
                                 <ul className="mb-8 grid gap-3 sm:grid-cols-2">
                                     {service.features.map((feature) => (
                                         <li key={feature} className="flex items-start gap-2">
-                                            <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                             </svg>
                                             <span className="text-sm text-steel">{feature}</span>
