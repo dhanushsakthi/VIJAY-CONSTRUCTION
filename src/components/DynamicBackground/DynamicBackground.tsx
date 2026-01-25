@@ -159,7 +159,7 @@ export function DynamicBackground({
                 className="absolute inset-0"
                 style={{
                     background:
-                        "radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.4) 100%)",
+                        "radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.7) 100%)",
                 }}
             />
 

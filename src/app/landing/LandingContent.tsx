@@ -6,9 +6,9 @@ import Link from "next/link";
 import { DynamicBackground } from "@/components/DynamicBackground/DynamicBackground";
 
 const benefits = [
-    "15+ Years of Experience",
+    "30+ Years of Experience",
     "4.9★ Google Rating",
-    "100+ Projects Completed",
+    "50+ Projects Completed",
     "Transparent Pricing",
     "On-Time Delivery",
     "Quality Guarantee",
@@ -127,7 +127,7 @@ export function LandingContent() {
                             <div className="h-12 w-px bg-white/20" />
                             <div className="text-center">
                                 <div className="font-display text-3xl font-bold text-white">
-                                    100+
+                                    50+
                                 </div>
                                 <div className="text-xs uppercase tracking-wider text-concrete">
                                     Projects

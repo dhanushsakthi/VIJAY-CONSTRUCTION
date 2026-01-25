@@ -16,36 +16,40 @@
   --color-brand-green: #2E7D32;
   --color-brand-green-light: #66BB6A;
   --color-brand-green-dark: #1B5E20;
-  --color-white: #FFFFFF;
-  
+  --color-white: #FDFCF5;
+  /* Cream background from card */
+
   /* Neutral Construction Tones */
-  --color-concrete: #9E9E9E;
-  --color-concrete-light: #E0E0E0;
-  --color-concrete-dark: #616161;
-  --color-steel: #37474F;
-  --color-steel-light: #546E7A;
-  --color-steel-dark: #263238;
-  --color-steel-black: #1A1F23;
-  --color-asphalt: #2C2C2C;
-  --color-asphalt-dark: #1A1A1A;
-  --color-asphalt-darker: #0D0D0D;
-  
+  --color-concrete: #8D8D8D;
+  --color-concrete-light: #E8E6D9;
+  /* Warmer neutral */
+  --color-concrete-dark: #4A4A4A;
+  --color-steel: #2D2D2D;
+  /* Darker charcoal */
+  --color-steel-light: #424242;
+  --color-steel-dark: #1A1A1A;
+  /* Near black */
+  --color-steel-black: #0F0F0F;
+  --color-asphalt: #1A1A1A;
+  --color-asphalt-dark: #0A0A0A;
+  --color-asphalt-darker: #050505;
+
   /* Typography */
   --font-display: var(--font-outfit), system-ui, sans-serif;
   --font-body: var(--font-inter), system-ui, sans-serif;
   --font-mono: var(--font-jetbrains), monospace;
-  
+
   /* Spacing */
   --section-padding: 6rem;
   --container-max: 1400px;
-  
+
   /* Animation Timing */
   --ease-construction: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
   --duration-fast: 200ms;
   --duration-normal: 400ms;
   --duration-slow: 600ms;
-  
+
   /* Shadows */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.12);
@@ -90,7 +94,12 @@ body {
    TYPOGRAPHY SYSTEM
    ======================================== */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-display);
   font-weight: 700;
   line-height: 1.2;
@@ -137,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Blueprint Grid Background */
 .blueprint-grid {
-  background-image: 
+  background-image:
     linear-gradient(to right, rgba(46, 125, 50, 0.08) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(46, 125, 50, 0.08) 1px, transparent 1px);
   background-size: 40px 40px;
@@ -169,13 +178,11 @@ h1, h2, h3, h4, h5, h6 {
 .section-divider {
   width: 100%;
   height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--color-concrete-light) 20%,
-    var(--color-concrete-light) 80%,
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      var(--color-concrete-light) 20%,
+      var(--color-concrete-light) 80%,
+      transparent);
   margin: 4rem 0;
 }
 
@@ -257,12 +264,10 @@ h1, h2, h3, h4, h5, h6 {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left var(--duration-slow) var(--ease-construction);
 }
 
@@ -345,11 +350,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Stagger animation delays */
-.stagger-1 { transition-delay: 0.1s; }
-.stagger-2 { transition-delay: 0.2s; }
-.stagger-3 { transition-delay: 0.3s; }
-.stagger-4 { transition-delay: 0.4s; }
-.stagger-5 { transition-delay: 0.5s; }
+.stagger-1 {
+  transition-delay: 0.1s;
+}
+
+.stagger-2 {
+  transition-delay: 0.2s;
+}
+
+.stagger-3 {
+  transition-delay: 0.3s;
+}
+
+.stagger-4 {
+  transition-delay: 0.4s;
+}
+
+.stagger-5 {
+  transition-delay: 0.5s;
+}
 
 /* ========================================
    LAYOUT UTILITIES
@@ -488,7 +507,7 @@ h1, h2, h3, h4, h5, h6 {
   :root {
     --section-padding: 4rem;
   }
-  
+
   .btn {
     padding: 0.75rem 1.5rem;
     font-size: 0.875rem;
@@ -497,6 +516,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {

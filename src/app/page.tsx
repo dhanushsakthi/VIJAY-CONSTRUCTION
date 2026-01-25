@@ -79,8 +79,8 @@ const testimonials = [
 const stats = [
     { value: 55, suffix: "+", label: "Happy Clients" },
     { value: 4.9, suffix: "★", label: "Google Rating", decimals: 1 },
-    { value: 100, suffix: "+", label: "Projects Completed" },
-    { value: 15, suffix: "+", label: "Years Experience" },
+    { value: 50, suffix: "+", label: "Projects Completed" },
+    { value: 30, suffix: "+", label: "Years Experience" },
 ];
 
 const processSteps = [
@@ -167,12 +167,11 @@ export default function HomePage() {
 
                         {/* Main Heading */}
                         <h1 className="hero-animate heading-xl mb-6 text-white">
-                            Building Your{" "}
+                            U dream{" "}
                             <span className="relative inline-block">
-                                <span className="relative z-10 text-brand-green">Dreams</span>
+                                <span className="relative z-10 text-brand-green">We build</span>
                                 <span className="absolute -bottom-2 left-0 h-3 w-full bg-brand-green/20" />
-                            </span>{" "}
-                            With Excellence
+                            </span>
                         </h1>
 
                         {/* Subheading */}
@@ -318,10 +317,12 @@ export default function HomePage() {
                             <span className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand-green">
                                 About Vijay Constructions
                             </span>
-                            <h2 className="heading-lg mb-6 text-steel-dark">
-                                Building Excellence in{" "}
-                                <span className="text-brand-red">Yercaud & Salem</span>
+                            <h2 className="heading-lg mb-2 text-steel-dark">
+                                Er.M.Vijayanand <span className="text-brand-red text-sm font-normal block mt-1">M.E., Ph.D. — CEO</span>
                             </h2>
+                            <h3 className="heading-md mb-6 text-steel">
+                                Building Excellence in <span className="text-brand-green">Yercaud & Salem</span>
+                            </h3>
                             <p className="body-md mb-6 text-concrete-dark">
                                 Vijay Constructions is a premier civil engineering and real
                                 estate construction company serving the Yercaud and Salem
@@ -424,7 +425,7 @@ export default function HomePage() {
                             {/* Experience Badge */}
                             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                                 <div className="flex h-32 w-32 flex-col items-center justify-center rounded-full bg-brand-red text-white shadow-lg">
-                                    <span className="font-display text-3xl font-bold">15+</span>
+                                    <span className="font-display text-3xl font-bold">30+</span>
                                     <span className="text-xs uppercase tracking-wider">
                                         Years
                                     </span>

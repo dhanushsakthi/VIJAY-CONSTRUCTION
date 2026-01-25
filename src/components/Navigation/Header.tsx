@@ -80,7 +80,7 @@ export function Header() {
                                     <div className="absolute -bottom-0.5 -right-0.5 h-2 w-2 bg-brand-green transition-all duration-300 group-hover:h-3 group-hover:w-3" />
                                 </div>
                                 {/* Logo Text */}
-                                <div className="hidden sm:block">
+                                <div className={`hidden sm:block transition-all duration-500 ${(pathname === "/" && !isScrolled) ? "opacity-0 translate-x-4 pointer-events-none" : "opacity-100 translate-x-0"}`}>
                                     <span
                                         className={`font-display text-xl font-bold tracking-tight transition-colors duration-300 ${isScrolled ? "text-steel-dark" : "text-white"
                                             }`}

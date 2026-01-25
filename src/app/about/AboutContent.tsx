@@ -36,7 +36,7 @@ const timeline = [
     { year: "2009", title: "Company Founded", description: "Started with a vision to transform construction in Yercaud region." },
     { year: "2012", title: "First Major Project", description: "Completed our first residential complex, establishing our reputation." },
     { year: "2016", title: "Commercial Expansion", description: "Expanded services to include commercial construction projects." },
-    { year: "2020", title: "Milestone Achievement", description: "Completed 100+ projects with 55+ satisfied clients." },
+    { year: "2020", title: "Milestone Achievement", description: "Completed 50+ projects with 55+ satisfied clients." },
     { year: "2024", title: "Industry Recognition", description: "Achieved 4.9★ Google rating, becoming the region's preferred builder." },
 ];
 
@@ -98,7 +98,7 @@ export function AboutContent() {
                             Building Trust, <span className="text-brand-green">Brick by Brick</span>
                         </h1>
                         <p className="hero-animate body-lg text-white/70">
-                            With over 15 years of experience, Vijay Constructions has been transforming
+                            With over 30 years of experience, Vijay Constructions has been transforming
                             the landscape of Yercaud and Salem with quality construction that stands the test of time.
                         </p>
                     </div>
@@ -128,7 +128,7 @@ export function AboutContent() {
                                 integrity, and customer satisfaction.
                             </p>
                             <p className="body-md text-concrete-dark">
-                                Today, with over 100 completed projects and a 4.9-star Google rating from
+                                Today, with over 50 completed projects and a 4.9-star Google rating from
                                 55+ satisfied clients, we continue to build not just structures, but lasting
                                 relationships with our clients.
                             </p>
@@ -143,7 +143,7 @@ export function AboutContent() {
                             </div>
                             {/* Accent box */}
                             <div className="absolute -bottom-8 -left-8 hidden rounded-sm bg-brand-red p-8 text-white shadow-lg lg:block">
-                                <div className="font-display text-4xl font-bold">15+</div>
+                                <div className="font-display text-4xl font-bold">30+</div>
                                 <div className="text-sm uppercase tracking-wider">Years of Excellence</div>
                             </div>
                         </div>

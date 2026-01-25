@@ -12,8 +12,8 @@ gsap.registerPlugin(ScrollTrigger);
 const reasons = [
     {
         icon: "experience",
-        title: "15+ Years Experience",
-        description: "Over a decade and a half of construction excellence in Yercaud and Salem region.",
+        title: "30+ Years Experience",
+        description: "Over three decades of construction excellence in Yercaud and Salem region.",
     },
     {
         icon: "quality",
