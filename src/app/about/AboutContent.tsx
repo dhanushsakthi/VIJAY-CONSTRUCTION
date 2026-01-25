@@ -181,6 +181,50 @@ export function AboutContent() {
                 </div>
             </AnimatedSection>
 
+            {/* Meet Our CEO Section */}
+            <AnimatedSection className="section bg-white">
+                <div className="container">
+                    <div className="mb-12 text-center lg:mb-16">
+                        <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
+                            Leadership
+                        </span>
+                        <h2 className="heading-lg mb-4 text-steel-dark">
+                            Meet Our <span className="text-brand-red">CEO</span>
+                        </h2>
+                        <p className="body-md mx-auto max-w-2xl text-concrete-dark">
+                            Under the visionary leadership of Er. M. Vijayanand M.E., Ph.D., Vijay Constructions
+                            has grown to become a trusted name in the construction industry.
+                        </p>
+                    </div>
+                    <div className="flex justify-center">
+                        <div className="group relative overflow-hidden rounded-lg bg-gradient-to-br from-concrete-50 to-white p-2 shadow-xl transition-all duration-500 hover:shadow-2xl">
+                            {/* Decorative corner accents */}
+                            <div className="absolute left-0 top-0 h-20 w-20 border-l-4 border-t-4 border-brand-green/30 rounded-tl-lg" />
+                            <div className="absolute bottom-0 right-0 h-20 w-20 border-b-4 border-r-4 border-brand-red/30 rounded-br-lg" />
+
+                            {/* Visiting Card Image */}
+                            <div className="relative overflow-hidden rounded-md">
+                                <img
+                                    src="/images/visiting-card.png"
+                                    alt="Er. M. Vijayanand M.E., Ph.D. - CEO of Vijay Constructions - Visiting Card"
+                                    className="h-auto w-full max-w-2xl transform transition-transform duration-500 group-hover:scale-[1.02]"
+                                />
+                                {/* Subtle overlay on hover */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                            </div>
+
+                            {/* Glow effect on hover */}
+                            <div className="absolute -inset-1 -z-10 rounded-lg bg-gradient-to-r from-brand-green/20 via-transparent to-brand-red/20 opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100" />
+                        </div>
+                    </div>
+                    <div className="mt-8 text-center">
+                        <p className="body-sm italic text-concrete-dark">
+                            &ldquo;U dream We build&rdquo; - Our commitment to turning your vision into reality
+                        </p>
+                    </div>
+                </div>
+            </AnimatedSection>
+
             {/* Timeline Section */}
             <AnimatedSection className="section bg-concrete-100">
                 <div className="container">
