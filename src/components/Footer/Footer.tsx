@@ -44,21 +44,16 @@ export function Footer() {
                     <div className="lg:col-span-1">
                         <Link href="/" className="inline-block">
                             <div className="flex items-center gap-3">
-                                <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-gradient-to-br from-brand-red to-brand-red-dark">
-                                    <svg
-                                        viewBox="0 0 40 40"
-                                        className="h-8 w-8"
-                                        fill="none"
-                                        stroke="white"
-                                        strokeWidth="2"
-                                    >
-                                        <path d="M20 5 L35 15 L35 35 L5 35 L5 15 Z" />
-                                        <path d="M15 35 L15 22 L25 22 L25 35" />
-                                        <path d="M10 20 L20 12 L30 20" />
-                                    </svg>
+                                {/* Logo Image */}
+                                <div className="relative h-12 w-12 overflow-hidden rounded-sm transition-transform duration-300 hover:scale-105">
+                                    <img
+                                        src="/images/logo.png"
+                                        alt="Vijay Constructions Logo"
+                                        className="h-full w-full object-contain"
+                                    />
                                 </div>
                                 <div>
-                                    <span className="font-display text-xl font-bold">VIJAY</span>
+                                    <span className="font-display text-xl font-bold text-white">VIJAY</span>
                                     <span className="ml-1 font-display text-xl font-bold text-brand-green">
                                         CONSTRUCTIONS
                                     </span>

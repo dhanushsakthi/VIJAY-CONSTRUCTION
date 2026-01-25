@@ -60,8 +60,8 @@ export function Header() {
             <header
                 ref={headerRef}
                 className={`fixed left-0 right-0 top-0 z-50 transition-all duration-500 ${isScrolled
-                        ? "bg-white/95 shadow-construction backdrop-blur-md"
-                        : "bg-transparent"
+                    ? "bg-white/95 shadow-construction backdrop-blur-md"
+                    : "bg-transparent"
                     }`}
             >
                 <div className="container">
@@ -69,21 +69,15 @@ export function Header() {
                         {/* Logo */}
                         <Link href="/" className="group relative z-10">
                             <div className="flex items-center gap-3">
-                                {/* Logo Icon */}
-                                <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-sm bg-gradient-to-br from-brand-red to-brand-red-dark shadow-lg transition-transform duration-300 group-hover:scale-105">
-                                    <svg
-                                        viewBox="0 0 40 40"
-                                        className="h-8 w-8"
-                                        fill="none"
-                                        stroke="white"
-                                        strokeWidth="2"
-                                    >
-                                        <path d="M20 5 L35 15 L35 35 L5 35 L5 15 Z" />
-                                        <path d="M15 35 L15 22 L25 22 L25 35" />
-                                        <path d="M10 20 L20 12 L30 20" />
-                                    </svg>
-                                    {/* Animated corner accent */}
-                                    <div className="absolute -bottom-1 -right-1 h-3 w-3 bg-brand-green transition-all duration-300 group-hover:h-4 group-hover:w-4" />
+                                {/* Logo Image */}
+                                <div className="relative h-12 w-12 overflow-hidden rounded-sm transition-transform duration-300 group-hover:scale-105">
+                                    <img
+                                        src="/images/logo.png"
+                                        alt="Vijay Constructions Logo"
+                                        className="h-full w-full object-contain"
+                                    />
+                                    {/* Animated corner accent - adjusted for better visibility with white bg logo */}
+                                    <div className="absolute -bottom-0.5 -right-0.5 h-2 w-2 bg-brand-green transition-all duration-300 group-hover:h-3 group-hover:w-3" />
                                 </div>
                                 {/* Logo Text */}
                                 <div className="hidden sm:block">
@@ -110,12 +104,12 @@ export function Header() {
                                     key={link.href}
                                     href={link.href}
                                     className={`group relative px-4 py-2 font-display text-sm font-medium tracking-wide transition-colors duration-300 ${pathname === link.href
-                                            ? isScrolled
-                                                ? "text-brand-red"
-                                                : "text-white"
-                                            : isScrolled
-                                                ? "text-steel hover:text-brand-red"
-                                                : "text-white/80 hover:text-white"
+                                        ? isScrolled
+                                            ? "text-brand-red"
+                                            : "text-white"
+                                        : isScrolled
+                                            ? "text-steel hover:text-brand-red"
+                                            : "text-white/80 hover:text-white"
                                         }`}
                                     style={{ transitionDelay: `${index * 50}ms` }}
                                 >
@@ -146,10 +140,10 @@ export function Header() {
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                             className={`relative z-10 flex h-12 w-12 items-center justify-center rounded-sm transition-colors duration-300 lg:hidden ${isMobileMenuOpen
-                                    ? "bg-brand-red"
-                                    : isScrolled
-                                        ? "bg-steel-dark"
-                                        : "bg-white/20"
+                                ? "bg-brand-red"
+                                : isScrolled
+                                    ? "bg-steel-dark"
+                                    : "bg-white/20"
                                 }`}
                             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
                             aria-expanded={isMobileMenuOpen}
@@ -213,14 +207,14 @@ export function Header() {
                                         <Link
                                             href={link.href}
                                             className={`group flex items-center gap-4 border-b border-white/10 py-4 font-display text-lg font-medium tracking-wide transition-colors ${pathname === link.href
-                                                    ? "text-brand-green"
-                                                    : "text-white hover:text-brand-green"
+                                                ? "text-brand-green"
+                                                : "text-white hover:text-brand-green"
                                                 }`}
                                         >
                                             <span
                                                 className={`h-2 w-2 rounded-full transition-all duration-300 ${pathname === link.href
-                                                        ? "bg-brand-green"
-                                                        : "bg-white/30 group-hover:bg-brand-red"
+                                                    ? "bg-brand-green"
+                                                    : "bg-white/30 group-hover:bg-brand-red"
                                                     }`}
                                             />
                                             {link.label}
