@@ -257,7 +257,7 @@ export default function HomePage() {
                                     <p className="text-xs uppercase tracking-wider text-black/40">
                                         Call Us
                                     </p>
-                                    <p className="font-display font-semibold">076958 50762</p>
+                                    <p className="font-display font-semibold">76958 50762</p>
                                 </div>
                             </a>
 

@@ -14,7 +14,7 @@ const footerLinks = {
         { href: "/services#civil", label: "Civil Engineering" },
     ],
     contact: [
-        { href: "tel:+917695850762", label: "076958 50762" },
+        { href: "tel:+917695850762", label: "76958 50762" },
         { href: "mailto:contact@vijayconstructions.in", label: "Email Us" },
         { href: "/contact", label: "Get in Touch" },
     ],
@@ -140,7 +140,7 @@ export function Footer() {
                                 href="tel:+917695850762"
                                 className="mb-2 block text-lg font-semibold text-white transition-colors hover:text-brand-red"
                             >
-                                076958 50762
+                                76958 50762
                             </a>
                             <p className="text-sm text-concrete">
                                 Open daily, closes at 6:00 PM

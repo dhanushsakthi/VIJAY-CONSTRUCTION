@@ -238,7 +238,7 @@ export function Header() {
                                         href="tel:+917695850762"
                                         className="mb-2 block text-2xl font-bold text-white hover:text-brand-red"
                                     >
-                                        076958 50762
+                                        76958 50762
                                     </a>
                                     <p className="text-sm text-concrete">
                                         256/2, 1st Street, Jerinakadu

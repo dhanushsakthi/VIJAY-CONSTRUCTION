@@ -223,7 +223,7 @@ export function ContactContent() {
                                         <div>
                                             <p className="mb-1 text-sm uppercase tracking-wider text-concrete">Phone</p>
                                             <a href="tel:+917695850762" className="text-xl font-semibold transition-colors hover:text-brand-green">
-                                                076958 50762
+                                                76958 50762
                                             </a>
                                         </div>
                                     </div>
