@@ -72,10 +72,10 @@ export function ProjectsContent() {
                         <span className="hero-animate mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
                             Our Portfolio
                         </span>
-                        <h1 className="hero-animate heading-xl mb-6 text-white">
+                        <h1 className="hero-animate heading-xl mb-6 text-steel-dark">
                             Projects That <span className="text-brand-green">Speak</span> Quality
                         </h1>
-                        <p className="hero-animate body-lg text-white/70">
+                        <p className="hero-animate body-lg text-concrete-dark">
                             Explore our collection of completed projects across residential, commercial,
                             and renovation categories in Yercaud and Salem region.
                         </p>
@@ -168,13 +168,13 @@ export function ProjectsContent() {
             </AnimatedSection>
 
             {/* CTA Section */}
-            <section className="relative overflow-hidden bg-steel-dark py-20">
+            <section className="relative overflow-hidden bg-concrete-100 py-20">
                 <div className="container relative">
                     <div className="mx-auto max-w-3xl text-center">
-                        <h2 className="heading-md mb-6 text-white">
+                        <h2 className="heading-md mb-6 text-steel-dark">
                             Ready to Start Your Project?
                         </h2>
-                        <p className="body-md mb-8 text-concrete">
+                        <p className="body-md mb-8 text-concrete-dark">
                             Join our list of satisfied clients. Let&apos;s build something amazing together.
                         </p>
                         <Link href="/contact" className="btn btn-primary">

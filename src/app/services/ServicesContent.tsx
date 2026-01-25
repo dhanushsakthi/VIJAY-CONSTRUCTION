@@ -103,10 +103,10 @@ export function ServicesContent() {
                         <span className="hero-animate mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
                             Our Services
                         </span>
-                        <h1 className="hero-animate heading-xl mb-6 text-white">
+                        <h1 className="hero-animate heading-xl mb-6 text-steel-dark">
                             Comprehensive <span className="text-brand-green">Construction</span> Solutions
                         </h1>
-                        <p className="hero-animate body-lg text-white/70">
+                        <p className="hero-animate body-lg text-concrete-dark">
                             From concept to completion, we offer end-to-end construction and civil engineering
                             services tailored to your unique requirements.
                         </p>

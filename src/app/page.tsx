@@ -156,17 +156,17 @@ export default function HomePage() {
                         className="max-w-4xl pb-32 pt-32 lg:pb-24 lg:pt-40"
                     >
                         {/* Badge */}
-                        <div className="hero-animate mb-6 inline-flex items-center gap-3 rounded-full bg-white/10 px-4 py-2 backdrop-blur-sm">
+                        <div className="hero-animate mb-6 inline-flex items-center gap-3 rounded-full bg-black/5 px-4 py-2 backdrop-blur-sm">
                             <span className="flex h-2 w-2 rounded-full bg-brand-green">
                                 <span className="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-brand-green opacity-75" />
                             </span>
-                            <span className="text-sm font-medium text-white/80">
+                            <span className="text-sm font-medium text-black/60">
                                 Serving Yercaud & Salem Region
                             </span>
                         </div>
 
                         {/* Main Heading */}
-                        <h1 className="hero-animate heading-xl mb-6 text-white">
+                        <h1 className="hero-animate heading-xl mb-6 text-steel-dark">
                             U dream{" "}
                             <span className="relative inline-block">
                                 <span className="relative z-10 text-brand-green">We build</span>
@@ -175,7 +175,7 @@ export default function HomePage() {
                         </h1>
 
                         {/* Subheading */}
-                        <p className="hero-animate body-lg mb-8 max-w-2xl text-white/70">
+                        <p className="hero-animate body-lg mb-8 max-w-2xl text-concrete-dark">
                             Premier civil engineering and construction company transforming
                             visions into reality. With{" "}
                             <span className="font-semibold text-brand-red">4.9★ rating</span>{" "}
@@ -211,7 +211,7 @@ export default function HomePage() {
 
                             <Link
                                 href="/projects"
-                                className="group rounded-sm border-2 border-white/30 px-8 py-4 font-display text-sm font-semibold uppercase tracking-wider text-white transition-all duration-300 hover:border-white hover:bg-white/10"
+                                className="group rounded-sm border-2 border-steel/30 px-8 py-4 font-display text-sm font-semibold uppercase tracking-wider text-steel-dark transition-all duration-300 hover:border-steel hover:bg-steel/5"
                             >
                                 <span className="flex items-center gap-2">
                                     View Projects
@@ -233,12 +233,12 @@ export default function HomePage() {
                         </div>
 
                         {/* Contact Quick Info */}
-                        <div className="hero-animate mt-12 flex flex-wrap items-center gap-8 border-t border-white/10 pt-8">
+                        <div className="hero-animate mt-12 flex flex-wrap items-center gap-8 border-t border-black/10 pt-8">
                             <a
                                 href="tel:+917695850762"
-                                className="group flex items-center gap-3 text-white transition-colors hover:text-brand-green"
+                                className="group flex items-center gap-3 text-steel-dark transition-colors hover:text-brand-green"
                             >
-                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 transition-colors group-hover:bg-brand-green/20">
+                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-black/5 transition-colors group-hover:bg-brand-green/10">
                                     <svg
                                         className="h-5 w-5"
                                         fill="none"
@@ -254,15 +254,15 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-white/50">
+                                    <p className="text-xs uppercase tracking-wider text-black/40">
                                         Call Us
                                     </p>
                                     <p className="font-display font-semibold">076958 50762</p>
                                 </div>
                             </a>
 
-                            <div className="flex items-center gap-3 text-white">
-                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10">
+                            <div className="flex items-center gap-3 text-steel-dark">
+                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-black/5">
                                     <svg
                                         className="h-5 w-5"
                                         fill="none"
@@ -284,7 +284,7 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-white/50">
+                                    <p className="text-xs uppercase tracking-wider text-black/40">
                                         Location
                                     </p>
                                     <p className="font-display font-semibold">Yercaud, Salem</p>
@@ -483,16 +483,16 @@ export default function HomePage() {
             </AnimatedSection>
 
             {/* Process Section */}
-            <AnimatedSection className="section bg-steel-dark">
+            <AnimatedSection className="section bg-concrete-100">
                 <div className="container">
                     <div className="mb-12 text-center lg:mb-16">
                         <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
                             How We Work
                         </span>
-                        <h2 className="heading-lg mb-4 text-white">
+                        <h2 className="heading-lg mb-4 text-steel-dark">
                             Our <span className="text-brand-red">Process</span>
                         </h2>
-                        <p className="mx-auto max-w-2xl text-concrete">
+                        <p className="mx-auto max-w-2xl text-concrete-dark">
                             A systematic approach to delivering excellence in every project
                         </p>
                     </div>

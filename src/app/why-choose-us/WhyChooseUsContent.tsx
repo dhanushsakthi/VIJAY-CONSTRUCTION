@@ -115,10 +115,10 @@ export function WhyChooseUsContent() {
                         <span className="hero-animate mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
                             Why Choose Us
                         </span>
-                        <h1 className="hero-animate heading-xl mb-6 text-white">
+                        <h1 className="hero-animate heading-xl mb-6 text-steel-dark">
                             The <span className="text-brand-green">Vijay Constructions</span> Difference
                         </h1>
-                        <p className="hero-animate body-lg text-white/70">
+                        <p className="hero-animate body-lg text-concrete-dark">
                             Discover what sets us apart and why we are the preferred construction
                             partner for families and businesses in Yercaud and Salem.
                         </p>
@@ -217,13 +217,13 @@ export function WhyChooseUsContent() {
             </AnimatedSection>
 
             {/* Process Overview */}
-            <AnimatedSection className="section bg-steel-dark">
+            <AnimatedSection className="section bg-concrete-100">
                 <div className="container">
                     <div className="mb-12 text-center lg:mb-16">
                         <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
                             Our Approach
                         </span>
-                        <h2 className="heading-lg mb-4 text-white">
+                        <h2 className="heading-lg mb-4 text-steel-dark">
                             Simple, <span className="text-brand-red">Transparent</span> Process
                         </h2>
                     </div>
@@ -235,11 +235,11 @@ export function WhyChooseUsContent() {
                             { step: "03", title: "Execution", desc: "Quality construction with regular progress updates." },
                         ].map((item) => (
                             <div key={item.step} className="group text-center">
-                                <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full border-2 border-white/20 font-display text-3xl font-bold text-brand-green transition-all group-hover:border-brand-green group-hover:bg-brand-green group-hover:text-white">
+                                <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full border-2 border-black/10 font-display text-3xl font-bold text-brand-green transition-all group-hover:border-brand-green group-hover:bg-brand-green group-hover:text-white">
                                     {item.step}
                                 </div>
-                                <h3 className="mb-2 font-display text-xl font-bold text-white">{item.title}</h3>
-                                <p className="text-concrete">{item.desc}</p>
+                                <h3 className="mb-2 font-display text-xl font-bold text-steel-dark">{item.title}</h3>
+                                <p className="text-concrete-dark">{item.desc}</p>
                             </div>
                         ))}
                     </div>

@@ -94,10 +94,10 @@ export function AboutContent() {
                         <span className="hero-animate mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
                             About Us
                         </span>
-                        <h1 className="hero-animate heading-xl mb-6 text-white">
+                        <h1 className="hero-animate heading-xl mb-6 text-steel-dark">
                             Building Trust, <span className="text-brand-green">Brick by Brick</span>
                         </h1>
-                        <p className="hero-animate body-lg text-white/70">
+                        <p className="hero-animate body-lg text-concrete-dark">
                             With over 30 years of experience, Vijay Constructions has been transforming
                             the landscape of Yercaud and Salem with quality construction that stands the test of time.
                         </p>
@@ -182,13 +182,13 @@ export function AboutContent() {
             </AnimatedSection>
 
             {/* Timeline Section */}
-            <AnimatedSection className="section bg-steel-dark">
+            <AnimatedSection className="section bg-concrete-100">
                 <div className="container">
                     <div className="mb-12 text-center lg:mb-16">
                         <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
                             Our Journey
                         </span>
-                        <h2 className="heading-lg mb-4 text-white">
+                        <h2 className="heading-lg mb-4 text-steel-dark">
                             Milestones <span className="text-brand-red">Achieved</span>
                         </h2>
                     </div>
@@ -205,10 +205,10 @@ export function AboutContent() {
                                 >
                                     {/* Content */}
                                     <div className={`ml-12 flex-1 md:ml-0 ${index % 2 === 0 ? "md:pr-16 md:text-right" : "md:pl-16"}`}>
-                                        <div className="rounded-sm bg-white/5 p-6 backdrop-blur-sm">
+                                        <div className="rounded-sm bg-white p-6 shadow-sm">
                                             <span className="text-2xl font-bold text-brand-green">{item.year}</span>
-                                            <h3 className="mb-2 font-display text-lg font-bold text-white">{item.title}</h3>
-                                            <p className="text-sm text-concrete">{item.description}</p>
+                                            <h3 className="mb-2 font-display text-lg font-bold text-steel-dark">{item.title}</h3>
+                                            <p className="text-sm text-concrete-dark">{item.description}</p>
                                         </div>
                                     </div>
                                     {/* Dot */}

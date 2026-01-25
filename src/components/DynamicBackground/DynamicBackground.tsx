@@ -11,22 +11,22 @@ interface DynamicBackgroundProps {
 const backgrounds = [
     {
         id: 1,
-        gradient: "linear-gradient(135deg, #1A1A1A 0%, #2C2C2C 50%, #1A1A1A 100%)",
+        gradient: "linear-gradient(135deg, #FDFCF5 0%, #F5F5F0 50%, #FDFCF5 100%)",
         pattern: "blueprint",
     },
     {
         id: 2,
-        gradient: "linear-gradient(135deg, #263238 0%, #37474F 50%, #263238 100%)",
+        gradient: "linear-gradient(135deg, #F5F7F8 0%, #E8E6D9 50%, #F5F7F8 100%)",
         pattern: "construction",
     },
     {
         id: 3,
-        gradient: "linear-gradient(135deg, #1A1F23 0%, #2C3E50 50%, #1A1F23 100%)",
+        gradient: "linear-gradient(135deg, #FFFFFF 0%, #F0F2F5 50%, #FFFFFF 100%)",
         pattern: "steel",
     },
     {
         id: 4,
-        gradient: "linear-gradient(135deg, #0D0D0D 0%, #1A1A1A 50%, #0D0D0D 100%)",
+        gradient: "linear-gradient(135deg, #F8F9FA 0%, #E9ECEF 50%, #F8F9FA 100%)",
         pattern: "grid",
     },
 ];
@@ -86,8 +86,8 @@ export function DynamicBackground({
             case "steel":
                 return {
                     backgroundImage: `
-            linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px),
-            linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px)
+            linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px),
+            linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px)
           `,
                     backgroundSize: "20px 20px",
                 };
@@ -132,7 +132,7 @@ export function DynamicBackground({
                     className="absolute -left-1/4 top-1/4 h-96 w-96 rounded-full opacity-30"
                     style={{
                         background:
-                            "radial-gradient(circle, rgba(198, 40, 40, 0.3) 0%, transparent 70%)",
+                            "radial-gradient(circle, rgba(198, 40, 40, 0.2) 0%, transparent 70%)",
                         animation: "float 20s ease-in-out infinite",
                     }}
                 />
@@ -140,7 +140,7 @@ export function DynamicBackground({
                     className="absolute -right-1/4 bottom-1/4 h-96 w-96 rounded-full opacity-30"
                     style={{
                         background:
-                            "radial-gradient(circle, rgba(46, 125, 50, 0.3) 0%, transparent 70%)",
+                            "radial-gradient(circle, rgba(46, 125, 50, 0.2) 0%, transparent 70%)",
                         animation: "float 25s ease-in-out infinite reverse",
                     }}
                 />
@@ -159,7 +159,7 @@ export function DynamicBackground({
                 className="absolute inset-0"
                 style={{
                     background:
-                        "radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.7) 100%)",
+                        "radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.1) 100%)",
                 }}
             />
 

@@ -61,10 +61,10 @@ export function ContactContent() {
                         <span className="hero-animate mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
                             Contact Us
                         </span>
-                        <h1 className="hero-animate heading-xl mb-6 text-white">
+                        <h1 className="hero-animate heading-xl mb-6 text-steel-dark">
                             Let&apos;s Build <span className="text-brand-green">Together</span>
                         </h1>
-                        <p className="hero-animate body-lg text-white/70">
+                        <p className="hero-animate body-lg text-concrete-dark">
                             Ready to start your construction project? Get in touch with us today
                             for a free consultation and quote.
                         </p>
