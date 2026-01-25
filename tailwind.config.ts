@@ -127,8 +127,8 @@ const config: Config = {
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                 'blueprint-grid': `
-          linear-gradient(to right, rgba(46, 125, 50, 0.1) 1px, transparent 1px),
-          linear-gradient(to bottom, rgba(46, 125, 50, 0.1) 1px, transparent 1px)
+          linear-gradient(to right, rgba(90, 90, 90, 0.1) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(90, 90, 90, 0.1) 1px, transparent 1px)
         `,
                 'construction-pattern': `
           repeating-linear-gradient(

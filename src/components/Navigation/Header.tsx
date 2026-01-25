@@ -60,7 +60,7 @@ export function Header() {
             <header
                 ref={headerRef}
                 className={`fixed left-0 right-0 top-0 z-50 transition-all duration-500 ${isScrolled
-                    ? "bg-white/95 shadow-construction backdrop-blur-md"
+                    ? "bg-[#E8E4E0]/95 shadow-construction backdrop-blur-md"
                     : "bg-transparent"
                     }`}
             >

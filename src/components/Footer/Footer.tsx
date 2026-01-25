@@ -30,8 +30,8 @@ export function Footer() {
                 className="absolute inset-0 opacity-5"
                 style={{
                     backgroundImage: `
-            linear-gradient(to right, rgba(46, 125, 50, 0.5) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(46, 125, 50, 0.5) 1px, transparent 1px)
+            linear-gradient(to right, rgba(90, 90, 90, 0.5) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(90, 90, 90, 0.5) 1px, transparent 1px)
           `,
                     backgroundSize: "40px 40px",
                 }}

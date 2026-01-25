@@ -16,14 +16,15 @@
   --color-brand-green: #2E7D32;
   --color-brand-green-light: #66BB6A;
   --color-brand-green-dark: #1B5E20;
-  --color-white: #FDFCF5;
-  /* Cream background from card */
+  --color-white: #E8E4E0;
+  /* Light beige/gray from card */
 
   /* Neutral Construction Tones */
   --color-concrete: #8D8D8D;
-  --color-concrete-light: #E8E6D9;
-  /* Warmer neutral */
-  --color-concrete-dark: #4A4A4A;
+  --color-concrete-light: #D2CDC6;
+  /* Adjusted warmer gray */
+  --color-concrete-dark: #5A5A5A;
+  /* Charcoal gray from card */
   --color-steel: #2D2D2D;
   /* Darker charcoal */
   --color-steel-light: #424242;

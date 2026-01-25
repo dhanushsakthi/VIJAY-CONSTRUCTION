@@ -69,27 +69,27 @@ export function LandingContent() {
                     {/* Left Content */}
                     <div className="flex flex-col justify-center pt-16 lg:pt-0">
                         {/* Badge */}
-                        <div className="animate-in mb-6 inline-flex w-fit items-center gap-2 rounded-full bg-white/10 px-4 py-2 backdrop-blur-sm">
+                        <div className="animate-in mb-6 inline-flex w-fit items-center gap-2 rounded-full bg-steel-dark/10 px-4 py-2 backdrop-blur-sm">
                             <span className="relative flex h-2 w-2">
-                                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand-green opacity-75" />
-                                <span className="relative inline-flex h-2 w-2 rounded-full bg-brand-green" />
+                                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand-red opacity-75" />
+                                <span className="relative inline-flex h-2 w-2 rounded-full bg-brand-red" />
                             </span>
-                            <span className="text-sm font-medium text-white">
+                            <span className="text-sm font-medium text-steel-dark">
                                 Limited Time Offer
                             </span>
                         </div>
 
                         {/* Headline */}
-                        <h1 className="animate-in mb-6 font-display text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
+                        <h1 className="animate-in mb-6 font-display text-4xl font-bold leading-tight text-steel-dark md:text-5xl lg:text-6xl">
                             Build Your Dream Home in{" "}
-                            <span className="text-brand-green">Yercaud & Salem</span>
+                            <span className="text-brand-red">Yercaud & Salem</span>
                         </h1>
 
                         {/* Subheadline */}
-                        <p className="animate-in mb-8 text-lg text-white/70 md:text-xl">
+                        <p className="animate-in mb-8 text-lg text-steel-dark/70 md:text-xl">
                             Get a <strong className="text-brand-red">FREE consultation</strong> and
                             quote from the region&apos;s most trusted construction company with
-                            <strong className="text-brand-green"> 4.9★ rating</strong>.
+                            <strong className="text-brand-red"> 4.9★ rating</strong>.
                         </p>
 
                         {/* Benefits */}
