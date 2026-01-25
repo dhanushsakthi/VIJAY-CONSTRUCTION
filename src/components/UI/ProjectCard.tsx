@@ -69,7 +69,7 @@ export function ProjectCard({
 
                 {/* Category Badge */}
                 <div className="absolute left-4 top-4">
-                    <span className="inline-block rounded-sm bg-brand-green px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">
+                    <span className="inline-block rounded-sm bg-brand-red px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">
                         {category}
                     </span>
                 </div>
@@ -104,7 +104,7 @@ export function ProjectCard({
                         </div>
 
                         {/* View Project Link */}
-                        <div className="mt-4 flex items-center gap-2 text-sm font-semibold text-brand-green opacity-0 transition-all duration-300 group-hover:opacity-100">
+                        <div className="mt-4 flex items-center gap-2 text-sm font-semibold text-brand-red opacity-0 transition-all duration-300 group-hover:opacity-100">
                             View Project
                             <svg
                                 className="h-4 w-4 transition-transform group-hover:translate-x-1"

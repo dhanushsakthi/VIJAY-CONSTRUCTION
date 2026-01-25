@@ -63,11 +63,11 @@ export function StatsCounter({
             className="group relative overflow-hidden rounded-sm p-6 text-center transition-all duration-300 hover:bg-concrete-50"
         >
             {/* Animated border */}
-            <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-brand-red to-brand-green transition-all duration-500 group-hover:w-full" />
+            <div className="absolute bottom-0 left-0 h-1 w-0 bg-brand-red transition-all duration-500 group-hover:w-full" />
 
             <div className="mb-2 font-display text-4xl font-bold text-steel-dark lg:text-5xl">
                 {decimals > 0 ? count.toFixed(decimals) : count}
-                <span className="text-brand-green">{suffix}</span>
+                <span className="text-brand-red">{suffix}</span>
             </div>
             <p className="text-sm font-medium uppercase tracking-wider text-concrete-dark">
                 {label}
