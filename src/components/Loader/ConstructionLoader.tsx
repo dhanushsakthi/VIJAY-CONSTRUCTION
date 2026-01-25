@@ -142,85 +142,159 @@ export function ConstructionLoader() {
 
             {/* Main Construction Animation */}
             <div className="relative flex h-[250px] w-[300px] items-center justify-center">
-                {/* Blueprint SVG */}
+                {/* Blueprint SVG - Modern House from Visiting Card */}
                 <svg
                     ref={blueprintRef}
-                    viewBox="0 0 200 200"
+                    viewBox="0 0 240 220"
                     className="absolute h-full w-full"
                     style={{ filter: "drop-shadow(0 0 10px rgba(46, 125, 50, 0.3))" }}
                 >
-                    {/* Building outline */}
+                    {/* Decorative Tree on left */}
                     <path
                         className="blueprint-path"
-                        d="M40 180 L40 80 L100 40 L160 80 L160 180"
+                        d="M35 200 L35 150"
                         stroke="#2E7D32"
                         strokeWidth="2"
                         fill="none"
                         strokeLinecap="round"
-                        strokeLinejoin="round"
                     />
-                    {/* Roof */}
+                    {/* Tree branches */}
+                    <circle className="blueprint-path" cx="35" cy="140" r="8" stroke="#2E7D32" strokeWidth="1.5" fill="none" />
+                    <circle className="blueprint-path" cx="28" cy="130" r="6" stroke="#2E7D32" strokeWidth="1.5" fill="none" />
+                    <circle className="blueprint-path" cx="42" cy="128" r="7" stroke="#2E7D32" strokeWidth="1.5" fill="none" />
+                    <circle className="blueprint-path" cx="35" cy="120" r="6" stroke="#2E7D32" strokeWidth="1.5" fill="none" />
+                    <circle className="blueprint-path" cx="30" cy="115" r="4" stroke="#2E7D32" strokeWidth="1.5" fill="none" />
+                    <circle className="blueprint-path" cx="40" cy="112" r="5" stroke="#2E7D32" strokeWidth="1.5" fill="none" />
+
+                    {/* Main Building Structure */}
+                    {/* Left wall */}
                     <path
                         className="blueprint-path"
-                        d="M30 80 L100 30 L170 80"
+                        d="M60 200 L60 90"
                         stroke="#2E7D32"
                         strokeWidth="2"
                         fill="none"
                         strokeLinecap="round"
-                        strokeLinejoin="round"
                     />
-                    {/* Windows */}
+                    {/* Right wall */}
+                    <path
+                        className="blueprint-path"
+                        d="M180 200 L180 70"
+                        stroke="#2E7D32"
+                        strokeWidth="2"
+                        fill="none"
+                        strokeLinecap="round"
+                    />
+
+                    {/* Slanted Roof */}
+                    <path
+                        className="blueprint-path"
+                        d="M55 90 L180 45"
+                        stroke="#2E7D32"
+                        strokeWidth="2.5"
+                        fill="none"
+                        strokeLinecap="round"
+                    />
+                    <path
+                        className="blueprint-path"
+                        d="M180 45 L190 48"
+                        stroke="#2E7D32"
+                        strokeWidth="2"
+                        fill="none"
+                        strokeLinecap="round"
+                    />
+
+                    {/* Top floor - Glass windows */}
                     <rect
                         className="blueprint-path"
-                        x="55"
-                        y="100"
-                        width="25"
+                        x="65"
+                        y="95"
+                        width="50"
                         height="30"
                         stroke="#2E7D32"
                         strokeWidth="1.5"
                         fill="none"
                     />
+                    {/* Window divisions */}
+                    <line className="blueprint-path" x1="78" y1="95" x2="78" y2="125" stroke="#2E7D32" strokeWidth="1" />
+                    <line className="blueprint-path" x1="90" y1="95" x2="90" y2="125" stroke="#2E7D32" strokeWidth="1" />
+                    <line className="blueprint-path" x1="102" y1="95" x2="102" y2="125" stroke="#2E7D32" strokeWidth="1" />
+
+                    {/* Top floor right section */}
                     <rect
                         className="blueprint-path"
                         x="120"
-                        y="100"
-                        width="25"
+                        y="75"
+                        width="55"
+                        height="25"
+                        stroke="#2E7D32"
+                        strokeWidth="1.5"
+                        fill="none"
+                    />
+                    <line className="blueprint-path" x1="140" y1="75" x2="140" y2="100" stroke="#2E7D32" strokeWidth="1" />
+                    <line className="blueprint-path" x1="155" y1="75" x2="155" y2="100" stroke="#2E7D32" strokeWidth="1" />
+
+                    {/* Floor separator 1 */}
+                    <line
+                        className="blueprint-path"
+                        x1="60"
+                        y1="130"
+                        x2="180"
+                        y2="130"
+                        stroke="#2E7D32"
+                        strokeWidth="1.5"
+                    />
+
+                    {/* Middle floor - Balcony with railings */}
+                    <rect
+                        className="blueprint-path"
+                        x="65"
+                        y="135"
+                        width="110"
                         height="30"
                         stroke="#2E7D32"
                         strokeWidth="1.5"
                         fill="none"
                     />
-                    {/* Door */}
+                    {/* Balcony railing vertical bars */}
+                    <line className="blueprint-path" x1="75" y1="165" x2="75" y2="175" stroke="#2E7D32" strokeWidth="1" />
+                    <line className="blueprint-path" x1="85" y1="165" x2="85" y2="175" stroke="#2E7D32" strokeWidth="1" />
+                    <line className="blueprint-path" x1="95" y1="165" x2="95" y2="175" stroke="#2E7D32" strokeWidth="1" />
+                    <line className="blueprint-path" x1="105" y1="165" x2="105" y2="175" stroke="#2E7D32" strokeWidth="1" />
+                    <line className="blueprint-path" x1="115" y1="165" x2="115" y2="175" stroke="#2E7D32" strokeWidth="1" />
+                    <line className="blueprint-path" x1="125" y1="165" x2="125" y2="175" stroke="#2E7D32" strokeWidth="1" />
+                    <line className="blueprint-path" x1="135" y1="165" x2="135" y2="175" stroke="#2E7D32" strokeWidth="1" />
+                    <line className="blueprint-path" x1="145" y1="165" x2="145" y2="175" stroke="#2E7D32" strokeWidth="1" />
+                    <line className="blueprint-path" x1="155" y1="165" x2="155" y2="175" stroke="#2E7D32" strokeWidth="1" />
+                    <line className="blueprint-path" x1="165" y1="165" x2="165" y2="175" stroke="#2E7D32" strokeWidth="1" />
+                    {/* Balcony railing horizontal */}
+                    <line className="blueprint-path" x1="70" y1="175" x2="170" y2="175" stroke="#2E7D32" strokeWidth="1.5" />
+
+                    {/* Ground floor - Garage door */}
                     <rect
                         className="blueprint-path"
-                        x="85"
-                        y="140"
-                        width="30"
-                        height="40"
+                        x="65"
+                        y="180"
+                        width="110"
+                        height="20"
                         stroke="#2E7D32"
                         strokeWidth="1.5"
                         fill="none"
                     />
-                    {/* Grid lines */}
+                    {/* Garage door horizontal lines */}
+                    <line className="blueprint-path" x1="65" y1="185" x2="175" y2="185" stroke="#2E7D32" strokeWidth="0.8" />
+                    <line className="blueprint-path" x1="65" y1="190" x2="175" y2="190" stroke="#2E7D32" strokeWidth="0.8" />
+                    <line className="blueprint-path" x1="65" y1="195" x2="175" y2="195" stroke="#2E7D32" strokeWidth="0.8" />
+
+                    {/* Ground line */}
                     <line
                         className="blueprint-path"
-                        x1="40"
-                        y1="130"
-                        x2="160"
-                        y2="130"
+                        x1="25"
+                        y1="200"
+                        x2="200"
+                        y2="200"
                         stroke="#2E7D32"
-                        strokeWidth="0.5"
-                        strokeDasharray="5,5"
-                    />
-                    <line
-                        className="blueprint-path"
-                        x1="100"
-                        y1="40"
-                        x2="100"
-                        y2="180"
-                        stroke="#2E7D32"
-                        strokeWidth="0.5"
-                        strokeDasharray="5,5"
+                        strokeWidth="2"
                     />
                 </svg>
 
