@@ -119,21 +119,22 @@ export function ConstructionLoader() {
     return (
         <div
             ref={loaderRef}
-            className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-asphalt-dark"
+            className="fixed inset-0 z-[9999] flex flex-col items-center justify-center"
+            style={{ backgroundColor: "#E8E4E0" }}
             aria-label="Loading"
             role="progressbar"
             aria-valuenow={Math.min(progress, 100)}
             aria-valuemin={0}
             aria-valuemax={100}
         >
-            {/* Blueprint Grid Background */}
-            <div className="absolute inset-0 opacity-20">
+            {/* Subtle Grid Background */}
+            <div className="absolute inset-0 opacity-10">
                 <div
                     className="h-full w-full"
                     style={{
                         backgroundImage: `
-              linear-gradient(to right, rgba(46, 125, 50, 0.3) 1px, transparent 1px),
-              linear-gradient(to bottom, rgba(46, 125, 50, 0.3) 1px, transparent 1px)
+              linear-gradient(to right, rgba(90, 90, 90, 0.3) 1px, transparent 1px),
+              linear-gradient(to bottom, rgba(90, 90, 90, 0.3) 1px, transparent 1px)
             `,
                         backgroundSize: "40px 40px",
                     }}
@@ -147,31 +148,31 @@ export function ConstructionLoader() {
                     ref={blueprintRef}
                     viewBox="0 0 240 220"
                     className="absolute h-full w-full"
-                    style={{ filter: "drop-shadow(0 0 10px rgba(46, 125, 50, 0.3))" }}
+                    style={{ filter: "drop-shadow(0 0 8px rgba(90, 90, 90, 0.2))" }}
                 >
                     {/* Decorative Tree on left */}
                     <path
                         className="blueprint-path"
                         d="M35 200 L35 150"
-                        stroke="#2E7D32"
+                        stroke="#5A5A5A"
                         strokeWidth="2"
                         fill="none"
                         strokeLinecap="round"
                     />
                     {/* Tree branches */}
-                    <circle className="blueprint-path" cx="35" cy="140" r="8" stroke="#2E7D32" strokeWidth="1.5" fill="none" />
-                    <circle className="blueprint-path" cx="28" cy="130" r="6" stroke="#2E7D32" strokeWidth="1.5" fill="none" />
-                    <circle className="blueprint-path" cx="42" cy="128" r="7" stroke="#2E7D32" strokeWidth="1.5" fill="none" />
-                    <circle className="blueprint-path" cx="35" cy="120" r="6" stroke="#2E7D32" strokeWidth="1.5" fill="none" />
-                    <circle className="blueprint-path" cx="30" cy="115" r="4" stroke="#2E7D32" strokeWidth="1.5" fill="none" />
-                    <circle className="blueprint-path" cx="40" cy="112" r="5" stroke="#2E7D32" strokeWidth="1.5" fill="none" />
+                    <circle className="blueprint-path" cx="35" cy="140" r="8" stroke="#5A5A5A" strokeWidth="1.5" fill="none" />
+                    <circle className="blueprint-path" cx="28" cy="130" r="6" stroke="#5A5A5A" strokeWidth="1.5" fill="none" />
+                    <circle className="blueprint-path" cx="42" cy="128" r="7" stroke="#5A5A5A" strokeWidth="1.5" fill="none" />
+                    <circle className="blueprint-path" cx="35" cy="120" r="6" stroke="#5A5A5A" strokeWidth="1.5" fill="none" />
+                    <circle className="blueprint-path" cx="30" cy="115" r="4" stroke="#5A5A5A" strokeWidth="1.5" fill="none" />
+                    <circle className="blueprint-path" cx="40" cy="112" r="5" stroke="#5A5A5A" strokeWidth="1.5" fill="none" />
 
                     {/* Main Building Structure */}
                     {/* Left wall */}
                     <path
                         className="blueprint-path"
                         d="M60 200 L60 90"
-                        stroke="#2E7D32"
+                        stroke="#5A5A5A"
                         strokeWidth="2"
                         fill="none"
                         strokeLinecap="round"
@@ -180,7 +181,7 @@ export function ConstructionLoader() {
                     <path
                         className="blueprint-path"
                         d="M180 200 L180 70"
-                        stroke="#2E7D32"
+                        stroke="#5A5A5A"
                         strokeWidth="2"
                         fill="none"
                         strokeLinecap="round"
@@ -190,7 +191,7 @@ export function ConstructionLoader() {
                     <path
                         className="blueprint-path"
                         d="M55 90 L180 45"
-                        stroke="#2E7D32"
+                        stroke="#5A5A5A"
                         strokeWidth="2.5"
                         fill="none"
                         strokeLinecap="round"
@@ -198,7 +199,7 @@ export function ConstructionLoader() {
                     <path
                         className="blueprint-path"
                         d="M180 45 L190 48"
-                        stroke="#2E7D32"
+                        stroke="#5A5A5A"
                         strokeWidth="2"
                         fill="none"
                         strokeLinecap="round"
@@ -211,14 +212,14 @@ export function ConstructionLoader() {
                         y="95"
                         width="50"
                         height="30"
-                        stroke="#2E7D32"
+                        stroke="#5A5A5A"
                         strokeWidth="1.5"
                         fill="none"
                     />
                     {/* Window divisions */}
-                    <line className="blueprint-path" x1="78" y1="95" x2="78" y2="125" stroke="#2E7D32" strokeWidth="1" />
-                    <line className="blueprint-path" x1="90" y1="95" x2="90" y2="125" stroke="#2E7D32" strokeWidth="1" />
-                    <line className="blueprint-path" x1="102" y1="95" x2="102" y2="125" stroke="#2E7D32" strokeWidth="1" />
+                    <line className="blueprint-path" x1="78" y1="95" x2="78" y2="125" stroke="#5A5A5A" strokeWidth="1" />
+                    <line className="blueprint-path" x1="90" y1="95" x2="90" y2="125" stroke="#5A5A5A" strokeWidth="1" />
+                    <line className="blueprint-path" x1="102" y1="95" x2="102" y2="125" stroke="#5A5A5A" strokeWidth="1" />
 
                     {/* Top floor right section */}
                     <rect
@@ -227,12 +228,12 @@ export function ConstructionLoader() {
                         y="75"
                         width="55"
                         height="25"
-                        stroke="#2E7D32"
+                        stroke="#5A5A5A"
                         strokeWidth="1.5"
                         fill="none"
                     />
-                    <line className="blueprint-path" x1="140" y1="75" x2="140" y2="100" stroke="#2E7D32" strokeWidth="1" />
-                    <line className="blueprint-path" x1="155" y1="75" x2="155" y2="100" stroke="#2E7D32" strokeWidth="1" />
+                    <line className="blueprint-path" x1="140" y1="75" x2="140" y2="100" stroke="#5A5A5A" strokeWidth="1" />
+                    <line className="blueprint-path" x1="155" y1="75" x2="155" y2="100" stroke="#5A5A5A" strokeWidth="1" />
 
                     {/* Floor separator 1 */}
                     <line
@@ -241,7 +242,7 @@ export function ConstructionLoader() {
                         y1="130"
                         x2="180"
                         y2="130"
-                        stroke="#2E7D32"
+                        stroke="#5A5A5A"
                         strokeWidth="1.5"
                     />
 
@@ -252,23 +253,23 @@ export function ConstructionLoader() {
                         y="135"
                         width="110"
                         height="30"
-                        stroke="#2E7D32"
+                        stroke="#5A5A5A"
                         strokeWidth="1.5"
                         fill="none"
                     />
                     {/* Balcony railing vertical bars */}
-                    <line className="blueprint-path" x1="75" y1="165" x2="75" y2="175" stroke="#2E7D32" strokeWidth="1" />
-                    <line className="blueprint-path" x1="85" y1="165" x2="85" y2="175" stroke="#2E7D32" strokeWidth="1" />
-                    <line className="blueprint-path" x1="95" y1="165" x2="95" y2="175" stroke="#2E7D32" strokeWidth="1" />
-                    <line className="blueprint-path" x1="105" y1="165" x2="105" y2="175" stroke="#2E7D32" strokeWidth="1" />
-                    <line className="blueprint-path" x1="115" y1="165" x2="115" y2="175" stroke="#2E7D32" strokeWidth="1" />
-                    <line className="blueprint-path" x1="125" y1="165" x2="125" y2="175" stroke="#2E7D32" strokeWidth="1" />
-                    <line className="blueprint-path" x1="135" y1="165" x2="135" y2="175" stroke="#2E7D32" strokeWidth="1" />
-                    <line className="blueprint-path" x1="145" y1="165" x2="145" y2="175" stroke="#2E7D32" strokeWidth="1" />
-                    <line className="blueprint-path" x1="155" y1="165" x2="155" y2="175" stroke="#2E7D32" strokeWidth="1" />
-                    <line className="blueprint-path" x1="165" y1="165" x2="165" y2="175" stroke="#2E7D32" strokeWidth="1" />
+                    <line className="blueprint-path" x1="75" y1="165" x2="75" y2="175" stroke="#5A5A5A" strokeWidth="1" />
+                    <line className="blueprint-path" x1="85" y1="165" x2="85" y2="175" stroke="#5A5A5A" strokeWidth="1" />
+                    <line className="blueprint-path" x1="95" y1="165" x2="95" y2="175" stroke="#5A5A5A" strokeWidth="1" />
+                    <line className="blueprint-path" x1="105" y1="165" x2="105" y2="175" stroke="#5A5A5A" strokeWidth="1" />
+                    <line className="blueprint-path" x1="115" y1="165" x2="115" y2="175" stroke="#5A5A5A" strokeWidth="1" />
+                    <line className="blueprint-path" x1="125" y1="165" x2="125" y2="175" stroke="#5A5A5A" strokeWidth="1" />
+                    <line className="blueprint-path" x1="135" y1="165" x2="135" y2="175" stroke="#5A5A5A" strokeWidth="1" />
+                    <line className="blueprint-path" x1="145" y1="165" x2="145" y2="175" stroke="#5A5A5A" strokeWidth="1" />
+                    <line className="blueprint-path" x1="155" y1="165" x2="155" y2="175" stroke="#5A5A5A" strokeWidth="1" />
+                    <line className="blueprint-path" x1="165" y1="165" x2="165" y2="175" stroke="#5A5A5A" strokeWidth="1" />
                     {/* Balcony railing horizontal */}
-                    <line className="blueprint-path" x1="70" y1="175" x2="170" y2="175" stroke="#2E7D32" strokeWidth="1.5" />
+                    <line className="blueprint-path" x1="70" y1="175" x2="170" y2="175" stroke="#5A5A5A" strokeWidth="1.5" />
 
                     {/* Ground floor - Garage door */}
                     <rect
@@ -277,14 +278,14 @@ export function ConstructionLoader() {
                         y="180"
                         width="110"
                         height="20"
-                        stroke="#2E7D32"
+                        stroke="#5A5A5A"
                         strokeWidth="1.5"
                         fill="none"
                     />
                     {/* Garage door horizontal lines */}
-                    <line className="blueprint-path" x1="65" y1="185" x2="175" y2="185" stroke="#2E7D32" strokeWidth="0.8" />
-                    <line className="blueprint-path" x1="65" y1="190" x2="175" y2="190" stroke="#2E7D32" strokeWidth="0.8" />
-                    <line className="blueprint-path" x1="65" y1="195" x2="175" y2="195" stroke="#2E7D32" strokeWidth="0.8" />
+                    <line className="blueprint-path" x1="65" y1="185" x2="175" y2="185" stroke="#5A5A5A" strokeWidth="0.8" />
+                    <line className="blueprint-path" x1="65" y1="190" x2="175" y2="190" stroke="#5A5A5A" strokeWidth="0.8" />
+                    <line className="blueprint-path" x1="65" y1="195" x2="175" y2="195" stroke="#5A5A5A" strokeWidth="0.8" />
 
                     {/* Ground line */}
                     <line
@@ -293,7 +294,7 @@ export function ConstructionLoader() {
                         y1="200"
                         x2="200"
                         y2="200"
-                        stroke="#2E7D32"
+                        stroke="#5A5A5A"
                         strokeWidth="2"
                     />
                 </svg>
@@ -343,16 +344,16 @@ export function ConstructionLoader() {
 
             {/* Company Name and Progress */}
             <div ref={textRef} className="mt-8 text-center">
-                <h1 className="font-display text-2xl font-bold tracking-wider text-white">
+                <h1 className="font-display text-2xl font-bold tracking-wider" style={{ color: "#C62828" }}>
                     VIJAY{" "}
-                    <span className="text-brand-green">CONSTRUCTIONS</span>
+                    <span style={{ color: "#333333" }}>CONSTRUCTIONS</span>
                 </h1>
-                <p className="mt-2 font-mono text-xs tracking-widest text-concrete">
-                    BUILDING EXCELLENCE
+                <p className="mt-2 font-mono text-xs tracking-widest" style={{ color: "#666666" }}>
+                    U dream We build
                 </p>
 
                 {/* Progress Bar */}
-                <div className="mx-auto mt-6 h-1 w-48 overflow-hidden rounded-full bg-steel-dark">
+                <div className="mx-auto mt-6 h-1 w-48 overflow-hidden rounded-full" style={{ backgroundColor: "#CCCCCC" }}>
                     <div
                         className="h-full rounded-full transition-all duration-300 ease-out"
                         style={{
@@ -361,7 +362,7 @@ export function ConstructionLoader() {
                         }}
                     />
                 </div>
-                <p className="mt-2 font-mono text-xs text-concrete-dark">
+                <p className="mt-2 font-mono text-xs" style={{ color: "#666666" }}>
                     {Math.min(Math.round(progress), 100)}%
                 </p>
             </div>
