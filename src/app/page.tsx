@@ -188,7 +188,7 @@ export default function HomePage() {
                         <div className="hero-animate flex flex-wrap gap-4">
                             <Link
                                 href="/contact"
-                                className="group relative overflow-hidden rounded-sm bg-brand-red px-8 py-4 font-display text-sm font-semibold uppercase tracking-wider text-white shadow-lg transition-all duration-300 hover:shadow-xl"
+                                className="group relative inline-flex items-center justify-center overflow-hidden rounded-sm bg-brand-red px-8 py-4 font-display text-sm font-semibold uppercase tracking-wider text-white shadow-lg transition-all duration-300 hover:shadow-xl"
                             >
                                 <span className="relative z-10 flex items-center gap-2">
                                     Get Free Quote
@@ -211,7 +211,7 @@ export default function HomePage() {
 
                             <Link
                                 href="/projects"
-                                className="group rounded-sm border-2 border-steel/30 px-8 py-4 font-display text-sm font-semibold uppercase tracking-wider text-steel-dark transition-all duration-300 hover:border-steel hover:bg-steel/5"
+                                className="group inline-flex items-center justify-center rounded-sm border-2 border-steel/30 px-8 py-4 font-display text-sm font-semibold uppercase tracking-wider text-steel-dark transition-all duration-300 hover:border-steel hover:bg-steel/5"
                             >
                                 <span className="flex items-center gap-2">
                                     View Projects

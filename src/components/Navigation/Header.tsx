@@ -127,7 +127,7 @@ export function Header() {
                         <div className="hidden lg:block">
                             <Link
                                 href="/contact"
-                                className="group relative overflow-hidden rounded-sm bg-brand-red px-6 py-3 font-display text-sm font-semibold uppercase tracking-wider text-white shadow-lg transition-all duration-300 hover:bg-brand-red-dark hover:shadow-xl"
+                                className="group relative inline-flex items-center justify-center overflow-hidden rounded-sm bg-brand-red px-6 py-3 font-display text-sm font-semibold uppercase tracking-wider text-white shadow-lg transition-all duration-300 hover:bg-brand-red-dark hover:shadow-xl"
                             >
                                 <span className="relative z-10">Get Quote</span>
                                 {/* Hover animation */}
