@@ -38,10 +38,10 @@ export function Footer() {
             />
 
             {/* Main Footer Content */}
-            <div className="container relative py-16 lg:py-20">
-                <div className="grid gap-12 lg:grid-cols-4 lg:gap-8">
+            <div className="container relative pt-24 pb-16 lg:pt-32 lg:pb-20">
+                <div className="grid gap-16 lg:grid-cols-4 lg:gap-8">
                     {/* Brand Section */}
-                    <div className="lg:col-span-1">
+                    <div className="flex flex-col items-center text-center lg:col-span-1 lg:items-start lg:text-left">
                         <Link href="/" className="inline-block">
                             <div className="flex items-center gap-3">
                                 {/* Logo Image */}
@@ -53,14 +53,14 @@ export function Footer() {
                                     />
                                 </div>
                                 <div>
-                                    <span className="font-display text-xl font-bold text-white">VIJAY</span>
-                                    <span className="ml-1 font-display text-xl font-bold text-brand-green">
+                                    <span className="font-display text-xl font-bold text-white sm:text-2xl">VIJAY</span>
+                                    <span className="ml-1 font-display text-xl font-bold text-brand-green sm:text-2xl">
                                         CONSTRUCTIONS
                                     </span>
                                 </div>
                             </div>
                         </Link>
-                        <p className="mt-6 text-sm leading-relaxed text-concrete">
+                        <p className="mt-6 max-w-sm text-sm leading-relaxed text-concrete">
                             Building excellence in Yercaud and Salem region since years. We
                             transform your vision into concrete reality with precision,
                             quality, and dedication.
@@ -84,7 +84,7 @@ export function Footer() {
                     </div>
 
                     {/* Company Links */}
-                    <div>
+                    <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
                         <h3 className="mb-6 font-display text-sm font-semibold uppercase tracking-wider text-brand-green">
                             Company
                         </h3>
@@ -104,7 +104,7 @@ export function Footer() {
                     </div>
 
                     {/* Services Links */}
-                    <div>
+                    <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
                         <h3 className="mb-6 font-display text-sm font-semibold uppercase tracking-wider text-brand-green">
                             Services
                         </h3>
@@ -124,12 +124,12 @@ export function Footer() {
                     </div>
 
                     {/* Contact Info */}
-                    <div>
+                    <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
                         <h3 className="mb-6 font-display text-sm font-semibold uppercase tracking-wider text-brand-green">
                             Contact
                         </h3>
                         <address className="not-italic">
-                            <p className="mb-4 text-sm text-concrete">
+                            <p className="mb-6 text-sm text-concrete">
                                 256/2, 1st Street, Jerinakadu
                                 <br />
                                 Yercaud, Salem
@@ -138,11 +138,11 @@ export function Footer() {
                             </p>
                             <a
                                 href="tel:+917695850762"
-                                className="mb-2 block text-lg font-semibold text-white transition-colors hover:text-brand-red"
+                                className="mb-3 block text-lg font-semibold text-white transition-colors hover:text-brand-red sm:text-xl"
                             >
                                 76958 50762
                             </a>
-                            <p className="text-sm text-concrete">
+                            <p className="mb-6 text-sm text-concrete">
                                 Open daily, closes at 6:00 PM
                             </p>
                         </address>
