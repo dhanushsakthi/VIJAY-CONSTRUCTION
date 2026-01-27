@@ -578,7 +578,7 @@ export default function HomePage() {
             </AnimatedSection>
 
             {/* CTA Section */}
-            <section className="relative overflow-hidden bg-brand-red py-20 lg:py-24">
+            <section className="relative overflow-hidden bg-brand-red pt-20 pb-32 lg:pt-24 lg:pb-40">
                 {/* Background Pattern */}
                 <div
                     className="absolute inset-0 opacity-10"

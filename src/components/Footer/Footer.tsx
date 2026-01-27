@@ -38,7 +38,7 @@ export function Footer() {
             />
 
             {/* Main Footer Content */}
-            <div className="container relative pt-24 pb-16 lg:pt-32 lg:pb-20">
+            <div className="container relative pt-32 pb-16 lg:pt-48 lg:pb-20">
                 <div className="grid gap-16 lg:grid-cols-4 lg:gap-8">
                     {/* Brand Section */}
                     <div className="flex flex-col items-center text-center lg:col-span-1 lg:items-start lg:text-left">
