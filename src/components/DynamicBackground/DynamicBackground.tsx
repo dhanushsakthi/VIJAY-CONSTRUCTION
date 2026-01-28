@@ -11,22 +11,22 @@ interface DynamicBackgroundProps {
 const backgrounds = [
     {
         id: 1,
-        gradient: "linear-gradient(135deg, #FDFCF5 0%, #F5F5F0 50%, #FDFCF5 100%)",
+        gradient: "linear-gradient(135deg, rgba(253, 252, 245, 0.7) 0%, rgba(245, 245, 240, 0.4) 50%, rgba(253, 252, 245, 0.7) 100%)",
         pattern: "blueprint",
     },
     {
         id: 2,
-        gradient: "linear-gradient(135deg, #F5F7F8 0%, #E8E6D9 50%, #F5F7F8 100%)",
+        gradient: "linear-gradient(135deg, rgba(245, 247, 248, 0.7) 0%, rgba(232, 230, 217, 0.4) 50%, rgba(245, 247, 248, 0.7) 100%)",
         pattern: "construction",
     },
     {
         id: 3,
-        gradient: "linear-gradient(135deg, #FFFFFF 0%, #F0F2F5 50%, #FFFFFF 100%)",
+        gradient: "linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(240, 242, 245, 0.4) 50%, rgba(255, 255, 255, 0.7) 100%)",
         pattern: "steel",
     },
     {
         id: 4,
-        gradient: "linear-gradient(135deg, #F8F9FA 0%, #E9ECEF 50%, #F8F9FA 100%)",
+        gradient: "linear-gradient(135deg, rgba(248, 249, 250, 0.7) 0%, rgba(233, 236, 239, 0.4) 50%, rgba(248, 249, 250, 0.7) 100%)",
         pattern: "grid",
     },
 ];

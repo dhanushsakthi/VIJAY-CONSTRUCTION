@@ -310,7 +310,7 @@ export default function HomePage() {
             </section>
 
             {/* About Preview Section */}
-            <AnimatedSection className="section bg-white">
+            <AnimatedSection className="section bg-white/40 backdrop-blur-sm">
                 <div className="container">
                     <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
                         {/* Content */}
@@ -446,7 +446,7 @@ export default function HomePage() {
             </AnimatedSection>
 
             {/* Services Section */}
-            <AnimatedSection className="section bg-concrete-50">
+            <AnimatedSection className="section bg-concrete-50/40 backdrop-blur-sm">
                 <div className="container">
                     <div className="mb-12 text-center lg:mb-16">
                         <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
@@ -492,7 +492,7 @@ export default function HomePage() {
             </AnimatedSection>
 
             {/* Process Section */}
-            <AnimatedSection className="section bg-concrete-100">
+            <AnimatedSection className="section bg-concrete-100/40 backdrop-blur-sm">
                 <div className="container">
                     <div className="mb-12 text-center lg:mb-16">
                         <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
@@ -519,7 +519,7 @@ export default function HomePage() {
             </AnimatedSection>
 
             {/* Projects Section */}
-            <AnimatedSection className="section bg-white">
+            <AnimatedSection className="section bg-white/40 backdrop-blur-sm">
                 <div className="container">
                     <div className="mb-12 flex flex-col items-center justify-between gap-6 lg:mb-16 lg:flex-row">
                         <div>
@@ -560,7 +560,7 @@ export default function HomePage() {
             </AnimatedSection>
 
             {/* Testimonials Section */}
-            <AnimatedSection className="section bg-concrete-50">
+            <AnimatedSection className="section bg-concrete-50/40 backdrop-blur-sm">
                 <div className="container">
                     <div className="mb-12 text-center lg:mb-16">
                         <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">

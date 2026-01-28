@@ -94,7 +94,7 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
             </section>
 
             {/* Project Details */}
-            <AnimatedSection className="section bg-white">
+            <AnimatedSection className="section bg-white/40 backdrop-blur-sm">
                 <div className="container">
                     <div className="grid gap-12 lg:grid-cols-3 lg:gap-16">
                         <div className="lg:col-span-2">

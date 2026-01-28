@@ -25,7 +25,7 @@ export function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="relative overflow-hidden bg-steel-dark text-white">
+        <footer className="relative overflow-hidden bg-steel-dark/90 backdrop-blur-md text-white">
             {/* Blueprint grid background */}
             <div
                 className="absolute inset-0 opacity-5"

@@ -120,7 +120,7 @@ export function ServicesContent() {
                 <AnimatedSection
                     key={service.id}
                     id={service.id}
-                    className={`section ${index % 2 === 0 ? "bg-white" : "bg-concrete-50"}`}
+                    className={`section ${index % 2 === 0 ? "bg-white/40 backdrop-blur-sm" : "bg-concrete-50/40 backdrop-blur-sm"}`}
                 >
                     <div className="container">
                         <div className={`grid gap-12 lg:grid-cols-2 lg:gap-16 ${index % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}>

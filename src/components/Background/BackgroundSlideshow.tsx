@@ -29,7 +29,7 @@ export const BackgroundSlideshow = () => {
                 <motion.div
                     key={currentIndex}
                     initial={{ opacity: 0, scale: 1.1 }}
-                    animate={{ opacity: 0.25, scale: 1 }}
+                    animate={{ opacity: 0.45, scale: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 2, ease: "easeInOut" }}
                     className="absolute inset-0 w-full h-full"
@@ -44,8 +44,8 @@ export const BackgroundSlideshow = () => {
                     />
                 </motion.div>
             </AnimatePresence>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/40 to-white/60" />
-            <div className="absolute inset-0 backdrop-blur-[1px]" />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white/40" />
+            <div className="absolute inset-0 backdrop-blur-[0.5px]" />
         </div>
     );
 };

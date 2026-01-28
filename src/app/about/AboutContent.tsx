@@ -107,7 +107,7 @@ export function AboutContent() {
             </section>
 
             {/* Story Section */}
-            <AnimatedSection className="section bg-white">
+            <AnimatedSection className="section bg-white/40 backdrop-blur-sm">
                 <div className="container">
                     <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
                         <div>
@@ -155,7 +155,7 @@ export function AboutContent() {
             </AnimatedSection>
 
             {/* Values Section */}
-            <AnimatedSection className="section bg-concrete-50">
+            <AnimatedSection className="section bg-concrete-50/40 backdrop-blur-sm">
                 <div className="container">
                     <div className="mb-12 text-center lg:mb-16">
                         <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">
@@ -185,7 +185,7 @@ export function AboutContent() {
             </AnimatedSection>
 
             {/* Meet Our CEO Section */}
-            <AnimatedSection className="section bg-white">
+            <AnimatedSection className="section bg-white/40 backdrop-blur-sm">
                 <div className="container">
                     <div className="mb-12 text-center lg:mb-16">
                         <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
@@ -231,7 +231,7 @@ export function AboutContent() {
             </AnimatedSection>
 
             {/* Timeline Section */}
-            <AnimatedSection className="section bg-concrete-100">
+            <AnimatedSection className="section bg-concrete-100/40 backdrop-blur-sm">
                 <div className="container">
                     <div className="mb-12 text-center lg:mb-16">
                         <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">

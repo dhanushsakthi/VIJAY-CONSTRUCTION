@@ -85,7 +85,7 @@ export function ProjectsContent() {
             </section>
 
             {/* Filter & Projects Grid */}
-            <AnimatedSection className="section bg-white">
+            <AnimatedSection className="section bg-white/40 backdrop-blur-sm">
                 <div className="container">
                     {/* Filter Buttons */}
                     <div className="mb-12 flex flex-wrap justify-center gap-4">
