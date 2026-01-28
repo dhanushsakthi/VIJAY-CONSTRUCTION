@@ -185,7 +185,6 @@ const jsonLd = {
     ],
 };
 
-import { BackgroundSlideshow } from "@/components/Background/BackgroundSlideshow";
 
 export default function RootLayout({
     children,
