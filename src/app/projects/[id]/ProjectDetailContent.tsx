@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
+import Image from "next/image";
 import { DynamicBackground } from "@/components/DynamicBackground/DynamicBackground";
 import { AnimatedSection } from "@/components/UI/AnimatedSection";
 import { Project } from "@/lib/data/projects";
@@ -37,9 +38,11 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
             {/* Project Hero */}
             <section className="relative min-h-[70vh] overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    <img
+                    <Image
                         src={project.image}
                         alt={project.title}
+                        fill
+                        priority
                         className="h-full w-full object-cover"
                     />
                     <div className="absolute inset-0 bg-steel-black/70 backdrop-blur-[2px]" />
@@ -106,9 +109,11 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
                                 <div className="grid gap-4 sm:grid-cols-2 mt-12">
                                     {project.gallery.map((img, idx) => (
                                         <div key={idx} className="aspect-[4/3] overflow-hidden rounded-sm group">
-                                            <img
+                                            <Image
                                                 src={img}
                                                 alt={`${project.title} detail ${idx + 1}`}
+                                                width={600}
+                                                height={450}
                                                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                                             />
                                         </div>

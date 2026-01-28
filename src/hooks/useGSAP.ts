@@ -15,6 +15,7 @@ export function useGSAP(
     useLayoutEffect(() => {
         const ctx = gsap.context(callback, root);
         return () => ctx.revert();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [callback, ...dependencies]);
 
     return root;

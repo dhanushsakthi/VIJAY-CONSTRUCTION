@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
+import Image from "next/image";
 import { DynamicBackground } from "@/components/DynamicBackground/DynamicBackground";
 import { AnimatedSection } from "@/components/UI/AnimatedSection";
 import { StatsCounter } from "@/components/UI/StatsCounter";
@@ -391,32 +392,40 @@ export default function HomePage() {
                         <div className="relative grid grid-cols-2 gap-4">
                             <div className="space-y-4">
                                 <div className="aspect-[4/3] overflow-hidden rounded-sm">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400&h=300&fit=crop"
+                                    <Image
+                                        src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80"
                                         alt="Construction site"
+                                        width={400}
+                                        height={300}
                                         className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
                                     />
                                 </div>
                                 <div className="aspect-square overflow-hidden rounded-sm">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=400&fit=crop"
+                                    <Image
+                                        src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80"
                                         alt="Construction work"
+                                        width={400}
+                                        height={400}
                                         className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
                                     />
                                 </div>
                             </div>
                             <div className="mt-8 space-y-4">
                                 <div className="aspect-square overflow-hidden rounded-sm">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=400&fit=crop"
+                                    <Image
+                                        src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
                                         alt="Building project"
+                                        width={400}
+                                        height={400}
                                         className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
                                     />
                                 </div>
                                 <div className="aspect-[4/3] overflow-hidden rounded-sm">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1590725121839-892b458a74fe?w=400&h=300&fit=crop"
+                                    <Image
+                                        src="https://images.unsplash.com/photo-1590725121839-892b458a74fe?w=800&q=80"
                                         alt="Completed project"
+                                        width={400}
+                                        height={300}
                                         className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
                                     />
                                 </div>

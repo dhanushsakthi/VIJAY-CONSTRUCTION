@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
+import Image from "next/image";
 import { DynamicBackground } from "@/components/DynamicBackground/DynamicBackground";
 import { AnimatedSection } from "@/components/UI/AnimatedSection";
 
@@ -125,9 +126,11 @@ export function ServicesContent() {
                         <div className={`grid gap-12 lg:grid-cols-2 lg:gap-16 ${index % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}>
                             <div className={`order-2 ${index % 2 !== 0 ? "lg:order-1" : "lg:order-2"}`}>
                                 <div className="aspect-[4/3] overflow-hidden rounded-sm shadow-lg">
-                                    <img
+                                    <Image
                                         src={service.image}
                                         alt={service.title}
+                                        width={800}
+                                        height={600}
                                         className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                                     />
                                 </div>

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -71,9 +72,11 @@ export function Header() {
                             <div className="flex items-center gap-3">
                                 {/* Logo Image */}
                                 <div className="relative h-12 w-12 overflow-hidden rounded-sm transition-transform duration-300 group-hover:scale-105">
-                                    <img
+                                    <Image
                                         src="/images/logo.png"
                                         alt="Vijay Constructions Logo"
+                                        width={48}
+                                        height={48}
                                         className="h-full w-full object-contain"
                                     />
                                     {/* Animated corner accent - adjusted for better visibility with white bg logo */}

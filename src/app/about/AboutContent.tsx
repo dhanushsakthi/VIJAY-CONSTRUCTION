@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
+import Image from "next/image";
 import { DynamicBackground } from "@/components/DynamicBackground/DynamicBackground";
 import { AnimatedSection } from "@/components/UI/AnimatedSection";
 
@@ -135,9 +136,11 @@ export function AboutContent() {
                         </div>
                         <div className="relative">
                             <div className="aspect-[4/3] overflow-hidden rounded-sm">
-                                <img
-                                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=600&fit=crop"
+                                <Image
+                                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
                                     alt="Construction team at work"
+                                    width={800}
+                                    height={600}
                                     className="h-full w-full object-cover"
                                 />
                             </div>
@@ -204,9 +207,11 @@ export function AboutContent() {
 
                             {/* Visiting Card Image */}
                             <div className="relative overflow-hidden rounded-md">
-                                <img
+                                <Image
                                     src="/images/visiting-card.png"
                                     alt="Er. M. Vijayanand M.E., Ph.D. - CEO of Vijay Constructions - Visiting Card"
+                                    width={1200}
+                                    height={675}
                                     className="h-auto w-full max-w-2xl transform transition-transform duration-500 group-hover:scale-[1.02]"
                                 />
                                 {/* Subtle overlay on hover */}

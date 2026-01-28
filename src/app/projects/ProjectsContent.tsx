@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
+import Image from "next/image";
 import { DynamicBackground } from "@/components/DynamicBackground/DynamicBackground";
 import { AnimatedSection } from "@/components/UI/AnimatedSection";
 import { projects } from "@/lib/data/projects";
@@ -115,9 +116,11 @@ export function ProjectsContent() {
                             >
                                 {/* Image */}
                                 <div className="aspect-[4/3] overflow-hidden">
-                                    <img
+                                    <Image
                                         src={project.image}
                                         alt={project.title}
+                                        width={600}
+                                        height={450}
                                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                                     />
                                     {/* Category Badge */}

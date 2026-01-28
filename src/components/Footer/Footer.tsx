@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const footerLinks = {
     company: [
@@ -46,9 +47,11 @@ export function Footer() {
                             <div className="flex items-center gap-3">
                                 {/* Logo Image */}
                                 <div className="relative h-12 w-12 overflow-hidden rounded-sm transition-transform duration-300 hover:scale-105">
-                                    <img
+                                    <Image
                                         src="/images/logo.png"
                                         alt="Vijay Constructions Logo"
+                                        width={48}
+                                        height={48}
                                         className="h-full w-full object-contain"
                                     />
                                 </div>
