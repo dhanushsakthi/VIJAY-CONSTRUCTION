@@ -185,6 +185,8 @@ const jsonLd = {
     ],
 };
 
+import { BackgroundSlideshow } from "@/components/Background/BackgroundSlideshow";
+
 export default function RootLayout({
     children,
 }: {
@@ -207,6 +209,7 @@ export default function RootLayout({
                 <meta name="theme-color" content="#C62828" />
             </head>
             <body className="antialiased">
+                <BackgroundSlideshow />
                 <ConstructionLoader />
                 <SmoothScrollProvider>
                     <Header />
