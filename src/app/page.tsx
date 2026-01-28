@@ -157,30 +157,30 @@ export default function HomePage() {
                         className="max-w-4xl pb-32 pt-32 lg:pb-24 lg:pt-40"
                     >
                         {/* Badge */}
-                        <div className="hero-animate mb-6 inline-flex items-center gap-3 rounded-full bg-black/5 px-4 py-2">
-                            <span className="flex h-2 w-2 rounded-full bg-brand-green">
-                                <span className="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-brand-green opacity-75" />
+                        <div className="hero-animate mb-6 inline-flex items-center gap-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2">
+                            <span className="flex h-2 w-2 rounded-full bg-brand-green-light">
+                                <span className="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-brand-green-light opacity-75" />
                             </span>
-                            <span className="text-sm font-medium text-black/60">
+                            <span className="text-sm font-medium text-white/80">
                                 Serving Yercaud & Salem Region
                             </span>
                         </div>
 
                         {/* Main Heading */}
-                        <h1 className="hero-animate heading-xl mb-6 text-steel-dark">
+                        <h1 className="hero-animate heading-xl mb-6 text-white drop-shadow-sm">
                             U dream{" "}
-                            <span className="relative inline-block text-brand-green">
+                            <span className="relative inline-block text-brand-green-light">
                                 We build
                             </span>
                         </h1>
 
                         {/* Subheading */}
-                        <p className="hero-animate body-lg mb-8 max-w-2xl text-concrete-dark">
+                        <p className="hero-animate body-lg mb-8 max-w-2xl text-white/90 drop-shadow-sm">
                             Premier civil engineering and construction company transforming
                             visions into reality. With{" "}
-                            <span className="font-semibold text-brand-red">4.9★ rating</span>{" "}
+                            <span className="font-semibold text-brand-red-light">4.9★ rating</span>{" "}
                             and{" "}
-                            <span className="font-semibold text-brand-green">55+ happy clients</span>,
+                            <span className="font-semibold text-brand-green-light">55+ happy clients</span>,
                             we deliver quality that stands the test of time.
                         </p>
 
@@ -211,7 +211,7 @@ export default function HomePage() {
 
                             <Link
                                 href="/projects"
-                                className="group inline-flex items-center justify-center rounded-sm border-2 border-steel/30 px-8 py-4 font-display text-sm font-semibold uppercase tracking-wider text-steel-dark transition-all duration-300 hover:border-steel hover:bg-steel/5"
+                                className="group inline-flex items-center justify-center rounded-sm border-2 border-white/30 px-8 py-4 font-display text-sm font-semibold uppercase tracking-wider text-white transition-all duration-300 hover:border-white hover:bg-white/10"
                             >
                                 <span className="flex items-center gap-2">
                                     View Projects
@@ -233,12 +233,12 @@ export default function HomePage() {
                         </div>
 
                         {/* Contact Quick Info */}
-                        <div className="hero-animate mt-12 flex flex-wrap items-center gap-8 border-t border-black/10 pt-8">
+                        <div className="hero-animate mt-12 flex flex-wrap items-center gap-8 border-t border-white/10 pt-8">
                             <a
                                 href="tel:+917695850762"
-                                className="group flex items-center gap-3 text-steel-dark transition-colors hover:text-brand-green"
+                                className="group flex items-center gap-3 text-white transition-colors hover:text-brand-green-light"
                             >
-                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-black/5 transition-colors group-hover:bg-brand-green/10">
+                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 transition-colors group-hover:bg-brand-green/20">
                                     <svg
                                         className="h-5 w-5"
                                         fill="none"
@@ -254,15 +254,15 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-black/40">
+                                    <p className="text-xs uppercase tracking-wider text-white/50">
                                         Call Us
                                     </p>
                                     <p className="font-display font-semibold">76958 50762</p>
                                 </div>
                             </a>
 
-                            <div className="flex items-center gap-3 text-steel-dark">
-                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-black/5">
+                            <div className="flex items-center gap-3 text-white">
+                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10">
                                     <svg
                                         className="h-5 w-5"
                                         fill="none"
@@ -284,7 +284,7 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-black/40">
+                                    <p className="text-xs uppercase tracking-wider text-white/50">
                                         Location
                                     </p>
                                     <p className="font-display font-semibold">Yercaud, Salem</p>
@@ -300,9 +300,9 @@ export default function HomePage() {
             {/* Stats Section */}
             <section className="relative z-10 lg:-mt-20">
                 <div className="container">
-                    <div className="grid gap-4 rounded-sm bg-white p-6 shadow-elevated sm:grid-cols-2 lg:grid-cols-4 lg:p-8">
+                    <div className="grid gap-4 rounded-sm bg-white/10 backdrop-blur-md border border-white/20 p-6 shadow-2xl sm:grid-cols-2 lg:grid-cols-4 lg:p-8">
                         {stats.map((stat, index) => (
-                            <StatsCounter key={index} {...stat} delay={index * 0.1} />
+                            <StatsCounter key={index} {...stat} delay={index * 0.1} isHero />
                         ))}
                     </div>
                 </div>

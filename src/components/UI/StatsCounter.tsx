@@ -12,6 +12,7 @@ interface StatsCounterProps {
     label: string;
     delay?: number;
     decimals?: number;
+    isHero?: boolean;
 }
 
 export function StatsCounter({
@@ -20,6 +21,7 @@ export function StatsCounter({
     label,
     delay = 0,
     decimals = 0,
+    isHero = false,
 }: StatsCounterProps) {
     const [count, setCount] = useState(0);
     const containerRef = useRef<HTMLDivElement>(null);
@@ -60,16 +62,25 @@ export function StatsCounter({
     return (
         <div
             ref={containerRef}
-            className="group relative overflow-hidden rounded-sm p-6 text-center transition-all duration-300 hover:bg-concrete-50"
+            className={`group relative overflow-hidden rounded-sm p-6 text-center transition-all duration-300 ${isHero ? "hover:bg-white/5" : "hover:bg-concrete-50"
+                }`}
         >
             {/* Animated border */}
             <div className="absolute bottom-0 left-0 h-1 w-0 bg-brand-red transition-all duration-500 group-hover:w-full" />
 
-            <div className="mb-2 font-display text-4xl font-bold text-steel-dark lg:text-5xl">
+            <div
+                className={`mb-2 font-display text-4xl font-bold lg:text-5xl ${isHero ? "text-white" : "text-steel-dark"
+                    }`}
+            >
                 {decimals > 0 ? count.toFixed(decimals) : count}
-                <span className="text-brand-red">{suffix}</span>
+                <span className={isHero ? "text-brand-red-light" : "text-brand-red"}>
+                    {suffix}
+                </span>
             </div>
-            <p className="text-sm font-medium uppercase tracking-wider text-concrete-dark">
+            <p
+                className={`text-sm font-medium uppercase tracking-wider ${isHero ? "text-white/70" : "text-concrete-dark"
+                    }`}
+            >
                 {label}
             </p>
         </div>
