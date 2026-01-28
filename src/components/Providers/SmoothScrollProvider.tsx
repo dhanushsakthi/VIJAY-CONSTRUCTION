@@ -57,8 +57,12 @@ export function SmoothScrollProvider({ children }: SmoothScrollProviderProps) {
         };
 
         document.addEventListener("click", handleAnchorClick);
-
+        // Refresh ScrollTrigger after a short delay to ensure everything is loaded
+        const timeoutId = setTimeout(() => {
+            ScrollTrigger.refresh();
+        }, 500);
         return () => {
+            clearTimeout(timeoutId);
             lenis.destroy();
             document.removeEventListener("click", handleAnchorClick);
             gsap.ticker.remove((time) => {

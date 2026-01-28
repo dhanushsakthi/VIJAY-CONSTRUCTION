@@ -67,6 +67,7 @@ export function AnimatedSection({
             once: true,
         });
 
+        ScrollTrigger.refresh();
         return () => {
             trigger.kill();
         };
