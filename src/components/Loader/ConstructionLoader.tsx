@@ -97,19 +97,7 @@ export function ConstructionLoader() {
             aria-valuemin={0}
             aria-valuemax={100}
         >
-            {/* Subtle Grid Background */}
-            <div className="absolute inset-0 opacity-10">
-                <div
-                    className="h-full w-full"
-                    style={{
-                        backgroundImage: `
-              linear-gradient(to right, rgba(90, 90, 90, 0.3) 1px, transparent 1px),
-              linear-gradient(to bottom, rgba(90, 90, 90, 0.3) 1px, transparent 1px)
-            `,
-                        backgroundSize: "40px 40px",
-                    }}
-                />
-            </div>
+            {/* Subtle Grid Background - REMOVED for image clarity */}
 
             {/* Main Construction Animation */}
             <div className="relative flex h-[250px] w-[300px] items-center justify-center">

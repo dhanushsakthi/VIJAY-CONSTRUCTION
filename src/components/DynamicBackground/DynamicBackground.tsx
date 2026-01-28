@@ -1,6 +1,5 @@
 "use client";
 
-import { useRef } from "react";
 
 interface DynamicBackgroundProps {
     variant?: "hero" | "section" | "overlay";
@@ -11,27 +10,21 @@ export function DynamicBackground({
     variant = "hero",
     className = "",
 }: DynamicBackgroundProps) {
-    const containerRef = useRef<HTMLDivElement>(null);
-
-    const heightClass =
-        variant === "hero" ? "min-h-screen" : variant === "section" ? "h-full" : "";
+    const overlays = {
+        hero: "bg-black/20 backdrop-blur-[1px]",
+        section: "bg-white/40 backdrop-blur-sm",
+        overlay: "bg-black/40",
+    };
 
     return (
         <div
-            ref={containerRef}
-            className={`absolute inset-0 overflow-hidden pointer-events-none ${heightClass} ${className}`}
+            className={`absolute inset-0 overflow-hidden pointer-events-none z-0 ${className}`}
         >
-            {/* Fully transparent to allow BackgroundSlideshow to show through */}
-            <div className="absolute inset-0 bg-transparent" />
+            <div className={`absolute inset-0 transition-colors duration-700 ${overlays[variant]}`} />
 
-            {/* Subtle Vignette overlay to keep text readable */}
-            <div
-                className="absolute inset-0"
-                style={{
-                    background:
-                        "radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.15) 100%)",
-                }}
-            />
+            {variant === "hero" && (
+                <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white/20 to-transparent" />
+            )}
         </div>
     );
 }

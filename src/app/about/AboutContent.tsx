@@ -200,10 +200,7 @@ export function AboutContent() {
                         </p>
                     </div>
                     <div className="flex justify-center">
-                        <div className="group relative overflow-hidden rounded-lg bg-gradient-to-br from-concrete-50 to-white p-2 shadow-xl transition-all duration-500 hover:shadow-2xl">
-                            {/* Decorative corner accents */}
-                            <div className="absolute left-0 top-0 h-20 w-20 border-l-4 border-t-4 border-brand-red/30 rounded-tl-lg" />
-                            <div className="absolute bottom-0 right-0 h-20 w-20 border-b-4 border-r-4 border-brand-red/30 rounded-br-lg" />
+                        <div className="group relative overflow-hidden rounded-lg bg-white p-1 shadow-xl transition-all duration-500 hover:shadow-2xl">
 
                             {/* Visiting Card Image */}
                             <div className="relative overflow-hidden rounded-md">
@@ -218,8 +215,6 @@ export function AboutContent() {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                             </div>
 
-                            {/* Glow effect on hover */}
-                            <div className="absolute -inset-1 -z-10 rounded-lg bg-gradient-to-r from-brand-red/20 via-transparent to-brand-red/20 opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100" />
                         </div>
                     </div>
                     <div className="mt-8 text-center">

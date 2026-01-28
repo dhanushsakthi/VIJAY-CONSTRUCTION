@@ -73,17 +73,14 @@ html {
 
 body {
   font-family: var(--font-body);
-  background-color: transparent;
+  background-color: transparent !important;
   color: var(--color-steel-dark);
   line-height: 1.6;
   overflow-x: hidden;
 }
 
 /* Selection styling */
-::selection {
-  background-color: var(--color-brand-green);
-  color: var(--color-white);
-}
+/* Moved to layout.tsx */
 
 /* Focus styles for accessibility */
 :focus-visible {
@@ -180,18 +177,9 @@ h6 {
   margin: 4rem 0;
 }
 
-/* Concrete texture overlay */
+/* Concrete texture overlay - REMOVED */
 .concrete-texture {
   position: relative;
-}
-
-.concrete-texture::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
-  pointer-events: none;
-  opacity: 0.5;
 }
 
 /* ========================================

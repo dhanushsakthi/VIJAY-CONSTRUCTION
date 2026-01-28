@@ -208,14 +208,18 @@ export default function RootLayout({
                 <link rel="manifest" href="/manifest.json" />
                 <meta name="theme-color" content="#C62828" />
             </head>
-            <body className="antialiased">
+            <body className="antialiased bg-transparent selection:bg-brand-green selection:text-white">
                 <BackgroundSlideshow />
                 <ConstructionLoader />
-                <SmoothScrollProvider>
-                    <Header />
-                    <main id="main-content">{children}</main>
-                    <Footer />
-                </SmoothScrollProvider>
+                <div className="relative z-10">
+                    <SmoothScrollProvider>
+                        <Header />
+                        <main id="main-content" className="relative">
+                            {children}
+                        </main>
+                        <Footer />
+                    </SmoothScrollProvider>
+                </div>
             </body>
         </html>
     );

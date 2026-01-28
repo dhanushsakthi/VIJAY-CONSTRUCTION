@@ -126,22 +126,9 @@ const config: Config = {
             },
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-                'blueprint-grid': `
-          linear-gradient(to right, rgba(90, 90, 90, 0.1) 1px, transparent 1px),
-          linear-gradient(to bottom, rgba(90, 90, 90, 0.1) 1px, transparent 1px)
-        `,
-                'construction-pattern': `
-          repeating-linear-gradient(
-            45deg,
-            transparent,
-            transparent 10px,
-            rgba(198, 40, 40, 0.03) 10px,
-            rgba(198, 40, 40, 0.03) 20px
-          )
-        `,
             },
             backgroundSize: {
-                'blueprint': '50px 50px',
+                // 'blueprint': '50px 50px',
             },
             boxShadow: {
                 'construction': '0 4px 20px rgba(0, 0, 0, 0.15)',

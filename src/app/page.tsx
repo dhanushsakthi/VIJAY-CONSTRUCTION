@@ -157,7 +157,7 @@ export default function HomePage() {
                         className="max-w-4xl pb-32 pt-32 lg:pb-24 lg:pt-40"
                     >
                         {/* Badge */}
-                        <div className="hero-animate mb-6 inline-flex items-center gap-3 rounded-full bg-black/5 px-4 py-2 backdrop-blur-sm">
+                        <div className="hero-animate mb-6 inline-flex items-center gap-3 rounded-full bg-black/5 px-4 py-2">
                             <span className="flex h-2 w-2 rounded-full bg-brand-green">
                                 <span className="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-brand-green opacity-75" />
                             </span>
@@ -169,9 +169,8 @@ export default function HomePage() {
                         {/* Main Heading */}
                         <h1 className="hero-animate heading-xl mb-6 text-steel-dark">
                             U dream{" "}
-                            <span className="relative inline-block">
-                                <span className="relative z-10 text-brand-green">We build</span>
-                                <span className="absolute -bottom-2 left-0 h-3 w-full bg-brand-green/20" />
+                            <span className="relative inline-block text-brand-green">
+                                We build
                             </span>
                         </h1>
 
@@ -588,19 +587,6 @@ export default function HomePage() {
 
             {/* CTA Section */}
             <section className="relative overflow-hidden bg-brand-red pt-20 pb-12 lg:pt-24 lg:pb-40">
-                {/* Background Pattern */}
-                <div
-                    className="absolute inset-0 opacity-10"
-                    style={{
-                        backgroundImage: `
-              linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%),
-              linear-gradient(-45deg, rgba(255,255,255,0.1) 25%, transparent 25%),
-              linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.1) 75%),
-              linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.1) 75%)
-            `,
-                        backgroundSize: "20px 20px",
-                    }}
-                />
 
                 <div className="container relative">
                     <div className="mx-auto max-w-3xl text-center">

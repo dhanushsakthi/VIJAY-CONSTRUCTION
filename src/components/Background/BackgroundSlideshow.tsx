@@ -24,29 +24,30 @@ export const BackgroundSlideshow = () => {
     }, []);
 
     return (
-        <div className="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
-            <AnimatePresence mode="wait">
+        <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+            <AnimatePresence>
                 <motion.div
                     key={currentIndex}
-                    initial={{ opacity: 0, scale: 1.1 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 2, ease: "easeInOut" }}
+                    initial={{ opacity: 0, scale: 1.15 }}
+                    animate={{ opacity: 1, scale: 1.05 }}
+                    exit={{ opacity: 0, scale: 1 }}
+                    transition={{
+                        opacity: { duration: 2, ease: "easeInOut" },
+                        scale: { duration: 8, ease: "linear" }
+                    }}
                     className="absolute inset-0 w-full h-full"
                 >
                     <Image
                         src={images[currentIndex]}
-                        alt="Background Slideshow"
+                        alt="Vijay Constructions Background"
                         fill
-                        priority={currentIndex === 0}
+                        priority
                         className="object-cover object-center"
                         sizes="100vw"
+                        quality={90}
                     />
                 </motion.div>
             </AnimatePresence>
-            {/* Subtle dark overlay to ensure text readability against any image */}
-            <div className="absolute inset-0 bg-black/30" />
-            <div className="absolute inset-0 backdrop-blur-[0.5px]" />
         </div>
     );
 };
