@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import Image from "next/image";
 import { DynamicBackground } from "@/components/DynamicBackground/DynamicBackground";
+import { BackgroundSlideshow } from "@/components/Background/BackgroundSlideshow";
 import { AnimatedSection } from "@/components/UI/AnimatedSection";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -88,17 +89,18 @@ export function AboutContent() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative min-h-[60vh] overflow-hidden">
+            <section className="relative min-h-[60vh] overflow-hidden bg-asphalt-dark">
+                <BackgroundSlideshow />
                 <DynamicBackground variant="hero" />
                 <div className="container relative flex min-h-[60vh] items-center">
                     <div ref={heroContentRef} className="max-w-3xl pb-16 pt-32 lg:pt-40">
                         <span className="hero-animate mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">
                             About Us
                         </span>
-                        <h1 className="hero-animate heading-xl mb-6 text-steel-dark">
-                            Building Trust, <span className="text-brand-red">Brick by Brick</span>
+                        <h1 className="hero-animate heading-xl mb-6 text-white drop-shadow-sm">
+                            Building Trust, <span className="text-brand-red-light">Brick by Brick</span>
                         </h1>
-                        <p className="hero-animate body-lg text-concrete-dark">
+                        <p className="hero-animate body-lg text-white/90 drop-shadow-sm">
                             With over 30 years of experience, Vijay Constructions has been transforming
                             the landscape of Yercaud and Salem with quality construction that stands the test of time.
                         </p>

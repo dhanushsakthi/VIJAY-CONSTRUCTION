@@ -208,8 +208,7 @@ export default function RootLayout({
                 <link rel="manifest" href="/manifest.json" />
                 <meta name="theme-color" content="#C62828" />
             </head>
-            <body className="antialiased bg-transparent selection:bg-brand-green selection:text-white">
-                <BackgroundSlideshow />
+            <body className="antialiased bg-[#E8E4E0] selection:bg-brand-green selection:text-white">
                 <ConstructionLoader />
                 <div className="relative z-10">
                     <SmoothScrollProvider>

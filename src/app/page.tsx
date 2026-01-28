@@ -6,6 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import Image from "next/image";
 import { DynamicBackground } from "@/components/DynamicBackground/DynamicBackground";
+import { BackgroundSlideshow } from "@/components/Background/BackgroundSlideshow";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { AnimatedSection } from "@/components/UI/AnimatedSection";
 import { StatsCounter } from "@/components/UI/StatsCounter";
 import { ServiceCard } from "@/components/UI/ServiceCard";
@@ -147,7 +149,8 @@ export default function HomePage() {
     return (
         <>
             {/* Hero Section */}
-            <section ref={heroRef} className="relative min-h-[100dvh] lg:overflow-hidden">
+            <section ref={heroRef} className="relative min-h-[100dvh] lg:overflow-hidden bg-asphalt-dark">
+                <BackgroundSlideshow />
                 <DynamicBackground variant="hero" />
 
                 {/* Hero Content */}

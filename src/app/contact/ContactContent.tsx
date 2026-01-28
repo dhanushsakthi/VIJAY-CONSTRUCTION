@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { DynamicBackground } from "@/components/DynamicBackground/DynamicBackground";
+import { BackgroundSlideshow } from "@/components/Background/BackgroundSlideshow";
 import { AnimatedSection } from "@/components/UI/AnimatedSection";
 
 export function ContactContent() {
@@ -54,17 +55,18 @@ export function ContactContent() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative min-h-[50vh] overflow-hidden">
+            <section className="relative min-h-[50vh] overflow-hidden bg-asphalt-dark">
+                <BackgroundSlideshow />
                 <DynamicBackground variant="hero" />
                 <div className="container relative flex min-h-[50vh] items-center">
                     <div ref={heroContentRef} className="max-w-3xl pb-16 pt-32 lg:pt-40">
-                        <span className="hero-animate mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
+                        <span className="hero-animate mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green-light">
                             Contact Us
                         </span>
-                        <h1 className="hero-animate heading-xl mb-6 text-steel-dark">
-                            Let&apos;s Build <span className="text-brand-green">Together</span>
+                        <h1 className="hero-animate heading-xl mb-6 text-white drop-shadow-sm">
+                            Let&apos;s Build <span className="text-brand-green-light">Together</span>
                         </h1>
-                        <p className="hero-animate body-lg text-concrete-dark">
+                        <p className="hero-animate body-lg text-white/90 drop-shadow-sm">
                             Ready to start your construction project? Get in touch with us today
                             for a free consultation and quote.
                         </p>
