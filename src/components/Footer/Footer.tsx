@@ -26,17 +26,6 @@ export function Footer() {
 
     return (
         <footer className="relative overflow-hidden bg-steel-dark/90 backdrop-blur-md text-white">
-            {/* Blueprint grid background */}
-            <div
-                className="absolute inset-0 opacity-5"
-                style={{
-                    backgroundImage: `
-            linear-gradient(to right, rgba(90, 90, 90, 0.5) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(90, 90, 90, 0.5) 1px, transparent 1px)
-          `,
-                    backgroundSize: "40px 40px",
-                }}
-            />
 
             {/* Main Footer Content */}
             <div className="container relative pt-16 pb-16 lg:pt-48 lg:pb-20">

@@ -187,17 +187,6 @@ export function Header() {
                             transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
                             className="absolute right-0 top-0 flex h-full w-full max-w-md flex-col bg-steel-dark pt-24"
                         >
-                            {/* Blueprint grid background */}
-                            <div
-                                className="absolute inset-0 opacity-10"
-                                style={{
-                                    backgroundImage: `
-                    linear-gradient(to right, rgba(46, 125, 50, 0.5) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(46, 125, 50, 0.5) 1px, transparent 1px)
-                  `,
-                                    backgroundSize: "30px 30px",
-                                }}
-                            />
 
                             <div className="relative flex flex-col gap-2 px-8">
                                 {navLinks.map((link, index) => (
