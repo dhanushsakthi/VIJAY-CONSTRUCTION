@@ -7,7 +7,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { DynamicBackground } from "@/components/DynamicBackground/DynamicBackground";
 import { BackgroundSlideshow } from "@/components/Background/BackgroundSlideshow";
-import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { AnimatedSection } from "@/components/UI/AnimatedSection";
 import { StatsCounter } from "@/components/UI/StatsCounter";
 import { ServiceCard } from "@/components/UI/ServiceCard";
