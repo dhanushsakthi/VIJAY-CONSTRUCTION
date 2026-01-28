@@ -85,13 +85,13 @@ export function Header() {
                                 {/* Logo Text */}
                                 <div className={`hidden sm:block transition-all duration-500 ${(pathname === "/" && !isScrolled) ? "opacity-0 translate-x-4 pointer-events-none" : "opacity-100 translate-x-0"}`}>
                                     <span
-                                        className={`font-display text-xl font-bold tracking-tight transition-colors duration-300 ${isScrolled ? "text-steel-dark" : "text-white"
+                                        className={`font-display text-xl font-bold tracking-tight transition-colors duration-300 ${isScrolled ? "text-steel-dark" : "text-steel-dark"
                                             }`}
                                     >
                                         VIJAY
                                     </span>
                                     <span
-                                        className={`ml-1 font-display text-xl font-bold tracking-tight transition-colors duration-300 ${isScrolled ? "text-brand-green" : "text-brand-green-light"
+                                        className={`ml-1 font-display text-xl font-bold tracking-tight transition-colors duration-300 ${isScrolled ? "text-brand-green" : "text-brand-green"
                                             }`}
                                     >
                                         CONSTRUCTIONS
@@ -109,10 +109,10 @@ export function Header() {
                                     className={`group relative px-4 py-2 font-display text-sm font-medium tracking-wide transition-colors duration-300 ${pathname === link.href
                                         ? isScrolled
                                             ? "text-brand-red"
-                                            : "text-white"
+                                            : "text-brand-red"
                                         : isScrolled
                                             ? "text-steel hover:text-brand-red"
-                                            : "text-white/80 hover:text-white"
+                                            : "text-steel-dark/80 hover:text-steel-dark"
                                         }`}
                                     style={{ transitionDelay: `${index * 50}ms` }}
                                 >

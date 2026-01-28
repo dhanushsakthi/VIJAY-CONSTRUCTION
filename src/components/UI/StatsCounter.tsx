@@ -69,16 +69,16 @@ export function StatsCounter({
             <div className="absolute bottom-0 left-0 h-1 w-0 bg-brand-red transition-all duration-500 group-hover:w-full" />
 
             <div
-                className={`mb-2 font-display text-4xl font-bold lg:text-5xl ${isHero ? "text-white" : "text-steel-dark"
+                className={`mb-2 font-display text-4xl font-bold lg:text-5xl ${isHero ? "text-steel-dark" : "text-steel-dark"
                     }`}
             >
                 {decimals > 0 ? count.toFixed(decimals) : count}
-                <span className={isHero ? "text-brand-red-light" : "text-brand-red"}>
+                <span className={isHero ? "text-brand-red" : "text-brand-red"}>
                     {suffix}
                 </span>
             </div>
             <p
-                className={`text-sm font-medium uppercase tracking-wider ${isHero ? "text-white/70" : "text-concrete-dark"
+                className={`text-sm font-medium uppercase tracking-wider ${isHero ? "text-steel-dark/70" : "text-concrete-dark"
                     }`}
             >
                 {label}
