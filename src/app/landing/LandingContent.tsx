@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
+import { BackgroundSlideshow } from "@/components/Background/BackgroundSlideshow";
 import { DynamicBackground } from "@/components/DynamicBackground/DynamicBackground";
 
 const benefits = [
@@ -59,7 +60,8 @@ export function LandingContent() {
 
     return (
         <div className="relative min-h-screen overflow-hidden">
-            <DynamicBackground variant="hero" />
+            <BackgroundSlideshow />
+            <DynamicBackground variant="overlay" />
 
             <div className="container relative flex min-h-screen items-center py-20">
                 <div
@@ -80,13 +82,13 @@ export function LandingContent() {
                         </div>
 
                         {/* Headline */}
-                        <h1 className="animate-in mb-6 font-display text-4xl font-bold leading-tight text-steel-dark md:text-5xl lg:text-6xl">
+                        <h1 className="animate-in mb-6 font-display text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
                             Build Your Dream Home in{" "}
                             <span className="text-brand-red">Yercaud & Salem</span>
                         </h1>
 
                         {/* Subheadline */}
-                        <p className="animate-in mb-8 text-lg text-steel-dark/70 md:text-xl">
+                        <p className="animate-in mb-8 text-lg text-white/90 md:text-xl">
                             Get a <strong className="text-brand-red">FREE consultation</strong> and
                             quote from the region&apos;s most trusted construction company with
                             <strong className="text-brand-red"> 4.9★ rating</strong>.

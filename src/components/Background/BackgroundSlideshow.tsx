@@ -24,7 +24,7 @@ export const BackgroundSlideshow = () => {
     }, []);
 
     return (
-        <div className="absolute inset-0 z-[-1] overflow-hidden pointer-events-none">
+        <div className="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
             <AnimatePresence>
                 <motion.div
                     key={currentIndex}

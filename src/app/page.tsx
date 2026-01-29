@@ -148,7 +148,7 @@ export default function HomePage() {
     return (
         <>
             {/* Hero Section */}
-            <section ref={heroRef} className="relative min-h-[100dvh] lg:overflow-hidden bg-asphalt-dark">
+            <section ref={heroRef} className="relative min-h-[100dvh] lg:overflow-hidden bg-black/20">
                 <BackgroundSlideshow />
                 <DynamicBackground variant="hero" />
 
@@ -175,7 +175,7 @@ export default function HomePage() {
                                 We build
                             </span>
                         </h1>
-                        /
+
                         {/* Subheading */}
                         <p className="hero-animate body-lg mb-8 max-w-2xl text-steel-dark/90 drop-shadow-sm">
                             Premier civil engineering and construction company transforming
@@ -300,9 +300,16 @@ export default function HomePage() {
             </section>
 
             {/* Stats Section */}
-            <section className="relative z-10 lg:-mt-20">
-                <div className="container">
-                    <div className="grid gap-4 rounded-sm bg-white/90 backdrop-blur-md border border-black/10 p-6 shadow-2xl sm:grid-cols-2 lg:grid-cols-4 lg:p-8">
+            <section className="relative z-10 lg:-mt-20 overflow-hidden">
+                <div
+                    className="absolute inset-0 z-0 bg-fixed bg-cover bg-center"
+                    style={{
+                        backgroundImage: "url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070')",
+                        filter: "brightness(0.3) grayscale(0.5)"
+                    }}
+                />
+                <div className="container relative z-10 py-12 lg:py-0">
+                    <div className="grid gap-4 rounded-sm bg-white/10 backdrop-blur-md border border-white/10 p-6 shadow-2xl sm:grid-cols-2 lg:grid-cols-4 lg:p-8">
                         {stats.map((stat, index) => (
                             <StatsCounter key={index} {...stat} delay={index * 0.1} isHero />
                         ))}
