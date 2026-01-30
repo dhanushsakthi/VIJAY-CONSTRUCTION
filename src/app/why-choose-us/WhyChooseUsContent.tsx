@@ -142,7 +142,7 @@ export function WhyChooseUsContent() {
                         {reasons.map((reason, index) => (
                             <div
                                 key={reason.title}
-                                className="group rounded-sm border border-concrete-light bg-white p-8 transition-all duration-300 hover:border-brand-green hover:shadow-lg"
+                                className="group relative overflow-hidden rounded-sm border border-concrete-light bg-white p-8 transition-all duration-300 hover:border-brand-green hover:shadow-lg"
                             >
                                 <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-brand-red/10 text-brand-red transition-all duration-300 group-hover:bg-brand-red group-hover:text-white">
                                     {icons[reason.icon]}
@@ -151,6 +151,8 @@ export function WhyChooseUsContent() {
                                     {reason.title}
                                 </h3>
                                 <p className="text-concrete-dark">{reason.description}</p>
+                                {/* Bottom accent line */}
+                                <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-brand-red to-brand-green transition-all duration-500 group-hover:w-full" />
                             </div>
                         ))}
                     </div>

@@ -93,6 +93,28 @@ export const projects: Project[] = [
             status: "Completed",
         },
     },
+    {
+        id: 5,
+        slug: "happy-nest",
+        title: "Happy Nest",
+        category: "Residential",
+        image: "/images/projects/happy-nest/exterior.png",
+        location: "Salem",
+        description: "A contemporary residential project designed for modern living. Happy Nest features spacious interiors, premium finishes, and a design that maximizes natural light and ventilation, providing a comfortable and elegant home for families.",
+        details: {
+            client: "Mr. Ramesh",
+            area: "2,400 sq.ft",
+            year: "2024",
+            status: "Completed",
+        },
+        gallery: [
+            "/images/projects/happy-nest/exterior.png",
+            "/images/projects/happy-nest/entrance.png",
+            "/images/projects/happy-nest/bedroom.png",
+            "/images/projects/happy-nest/dining.png",
+            "/images/projects/happy-nest/balcony.png",
+        ],
+    },
 ];
 
 export const getProjectById = (id: number | string) => {

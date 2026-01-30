@@ -60,11 +60,11 @@ export function ContactContent() {
                 <DynamicBackground variant="hero" />
                 <div className="container relative flex min-h-[50vh] items-center">
                     <div ref={heroContentRef} className="max-w-3xl pb-16 pt-32 lg:pt-40">
-                        <span className="hero-animate mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green-light">
+                        <span className="hero-animate mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">
                             Contact Us
                         </span>
                         <h1 className="hero-animate heading-xl mb-6 text-white drop-shadow-sm">
-                            Let&apos;s Build <span className="text-brand-green-light">Together</span>
+                            Let&apos;s Build <span className="text-brand-red-light">Together</span>
                         </h1>
                         <p className="hero-animate body-lg text-white/90 drop-shadow-sm">
                             Ready to start your construction project? Get in touch with us today
