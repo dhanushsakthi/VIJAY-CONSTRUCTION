@@ -11,7 +11,7 @@ export function DynamicBackground({
     className = "",
 }: DynamicBackgroundProps) {
     const overlays = {
-        hero: "bg-white/20",
+        hero: "bg-white/70",
         section: "bg-white/40 backdrop-blur-sm",
         overlay: "bg-black/60",
     };
@@ -23,7 +23,7 @@ export function DynamicBackground({
             <div className={`absolute inset-0 transition-colors duration-700 ${overlays[variant]}`} />
 
             {variant === "hero" && (
-                <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white/40 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white/60 to-transparent" />
             )}
         </div>
     );

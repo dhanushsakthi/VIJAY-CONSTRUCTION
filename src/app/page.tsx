@@ -156,7 +156,7 @@ export default function HomePage() {
                 <div className="container relative flex min-h-[100dvh] items-center">
                     <div
                         ref={heroContentRef}
-                        className="max-w-4xl pb-32 pt-32 lg:pb-24 lg:pt-40"
+                        className="max-w-4xl pb-32 pt-32 lg:pb-24 lg:pt-40 bg-white/60 backdrop-blur-md rounded-xl p-10 shadow-2xl border border-white/50"
                     >
                         {/* Badge */}
                         <div className="hero-animate mb-6 inline-flex items-center gap-3 rounded-full bg-black/5 backdrop-blur-sm border border-black/10 px-4 py-2">
