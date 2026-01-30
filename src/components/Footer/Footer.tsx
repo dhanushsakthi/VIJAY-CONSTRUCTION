@@ -29,13 +29,13 @@ export function Footer() {
 
             {/* Main Footer Content */}
             <div className="container relative pt-16 pb-16 lg:pt-48 lg:pb-20">
-                <div className="grid gap-16 lg:grid-cols-4 lg:gap-8">
+                <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-16">
                     {/* Brand Section */}
                     <div className="flex flex-col items-center text-center lg:col-span-1 lg:items-start lg:text-left">
-                        <Link href="/" className="inline-block">
-                            <div className="flex items-center gap-3">
+                        <Link href="/" className="inline-block transition-transform duration-300 hover:scale-[1.02]">
+                            <div className="flex items-center gap-4">
                                 {/* Logo Image */}
-                                <div className="relative h-12 w-12 overflow-hidden rounded-sm transition-transform duration-300 hover:scale-105">
+                                <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-sm transition-transform duration-300 hover:scale-105">
                                     <Image
                                         src="/images/logo.png"
                                         alt="Vijay Constructions Logo"
@@ -45,8 +45,8 @@ export function Footer() {
                                     />
                                 </div>
                                 <div>
-                                    <span className="font-display text-xl font-bold text-white sm:text-2xl">VIJAY</span>
-                                    <span className="ml-1 font-display text-xl font-bold text-brand-green sm:text-2xl">
+                                    <span className="font-display text-xl font-bold text-white sm:text-2xl tracking-wide">VIJAY</span>
+                                    <span className="ml-2 font-display text-xl font-bold text-brand-green sm:text-2xl tracking-wide">
                                         CONSTRUCTIONS
                                     </span>
                                 </div>

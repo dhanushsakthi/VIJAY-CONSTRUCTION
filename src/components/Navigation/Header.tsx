@@ -68,10 +68,10 @@ export function Header() {
                 <div className="container">
                     <nav className="flex h-20 items-center justify-between lg:h-24">
                         {/* Logo */}
-                        <Link href="/" className="group relative z-10">
-                            <div className="flex items-center gap-3">
+                        <Link href="/" className="group relative z-10 transition-transform duration-300 hover:scale-[1.02]">
+                            <div className="flex items-center gap-3 lg:gap-5">
                                 {/* Logo Image */}
-                                <div className="relative h-12 w-12 overflow-hidden rounded-sm transition-transform duration-300 group-hover:scale-105">
+                                <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-sm transition-transform duration-300 group-hover:scale-105">
                                     <Image
                                         src="/images/logo.png"
                                         alt="Vijay Constructions Logo"
@@ -83,16 +83,14 @@ export function Header() {
                                     <div className="absolute -bottom-0.5 -right-0.5 h-2 w-2 bg-brand-green transition-all duration-300 group-hover:h-3 group-hover:w-3" />
                                 </div>
                                 {/* Logo Text */}
-                                <div className={`hidden sm:block transition-all duration-500 ${(pathname === "/" && !isScrolled) ? "opacity-0 translate-x-4 pointer-events-none" : "opacity-100 translate-x-0"}`}>
+                                <div className={`hidden sm:flex items-center transition-all duration-500 ${(pathname === "/" && !isScrolled) ? "opacity-0 translate-x-4 pointer-events-none" : "opacity-100 translate-x-0"}`}>
                                     <span
-                                        className={`font-display text-xl font-bold tracking-tight transition-colors duration-300 ${isScrolled ? "text-steel-dark" : "text-steel-dark"
-                                            }`}
+                                        className={`font-display text-xl lg:text-2xl font-bold tracking-tight transition-colors duration-300 drop-shadow-sm ${isScrolled ? "text-steel-dark" : "text-steel-dark"}`}
                                     >
                                         VIJAY
                                     </span>
                                     <span
-                                        className={`ml-1 font-display text-xl font-bold tracking-tight transition-colors duration-300 ${isScrolled ? "text-brand-green" : "text-brand-green"
-                                            }`}
+                                        className={`ml-2 lg:ml-3 font-display text-xl lg:text-2xl font-bold tracking-tight transition-colors duration-300 drop-shadow-sm ${isScrolled ? "text-brand-green" : "text-brand-green"}`}
                                     >
                                         CONSTRUCTIONS
                                     </span>
