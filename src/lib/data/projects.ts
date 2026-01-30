@@ -40,6 +40,8 @@ export const projects: Project[] = [
             "/images/projects/viber-villa/bedroom.png",
             "/images/projects/viber-villa/dining.png",
             "/images/projects/viber-villa/garden.jpg",
+            "/images/projects/viber-villa/waterfall.jpg",
+            "/images/projects/viber-villa/outdoor-seating.jpg",
         ],
     },
     {
