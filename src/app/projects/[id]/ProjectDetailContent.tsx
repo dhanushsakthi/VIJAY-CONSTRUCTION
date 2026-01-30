@@ -123,6 +123,26 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
                         </div>
 
                         <div className="space-y-8">
+                            {project.externalLink && (
+                                <div className="rounded-sm bg-brand-green p-8 text-white">
+                                    <h3 className="font-display text-lg font-bold mb-4">🏨 Book Your Stay</h3>
+                                    <p className="text-sm text-white/90 mb-6">
+                                        Experience this beautiful property yourself! Book your stay now on Booking.com.
+                                    </p>
+                                    <a
+                                        href={project.externalLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center justify-center gap-2 w-full rounded-sm bg-white px-6 py-3 font-display text-sm font-semibold uppercase tracking-wider text-brand-green shadow-lg transition-all duration-300 hover:bg-steel-dark hover:text-white"
+                                    >
+                                        <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                        </svg>
+                                        Book Now on Booking.com
+                                    </a>
+                                </div>
+                            )}
+
                             <div className="rounded-sm bg-concrete-50 p-8 border-l-4 border-brand-red">
                                 <h3 className="font-display text-lg font-bold text-steel-dark mb-4">Project Highlights</h3>
                                 <ul className="space-y-3">

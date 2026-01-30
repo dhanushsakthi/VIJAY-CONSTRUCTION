@@ -8,6 +8,7 @@ export interface Project {
     description: string;
     year?: string;
     area?: string;
+    externalLink?: string;
     details: {
         client?: string;
         area?: string;
@@ -20,21 +21,25 @@ export interface Project {
 export const projects: Project[] = [
     {
         id: 1,
-        slug: "modern-villa-complex",
-        title: "Modern Villa Complex",
+        slug: "the-viber-yercaud",
+        title: "The Viber Yercaud - Villa with Waterfalls",
         category: "Residential",
-        image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
+        image: "/images/projects/viber-villa/exterior.jpg",
         location: "Yercaud",
-        description: "A state-of-the-art residential complex featuring 12 luxury villas designed with a focus on sustainable architecture and modern living. Each villa incorporates natural sunlight management and advanced water harvesting systems.",
+        description: "A stunning luxury villa nestled in the serene hills of Yercaud, featuring natural waterfalls and breathtaking views. This exquisite property combines traditional charm with modern amenities, offering a perfect retreat for nature lovers and those seeking tranquility.",
+        externalLink: "https://www.booking.com/hotel/in/the-viber-villa-with-waterfalls-yercaud.en-gb.html",
         details: {
-            client: "Private Residential Group",
-            area: "24,000 sq.ft",
-            year: "2023",
+            client: "Private Owner",
+            area: "3,500 sq.ft",
+            year: "2024",
             status: "Completed",
         },
         gallery: [
-            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
-            "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=600&fit=crop",
+            "/images/projects/viber-villa/exterior.jpg",
+            "/images/projects/viber-villa/living-room.png",
+            "/images/projects/viber-villa/bedroom.png",
+            "/images/projects/viber-villa/dining.png",
+            "/images/projects/viber-villa/garden.jpg",
         ],
     },
     {
