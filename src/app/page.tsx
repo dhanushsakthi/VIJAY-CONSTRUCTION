@@ -256,10 +256,10 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-steel-dark/50">
+                                    <p className="text-xs uppercase tracking-wider text-black/80 font-semibold">
                                         Call Us
                                     </p>
-                                    <p className="font-display font-semibold text-steel-dark">76958 50762</p>
+                                    <p className="font-display font-bold text-black">76958 50762</p>
                                 </div>
                             </a>
 
@@ -286,10 +286,10 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-steel-dark/50">
+                                    <p className="text-xs uppercase tracking-wider text-black/80 font-semibold">
                                         Location
                                     </p>
-                                    <p className="font-display font-semibold text-steel-dark">Yercaud, Salem</p>
+                                    <p className="font-display font-bold text-black">Yercaud, Salem</p>
                                 </div>
                             </div>
                         </div>
