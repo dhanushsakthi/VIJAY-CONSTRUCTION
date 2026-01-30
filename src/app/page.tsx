@@ -238,9 +238,9 @@ export default function HomePage() {
                         <div className="hero-animate mt-12 flex flex-wrap items-center gap-8 border-t border-white/10 pt-8">
                             <a
                                 href="tel:+917695850762"
-                                className="group flex items-center gap-3 text-white transition-colors hover:text-brand-green-light"
+                                className="group flex items-center gap-3 text-black transition-colors hover:text-brand-green"
                             >
-                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 transition-colors group-hover:bg-brand-green/20">
+                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-black/5 transition-colors group-hover:bg-brand-green/10">
                                     <svg
                                         className="h-5 w-5"
                                         fill="none"
@@ -256,15 +256,15 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-black/80 font-semibold">
+                                    <p className="text-xs uppercase tracking-wider text-black font-bold">
                                         Call Us
                                     </p>
                                     <p className="font-display font-bold text-black">76958 50762</p>
                                 </div>
                             </a>
 
-                            <div className="flex items-center gap-3 text-white">
-                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10">
+                            <div className="flex items-center gap-3 text-black">
+                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-black/5">
                                     <svg
                                         className="h-5 w-5"
                                         fill="none"
@@ -286,7 +286,7 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-black/80 font-semibold">
+                                    <p className="text-xs uppercase tracking-wider text-black font-bold">
                                         Location
                                     </p>
                                     <p className="font-display font-bold text-black">Yercaud, Salem</p>
