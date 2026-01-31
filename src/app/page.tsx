@@ -163,13 +163,13 @@ export default function HomePage() {
                             <span className="flex h-2 w-2 rounded-full bg-brand-green">
                                 <span className="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-brand-green opacity-75" />
                             </span>
-                            <span className="text-sm font-medium text-white/90">
+                            <span className="text-sm font-medium text-steel-dark">
                                 Serving Yercaud & Salem Region
                             </span>
                         </div>
 
                         {/* Main Heading */}
-                        <h1 className="hero-animate heading-xl mb-6 text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
+                        <h1 className="hero-animate heading-xl mb-6 text-steel-dark drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)]">
                             U dream{" "}
                             <span className="relative inline-block text-brand-green">
                                 We build
@@ -177,7 +177,7 @@ export default function HomePage() {
                         </h1>
 
                         {/* Subheading */}
-                        <p className="hero-animate body-lg mb-8 max-w-2xl text-white/95 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
+                        <p className="hero-animate body-lg mb-8 max-w-2xl text-steel-dark/95 drop-shadow-[0_2px_8px_rgba(0,0,0,0.2)]">
                             Premier civil engineering and construction company transforming
                             visions into reality. With{" "}
                             <span className="font-semibold text-brand-red">4.9★ rating</span>{" "}
@@ -213,7 +213,7 @@ export default function HomePage() {
 
                             <Link
                                 href="/projects"
-                                className="group inline-flex items-center justify-center rounded-sm border-2 border-white/30 px-8 py-4 font-display text-sm font-semibold uppercase tracking-wider text-white transition-all duration-300 hover:border-white hover:bg-white/10"
+                                className="group inline-flex items-center justify-center rounded-sm border-2 border-steel-dark/30 px-8 py-4 font-display text-sm font-semibold uppercase tracking-wider text-steel-dark transition-all duration-300 hover:border-steel-dark hover:bg-black/10"
                             >
                                 <span className="flex items-center gap-2">
                                     View Projects
@@ -238,9 +238,9 @@ export default function HomePage() {
                         <div className="hero-animate mt-12 flex flex-wrap items-center gap-8 border-t border-white/10 pt-8">
                             <a
                                 href="tel:+919443232172"
-                                className="group flex items-center gap-3 text-white transition-colors hover:text-brand-green"
+                                className="group flex items-center gap-3 text-steel-dark transition-colors hover:text-brand-green"
                             >
-                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 transition-colors group-hover:bg-brand-green/10">
+                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-black/5 transition-colors group-hover:bg-brand-green/10">
                                     <svg
                                         className="h-5 w-5"
                                         fill="none"
@@ -256,18 +256,18 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-white/90 font-bold drop-shadow-md">
+                                    <p className="text-xs uppercase tracking-wider text-steel-dark font-bold drop-shadow-sm">
                                         FOUNDER: G.MATHIALAGAN
                                     </p>
-                                    <p className="font-display font-bold text-white drop-shadow-lg">94432 32172</p>
+                                    <p className="font-display font-bold text-steel-dark">94432 32172</p>
                                 </div>
                             </a>
 
                             <a
                                 href="tel:+917695850762"
-                                className="group flex items-center gap-3 text-white transition-colors hover:text-brand-green"
+                                className="group flex items-center gap-3 text-steel-dark transition-colors hover:text-brand-green"
                             >
-                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 transition-colors group-hover:bg-brand-green/10">
+                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-black/5 transition-colors group-hover:bg-brand-green/10">
                                     <svg
                                         className="h-5 w-5"
                                         fill="none"
@@ -283,15 +283,15 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-white/90 font-bold drop-shadow-md">
+                                    <p className="text-xs uppercase tracking-wider text-steel-dark font-bold drop-shadow-sm">
                                         Call Us
                                     </p>
-                                    <p className="font-display font-bold text-white drop-shadow-lg">76958 50762</p>
+                                    <p className="font-display font-bold text-steel-dark">76958 50762</p>
                                 </div>
                             </a>
 
-                            <div className="flex items-center gap-3 text-white">
-                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10">
+                            <div className="flex items-center gap-3 text-steel-dark">
+                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-black/5">
                                     <svg
                                         className="h-5 w-5"
                                         fill="none"
@@ -313,10 +313,10 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-white/90 font-bold drop-shadow-md">
+                                    <p className="text-xs uppercase tracking-wider text-steel-dark font-bold drop-shadow-sm">
                                         Location
                                     </p>
-                                    <p className="font-display font-bold text-white drop-shadow-lg">Yercaud, Salem</p>
+                                    <p className="font-display font-bold text-steel-dark">Yercaud, Salem</p>
                                 </div>
                             </div>
                         </div>
