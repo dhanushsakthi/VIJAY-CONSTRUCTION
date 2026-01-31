@@ -237,6 +237,33 @@ export default function HomePage() {
                         {/* Contact Quick Info */}
                         <div className="hero-animate mt-12 flex flex-wrap items-center gap-8 border-t border-white/10 pt-8">
                             <a
+                                href="tel:+919443232172"
+                                className="group flex items-center gap-3 text-black transition-colors hover:text-brand-green"
+                            >
+                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-black/5 transition-colors group-hover:bg-brand-green/10">
+                                    <svg
+                                        className="h-5 w-5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                                        />
+                                    </svg>
+                                </span>
+                                <div>
+                                    <p className="text-xs uppercase tracking-wider text-black font-bold">
+                                        FOUNDER
+                                    </p>
+                                    <p className="font-display font-bold text-black">94432 32172</p>
+                                </div>
+                            </a>
+
+                            <a
                                 href="tel:+917695850762"
                                 className="group flex items-center gap-3 text-black transition-colors hover:text-brand-green"
                             >
@@ -613,6 +640,25 @@ export default function HomePage() {
                             >
                                 Get Free Quote
                             </Link>
+                            <a
+                                href="tel:+919443232172"
+                                className="group flex items-center gap-2 rounded-sm border-2 border-white px-8 py-4 font-display text-sm font-semibold uppercase tracking-wider text-white transition-all duration-300 hover:bg-white hover:text-brand-red"
+                            >
+                                <svg
+                                    className="h-4 w-4"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                                    />
+                                </svg>
+                                Founder: 94432 32172
+                            </a>
                             <a
                                 href="tel:+917695850762"
                                 className="group flex items-center gap-2 rounded-sm border-2 border-white px-8 py-4 font-display text-sm font-semibold uppercase tracking-wider text-white transition-all duration-300 hover:bg-white hover:text-brand-red"

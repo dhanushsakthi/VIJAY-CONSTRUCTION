@@ -15,6 +15,7 @@ const footerLinks = {
         { href: "/services#civil", label: "Civil Engineering" },
     ],
     contact: [
+        { href: "tel:+919443232172", label: "Founder: 94432 32172" },
         { href: "tel:+917695850762", label: "76958 50762" },
         { href: "mailto:contact@vijayconstructions.in", label: "Email Us" },
         { href: "/contact", label: "Get in Touch" },
@@ -128,6 +129,12 @@ export function Footer() {
                                 <br />
                                 Tamil Nadu – 636601
                             </p>
+                            <a
+                                href="tel:+919443232172"
+                                className="mb-2 block text-lg font-semibold text-white transition-colors hover:text-brand-red sm:text-xl"
+                            >
+                                Founder: 94432 32172
+                            </a>
                             <a
                                 href="tel:+917695850762"
                                 className="mb-3 block text-lg font-semibold text-white transition-colors hover:text-brand-red sm:text-xl"
