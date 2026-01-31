@@ -316,8 +316,7 @@ export function ContactContent() {
                         </div>
                     </div>
                 </div>
-            </div>
-        </AnimatedSection >
+            </AnimatedSection>
         </>
     );
 }
