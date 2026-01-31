@@ -156,20 +156,20 @@ export default function HomePage() {
                 <div className="container relative flex min-h-[100dvh] items-center">
                     <div
                         ref={heroContentRef}
-                        className="max-w-4xl pb-32 pt-32 lg:pb-24 lg:pt-40 bg-white/60 backdrop-blur-md rounded-xl p-10 shadow-2xl border border-white/50"
+                        className="max-w-4xl pb-32 pt-32 lg:pb-24 lg:pt-40"
                     >
                         {/* Badge */}
-                        <div className="hero-animate mb-6 inline-flex items-center gap-3 rounded-full bg-black/5 backdrop-blur-sm border border-black/10 px-4 py-2">
+                        <div className="hero-animate mb-6 inline-flex items-center gap-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2">
                             <span className="flex h-2 w-2 rounded-full bg-brand-green">
                                 <span className="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-brand-green opacity-75" />
                             </span>
-                            <span className="text-sm font-medium text-steel-dark">
+                            <span className="text-sm font-medium text-white/90">
                                 Serving Yercaud & Salem Region
                             </span>
                         </div>
 
                         {/* Main Heading */}
-                        <h1 className="hero-animate heading-xl mb-6 text-steel-dark drop-shadow-sm">
+                        <h1 className="hero-animate heading-xl mb-6 text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
                             U dream{" "}
                             <span className="relative inline-block text-brand-green">
                                 We build
@@ -177,7 +177,7 @@ export default function HomePage() {
                         </h1>
 
                         {/* Subheading */}
-                        <p className="hero-animate body-lg mb-8 max-w-2xl text-steel-dark/90 drop-shadow-sm">
+                        <p className="hero-animate body-lg mb-8 max-w-2xl text-white/95 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
                             Premier civil engineering and construction company transforming
                             visions into reality. With{" "}
                             <span className="font-semibold text-brand-red">4.9★ rating</span>{" "}
@@ -213,7 +213,7 @@ export default function HomePage() {
 
                             <Link
                                 href="/projects"
-                                className="group inline-flex items-center justify-center rounded-sm border-2 border-steel-dark/30 px-8 py-4 font-display text-sm font-semibold uppercase tracking-wider text-steel-dark transition-all duration-300 hover:border-steel-dark hover:bg-black/10"
+                                className="group inline-flex items-center justify-center rounded-sm border-2 border-white/30 px-8 py-4 font-display text-sm font-semibold uppercase tracking-wider text-white transition-all duration-300 hover:border-white hover:bg-white/10"
                             >
                                 <span className="flex items-center gap-2">
                                     View Projects
@@ -238,9 +238,9 @@ export default function HomePage() {
                         <div className="hero-animate mt-12 flex flex-wrap items-center gap-8 border-t border-white/10 pt-8">
                             <a
                                 href="tel:+919443232172"
-                                className="group flex items-center gap-3 text-black transition-colors hover:text-brand-green"
+                                className="group flex items-center gap-3 text-white transition-colors hover:text-brand-green"
                             >
-                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-black/5 transition-colors group-hover:bg-brand-green/10">
+                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 transition-colors group-hover:bg-brand-green/10">
                                     <svg
                                         className="h-5 w-5"
                                         fill="none"
@@ -256,18 +256,18 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-black font-bold">
-                                        FOUNDER
+                                    <p className="text-xs uppercase tracking-wider text-white/90 font-bold drop-shadow-md">
+                                        FOUNDER: G.MATHIALAGAN
                                     </p>
-                                    <p className="font-display font-bold text-black">94432 32172</p>
+                                    <p className="font-display font-bold text-white drop-shadow-lg">94432 32172</p>
                                 </div>
                             </a>
 
                             <a
                                 href="tel:+917695850762"
-                                className="group flex items-center gap-3 text-black transition-colors hover:text-brand-green"
+                                className="group flex items-center gap-3 text-white transition-colors hover:text-brand-green"
                             >
-                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-black/5 transition-colors group-hover:bg-brand-green/10">
+                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 transition-colors group-hover:bg-brand-green/10">
                                     <svg
                                         className="h-5 w-5"
                                         fill="none"
@@ -283,15 +283,15 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-black font-bold">
+                                    <p className="text-xs uppercase tracking-wider text-white/90 font-bold drop-shadow-md">
                                         Call Us
                                     </p>
-                                    <p className="font-display font-bold text-black">76958 50762</p>
+                                    <p className="font-display font-bold text-white drop-shadow-lg">76958 50762</p>
                                 </div>
                             </a>
 
-                            <div className="flex items-center gap-3 text-black">
-                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-black/5">
+                            <div className="flex items-center gap-3 text-white">
+                                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10">
                                     <svg
                                         className="h-5 w-5"
                                         fill="none"
@@ -313,10 +313,10 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-black font-bold">
+                                    <p className="text-xs uppercase tracking-wider text-white/90 font-bold drop-shadow-md">
                                         Location
                                     </p>
-                                    <p className="font-display font-bold text-black">Yercaud, Salem</p>
+                                    <p className="font-display font-bold text-white drop-shadow-lg">Yercaud, Salem</p>
                                 </div>
                             </div>
                         </div>
@@ -354,7 +354,7 @@ export default function HomePage() {
                                 About Vijay Constructions
                             </span>
                             <h2 className="heading-lg mb-2 text-steel-dark">
-                                Er.M.Vijayanand <span className="text-brand-red text-sm font-normal block mt-1">M.E., Ph.D. — CEO</span>
+                                G.MATHIALAGAN <span className="text-brand-red text-sm font-normal block mt-1">Founder</span>
                             </h2>
                             <h3 className="heading-md mb-6 text-steel">
                                 Building Excellence in <span className="text-brand-green">Yercaud & Salem</span>
@@ -657,7 +657,7 @@ export default function HomePage() {
                                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                                     />
                                 </svg>
-                                Founder: 94432 32172
+                                Founder: G.MATHIALAGAN (94432 32172)
                             </a>
                             <a
                                 href="tel:+917695850762"

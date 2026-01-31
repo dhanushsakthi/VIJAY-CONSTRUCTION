@@ -224,6 +224,7 @@ export function ContactContent() {
                                     <div>
                                         <p className="mb-1 text-sm uppercase tracking-wider text-concrete">Founder</p>
                                         <a href="tel:+919443232172" className="text-xl font-semibold transition-colors hover:text-brand-green">
+                                            G.MATHIALAGAN<br />
                                             94432 32172
                                         </a>
                                     </div>
