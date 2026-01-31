@@ -13,8 +13,8 @@ export function DynamicBackground({
     showGrid = true,
 }: DynamicBackgroundProps) {
     const overlays = {
-        hero: "bg-white/70",
-        section: "bg-white/40 backdrop-blur-sm",
+        hero: "bg-black/30",
+        section: "bg-black/20 backdrop-blur-[2px]", // Significantly reduced opacity and blur
         overlay: "bg-black/60",
     };
 
@@ -51,7 +51,7 @@ export function DynamicBackground({
             )}
 
             {variant === "hero" && (
-                <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white/60 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/80 to-transparent" />
             )}
 
             {/* Corner Accents for a 'Blueprint' feel */}
