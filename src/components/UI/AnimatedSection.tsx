@@ -65,8 +65,7 @@ export function AnimatedSection({
                 gsap.to(element, {
                     ...toVars,
                     onComplete: () => {
-                        // Optional: remove will-change after animation to save memory
-                        // gsap.set(element, { willChange: "auto" });
+                        gsap.set(element, { willChange: "auto" });
                     }
                 });
             },

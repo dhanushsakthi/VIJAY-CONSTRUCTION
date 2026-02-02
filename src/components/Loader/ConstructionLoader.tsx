@@ -104,7 +104,7 @@ export function ConstructionLoader() {
                     ref={blueprintRef}
                     viewBox="0 0 240 240"
                     className="h-full w-full"
-                    style={{ willChange: "contents" }}
+                    style={{ willChange: "transform, opacity" }}
                 >
                     {/* Ground Line */}
                     <line className="blueprint-path" x1="20" y1="210" x2="220" y2="210" stroke="#333333" strokeWidth="2.5" strokeLinecap="round" />
