@@ -5,17 +5,24 @@ import { gsap } from "gsap";
 
 export function ConstructionLoader() {
     const [isLoading, setIsLoading] = useState(true);
-    const [progress, setProgress] = useState(0);
     const loaderRef = useRef<HTMLDivElement>(null);
     const blueprintRef = useRef<SVGSVGElement>(null);
     const textRef = useRef<HTMLDivElement>(null);
+    const progressRef = useRef<HTMLDivElement>(null);
+    const progressTextRef = useRef<HTMLSpanElement>(null);
 
     useEffect(() => {
         // Main animation timeline
         const tl = gsap.timeline({
             onUpdate: function () {
-                // Synchronize the percentage with the timeline progress
-                setProgress(this.progress() * 100);
+                const prog = this.progress() * 100;
+                // Direct DOM updates to avoid re-renders
+                if (progressRef.current) {
+                    progressRef.current.style.width = `${prog}%`;
+                }
+                if (progressTextRef.current) {
+                    progressTextRef.current.innerText = `${Math.round(prog)}%`;
+                }
             },
             onComplete: () => {
                 // Hold for a moment so the 100% state is clearly visible
@@ -84,11 +91,10 @@ export function ConstructionLoader() {
     return (
         <div
             ref={loaderRef}
-            className="fixed inset-0 z-[9999] flex flex-col items-center justify-center p-4 text-center"
+            className="fixed inset-0 z-[9999] flex flex-col items-center justify-center p-4 text-center will-change-opacity"
             style={{ backgroundColor: "#E8E4E0" }}
             aria-label="Loading"
             role="progressbar"
-            aria-valuenow={Math.round(progress)}
             aria-valuemin={0}
             aria-valuemax={100}
         >
@@ -98,7 +104,7 @@ export function ConstructionLoader() {
                     ref={blueprintRef}
                     viewBox="0 0 240 240"
                     className="h-full w-full"
-                    style={{ filter: "drop-shadow(0 0 10px rgba(0, 0, 0, 0.1))" }}
+                    style={{ willChange: "contents" }}
                 >
                     {/* Ground Line */}
                     <line className="blueprint-path" x1="20" y1="210" x2="220" y2="210" stroke="#333333" strokeWidth="2.5" strokeLinecap="round" />
@@ -175,9 +181,10 @@ export function ConstructionLoader() {
                 <div className="mx-auto mt-10 w-64">
                     <div className="relative h-1.5 w-full overflow-hidden rounded-full" style={{ backgroundColor: "#D1CBC5" }}>
                         <div
-                            className="absolute left-0 top-0 h-full rounded-full transition-all duration-300 ease-out"
+                            ref={progressRef}
+                            className="absolute left-0 top-0 h-full rounded-full transition-none"
                             style={{
-                                width: `${progress}%`,
+                                width: `0%`,
                                 background: "linear-gradient(90deg, #C62828, #2E7D32)",
                             }}
                         />
@@ -185,7 +192,7 @@ export function ConstructionLoader() {
                     {/* Percentage Display */}
                     <div className="mt-3 flex justify-between font-mono text-[10px] font-bold tracking-tighter text-concrete-600">
                         <span className="uppercase opacity-50">Blueprint Drawing</span>
-                        <span>{Math.round(progress)}%</span>
+                        <span ref={progressTextRef}>0%</span>
                     </div>
                 </div>
             </div>

@@ -56,13 +56,19 @@ export function AnimatedSection({
                 break;
         }
 
-        gsap.set(element, fromVars);
+        gsap.set(element, { ...fromVars, willChange: "transform, opacity" });
 
         const trigger = ScrollTrigger.create({
             trigger: element,
             start: "top 85%",
             onEnter: () => {
-                gsap.to(element, toVars);
+                gsap.to(element, {
+                    ...toVars,
+                    onComplete: () => {
+                        // Optional: remove will-change after animation to save memory
+                        // gsap.set(element, { willChange: "auto" });
+                    }
+                });
             },
             once: true,
         });

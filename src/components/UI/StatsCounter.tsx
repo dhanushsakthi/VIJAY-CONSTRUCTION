@@ -23,12 +23,12 @@ export function StatsCounter({
     decimals = 0,
     isHero = false,
 }: StatsCounterProps) {
-    const [count, setCount] = useState(0);
     const containerRef = useRef<HTMLDivElement>(null);
+    const valueRef = useRef<HTMLSpanElement>(null);
     const hasAnimated = useRef(false);
 
     useEffect(() => {
-        if (!containerRef.current) return;
+        if (!containerRef.current || !valueRef.current) return;
 
         const trigger = ScrollTrigger.create({
             trigger: containerRef.current,
@@ -44,11 +44,12 @@ export function StatsCounter({
                     delay: delay,
                     ease: "power2.out",
                     onUpdate: () => {
-                        setCount(
-                            decimals > 0
-                                ? parseFloat(target.value.toFixed(decimals))
-                                : Math.round(target.value)
-                        );
+                        if (valueRef.current) {
+                            const formattedValue = decimals > 0
+                                ? target.value.toFixed(decimals)
+                                : Math.round(target.value).toString();
+                            valueRef.current.innerText = formattedValue;
+                        }
                     },
                 });
             },
@@ -72,7 +73,7 @@ export function StatsCounter({
                 className={`mb-2 font-display text-4xl font-bold lg:text-5xl ${isHero ? "text-white" : "text-steel-dark"
                     }`}
             >
-                {decimals > 0 ? count.toFixed(decimals) : count}
+                <span ref={valueRef}>0</span>
                 <span className={isHero ? "text-brand-red-light" : "text-brand-red"}>
                     {suffix}
                 </span>

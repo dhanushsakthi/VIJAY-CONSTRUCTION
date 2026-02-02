@@ -23,7 +23,7 @@ export const BackgroundSlideshow = () => {
     }, []);
 
     return (
-        <div className="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
+        <div className="absolute inset-0 z-[-1] overflow-hidden pointer-events-none">
             <AnimatePresence>
                 <motion.div
                     key={currentIndex}
@@ -34,7 +34,7 @@ export const BackgroundSlideshow = () => {
                         opacity: { duration: 2, ease: "easeInOut" },
                         scale: { duration: 8, ease: "linear" }
                     }}
-                    className="absolute inset-0 w-full h-full"
+                    className="absolute inset-0 w-full h-full will-change-transform"
                 >
                     <Image
                         src={images[currentIndex]}
@@ -43,7 +43,7 @@ export const BackgroundSlideshow = () => {
                         priority
                         className="object-cover object-center"
                         sizes="100vw"
-                        quality={90}
+                        quality={80}
                     />
                 </motion.div>
             </AnimatePresence>

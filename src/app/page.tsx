@@ -156,7 +156,7 @@ export default function HomePage() {
                 <div className="container relative flex min-h-[100dvh] items-center">
                     <div
                         ref={heroContentRef}
-                        className="max-w-4xl pb-32 pt-32 lg:pb-24 lg:pt-40"
+                        className="max-w-4xl pb-32 pt-32 lg:pb-24 lg:pt-40 will-change-transform"
                     >
                         {/* Badge */}
                         <div className="hero-animate mb-6 inline-flex items-center gap-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2">
@@ -329,7 +329,7 @@ export default function HomePage() {
             {/* Stats Section */}
             <section className="relative z-10 lg:-mt-20">
                 <div className="container relative z-10 py-12 lg:py-0">
-                    <div className="grid gap-4 rounded-sm bg-white/80 backdrop-blur-md border border-white/40 p-6 shadow-2xl sm:grid-cols-2 lg:grid-cols-4 lg:p-8">
+                    <div className="grid gap-4 rounded-sm bg-white/80 backdrop-blur-sm border border-white/40 p-6 shadow-2xl sm:grid-cols-2 lg:grid-cols-4 lg:p-8">
                         {stats.map((stat, index) => (
                             <StatsCounter key={index} {...stat} delay={index * 0.1} isHero={false} />
                         ))}
@@ -342,7 +342,7 @@ export default function HomePage() {
                 <div className="container">
                     <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
                         {/* Content */}
-                        <div className="flex flex-col justify-center bg-white/60 backdrop-blur-md rounded-lg p-8 border border-white/40 shadow-lg">
+                        <div className="flex flex-col justify-center bg-white/60 backdrop-blur-sm rounded-lg p-8 border border-white/40 shadow-lg">
                             <span className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand-red">
                                 About Vijay Constructions
                             </span>
@@ -425,7 +425,7 @@ export default function HomePage() {
                                         alt="Construction site"
                                         width={400}
                                         height={300}
-                                        className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
+                                        className="h-full w-full object-cover transition-transform duration-500 hover:scale-110 will-change-transform"
                                     />
                                 </div>
                                 <div className="aspect-square overflow-hidden rounded-sm">
@@ -434,7 +434,7 @@ export default function HomePage() {
                                         alt="Construction work"
                                         width={400}
                                         height={400}
-                                        className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
+                                        className="h-full w-full object-cover transition-transform duration-500 hover:scale-110 will-change-transform"
                                     />
                                 </div>
                             </div>
@@ -445,7 +445,7 @@ export default function HomePage() {
                                         alt="Building project"
                                         width={400}
                                         height={400}
-                                        className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
+                                        className="h-full w-full object-cover transition-transform duration-500 hover:scale-110 will-change-transform"
                                     />
                                 </div>
                                 <div className="aspect-[4/3] overflow-hidden rounded-sm">
@@ -454,7 +454,7 @@ export default function HomePage() {
                                         alt="Completed project"
                                         width={400}
                                         height={300}
-                                        className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
+                                        className="h-full w-full object-cover transition-transform duration-500 hover:scale-110 will-change-transform"
                                     />
                                 </div>
                             </div>
@@ -476,7 +476,7 @@ export default function HomePage() {
             {/* Services Section */}
             <AnimatedSection className="section">
                 <div className="container">
-                    <div className="mb-12 text-center lg:mb-16 bg-white/60 backdrop-blur-md rounded-lg p-6 border border-white/40 max-w-4xl mx-auto shadow-sm">
+                    <div className="mb-12 text-center lg:mb-16 bg-white/60 backdrop-blur-sm rounded-lg p-6 border border-white/40 max-w-4xl mx-auto shadow-sm">
                         <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">
                             What We Do
                         </span>
@@ -522,7 +522,7 @@ export default function HomePage() {
             {/* Process Section */}
             <AnimatedSection className="section">
                 <div className="container">
-                    <div className="mb-12 text-center lg:mb-16 bg-white/60 backdrop-blur-md rounded-lg p-6 border border-white/40 max-w-4xl mx-auto shadow-sm">
+                    <div className="mb-12 text-center lg:mb-16 bg-white/60 backdrop-blur-sm rounded-lg p-6 border border-white/40 max-w-4xl mx-auto shadow-sm">
                         <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">
                             How We Work
                         </span>
@@ -549,7 +549,7 @@ export default function HomePage() {
             {/* Projects Section */}
             <AnimatedSection className="section">
                 <div className="container">
-                    <div className="mb-12 flex flex-col items-center justify-between gap-6 lg:mb-16 lg:flex-row bg-white/60 backdrop-blur-md rounded-lg p-6 border border-white/40 shadow-sm">
+                    <div className="mb-12 flex flex-col items-center justify-between gap-6 lg:mb-16 lg:flex-row bg-white/60 backdrop-blur-sm rounded-lg p-6 border border-white/40 shadow-sm">
                         <div>
                             <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">
                                 Our Portfolio
@@ -590,7 +590,7 @@ export default function HomePage() {
             {/* Testimonials Section */}
             <AnimatedSection className="section">
                 <div className="container">
-                    <div className="mb-12 text-center lg:mb-16 bg-white/60 backdrop-blur-md rounded-lg p-6 border border-white/40 max-w-4xl mx-auto shadow-sm">
+                    <div className="mb-12 text-center lg:mb-16 bg-white/60 backdrop-blur-sm rounded-lg p-6 border border-white/40 max-w-4xl mx-auto shadow-sm">
                         <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">
                             Testimonials
                         </span>
