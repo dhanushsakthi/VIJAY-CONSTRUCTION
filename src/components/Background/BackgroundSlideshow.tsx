@@ -9,7 +9,7 @@ const images = [
     "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?q=80&w=2500&auto=format&fit=crop", // Misty Hills (Yercaud vibe)
     "https://images.unsplash.com/photo-1533038590840-1cde6e668a91?q=80&w=2500&auto=format&fit=crop", // Lush Green Valley
     "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=2500&auto=format&fit=crop", // Forest/Nature Close-up
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2500&auto=format&fit=crop", // Forest Road
+    "/images/hero-forest-house.jpg", // Forest with house - Yercaud style
 ];
 
 export const BackgroundSlideshow = () => {
@@ -41,10 +41,10 @@ export const BackgroundSlideshow = () => {
                         src={images[currentIndex]}
                         alt="Vijay Constructions Background"
                         fill
-                        priority
+                        priority={currentIndex === 0}
                         className="object-cover object-center"
-                        sizes="100vw"
-                        quality={80}
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
+                        quality={85}
                     />
                 </motion.div>
             </AnimatePresence>
