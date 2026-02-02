@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const images = [
+    "/images/hero-tree-house.jpg", // Tree and house - Yercaud featured image
     "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?q=80&w=2500&auto=format&fit=crop", // Misty Hills (Yercaud vibe)
     "https://images.unsplash.com/photo-1533038590840-1cde6e668a91?q=80&w=2500&auto=format&fit=crop", // Lush Green Valley
     "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=2500&auto=format&fit=crop", // Forest/Nature Close-up
