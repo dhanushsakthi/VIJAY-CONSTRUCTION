@@ -5,10 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const images = [
-    "/images/backgrounds/hero-mountain-v3.png",
-    "/images/backgrounds/hero-mountain-v3.png",
-    "/images/backgrounds/hero-tree-v3.png",
-    "/images/backgrounds/hero-tree-v3.png",
+    "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?q=80&w=2500&auto=format&fit=crop", // Misty Hills (Yercaud vibe)
+    "https://images.unsplash.com/photo-1533038590840-1cde6e668a91?q=80&w=2500&auto=format&fit=crop", // Lush Green Valley
+    "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=2500&auto=format&fit=crop", // Forest/Nature Close-up
+    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2500&auto=format&fit=crop", // Forest Road
 ];
 
 export const BackgroundSlideshow = () => {
