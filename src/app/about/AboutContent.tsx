@@ -120,6 +120,7 @@ export function AboutContent() {
                                     width={800}
                                     height={600}
                                     className="h-full w-full object-cover"
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-tr from-black/40 to-transparent" />
                             </div>
@@ -226,6 +227,7 @@ export function AboutContent() {
                                     alt="G.Mathialagan - Founder"
                                     fill
                                     className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />
                             </div>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8 text-white">

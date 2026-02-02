@@ -426,6 +426,7 @@ export default function HomePage() {
                                         width={400}
                                         height={300}
                                         className="h-full w-full object-cover transition-transform duration-500 hover:scale-110 will-change-transform"
+                                        sizes="(max-width: 768px) 100vw, 25vw"
                                     />
                                 </div>
                                 <div className="aspect-square overflow-hidden rounded-sm">
@@ -435,6 +436,7 @@ export default function HomePage() {
                                         width={400}
                                         height={400}
                                         className="h-full w-full object-cover transition-transform duration-500 hover:scale-110 will-change-transform"
+                                        sizes="(max-width: 768px) 100vw, 25vw"
                                     />
                                 </div>
                             </div>
@@ -446,6 +448,7 @@ export default function HomePage() {
                                         width={400}
                                         height={400}
                                         className="h-full w-full object-cover transition-transform duration-500 hover:scale-110 will-change-transform"
+                                        sizes="(max-width: 768px) 100vw, 25vw"
                                     />
                                 </div>
                                 <div className="aspect-[4/3] overflow-hidden rounded-sm">
@@ -455,6 +458,7 @@ export default function HomePage() {
                                         width={400}
                                         height={300}
                                         className="h-full w-full object-cover transition-transform duration-500 hover:scale-110 will-change-transform"
+                                        sizes="(max-width: 768px) 100vw, 25vw"
                                     />
                                 </div>
                             </div>

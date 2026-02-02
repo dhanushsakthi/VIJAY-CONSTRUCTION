@@ -44,6 +44,7 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
                         fill
                         priority
                         className="h-full w-full object-cover"
+                        sizes="100vw"
                     />
                     <div className="absolute inset-0 bg-steel-black/70 backdrop-blur-[2px]" />
                 </div>
@@ -115,6 +116,7 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
                                                 width={600}
                                                 height={450}
                                                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                             />
                                         </div>
                                     ))}

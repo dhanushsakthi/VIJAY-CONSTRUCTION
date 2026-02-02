@@ -65,6 +65,7 @@ export function ProjectCard({
                     width={400}
                     height={500}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
 
                 {/* Overlay */}
