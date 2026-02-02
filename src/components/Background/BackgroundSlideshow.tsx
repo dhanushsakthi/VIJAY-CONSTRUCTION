@@ -5,11 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const images = [
-    "/images/backgrounds/bg-1.png",
-    "/images/backgrounds/bg-2.png",
-    "/images/backgrounds/bg-3.png",
-    "/images/backgrounds/bg-4.png",
-    "/images/backgrounds/bg-5.png",
+    "/images/backgrounds/hero-mountain-1.jpg",
+    "/images/backgrounds/hero-mountain-2.jpg",
+    "/images/backgrounds/hero-tree-1.jpg",
+    "/images/backgrounds/hero-tree-2.jpg",
 ];
 
 export const BackgroundSlideshow = () => {

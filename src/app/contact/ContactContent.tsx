@@ -79,11 +79,11 @@ export function ContactContent() {
                 <div className="container">
                     <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
                         {/* Contact Form */}
-                        <div className="order-2 lg:order-1 bg-black/40 backdrop-blur-md rounded-lg p-8 border border-white/10">
-                            <h2 className="heading-md mb-6 text-white">
-                                Get a <span className="text-brand-red-light">Free Quote</span>
+                        <div className="order-2 lg:order-1 bg-white/60 backdrop-blur-md rounded-lg p-8 border border-white/40 shadow-lg">
+                            <h2 className="heading-md mb-6 text-steel-dark">
+                                Get a <span className="text-brand-red">Free Quote</span>
                             </h2>
-                            <p className="body-md mb-8 text-white/80">
+                            <p className="body-md mb-8 text-concrete-dark">
                                 Fill out the form below and our team will get back to you within 24 hours.
                             </p>
 
@@ -105,7 +105,7 @@ export function ContactContent() {
                                 <form onSubmit={handleSubmit} className="space-y-6">
                                     <div className="grid gap-6 sm:grid-cols-2">
                                         <div>
-                                            <label htmlFor="name" className="mb-2 block text-sm font-medium text-white/90">
+                                            <label htmlFor="name" className="mb-2 block text-sm font-medium text-steel-dark">
                                                 Full Name *
                                             </label>
                                             <input
@@ -115,12 +115,12 @@ export function ContactContent() {
                                                 required
                                                 value={formData.name}
                                                 onChange={handleChange}
-                                                className="w-full rounded-sm border border-white/20 bg-white/5 px-4 py-3 text-white transition-colors focus:border-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green/20 placeholder:text-white/30"
+                                                className="w-full rounded-sm border border-steel-dark/20 bg-white/50 px-4 py-3 text-steel-dark transition-colors focus:border-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green/20 placeholder:text-concrete-dark/50"
                                                 placeholder="Your name"
                                             />
                                         </div>
                                         <div>
-                                            <label htmlFor="phone" className="mb-2 block text-sm font-medium text-white/90">
+                                            <label htmlFor="phone" className="mb-2 block text-sm font-medium text-steel-dark">
                                                 Phone Number *
                                             </label>
                                             <input
@@ -130,14 +130,14 @@ export function ContactContent() {
                                                 required
                                                 value={formData.phone}
                                                 onChange={handleChange}
-                                                className="w-full rounded-sm border border-white/20 bg-white/5 px-4 py-3 text-white transition-colors focus:border-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green/20 placeholder:text-white/30"
+                                                className="w-full rounded-sm border border-steel-dark/20 bg-white/50 px-4 py-3 text-steel-dark transition-colors focus:border-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green/20 placeholder:text-concrete-dark/50"
                                                 placeholder="Your phone number"
                                             />
                                         </div>
                                     </div>
 
                                     <div>
-                                        <label htmlFor="email" className="mb-2 block text-sm font-medium text-white/90">
+                                        <label htmlFor="email" className="mb-2 block text-sm font-medium text-steel-dark">
                                             Email Address
                                         </label>
                                         <input
@@ -146,13 +146,13 @@ export function ContactContent() {
                                             name="email"
                                             value={formData.email}
                                             onChange={handleChange}
-                                            className="w-full rounded-sm border border-white/20 bg-white/5 px-4 py-3 text-white transition-colors focus:border-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green/20 placeholder:text-white/30"
+                                            className="w-full rounded-sm border border-steel-dark/20 bg-white/50 px-4 py-3 text-steel-dark transition-colors focus:border-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green/20 placeholder:text-concrete-dark/50"
                                             placeholder="your@email.com"
                                         />
                                     </div>
 
                                     <div>
-                                        <label htmlFor="service" className="mb-2 block text-sm font-medium text-white/90">
+                                        <label htmlFor="service" className="mb-2 block text-sm font-medium text-steel-dark">
                                             Service Required *
                                         </label>
                                         <select
@@ -161,7 +161,7 @@ export function ContactContent() {
                                             required
                                             value={formData.service}
                                             onChange={handleChange}
-                                            className="w-full rounded-sm border border-white/20 bg-black/50 px-4 py-3 text-white transition-colors focus:border-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green/20"
+                                            className="w-full rounded-sm border border-steel-dark/20 bg-white/50 px-4 py-3 text-steel-dark transition-colors focus:border-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green/20"
                                         >
                                             <option value="" className="text-black">Select a service</option>
                                             <option value="residential" className="text-black">Residential Construction</option>
@@ -173,7 +173,7 @@ export function ContactContent() {
                                     </div>
 
                                     <div>
-                                        <label htmlFor="message" className="mb-2 block text-sm font-medium text-white/90">
+                                        <label htmlFor="message" className="mb-2 block text-sm font-medium text-steel-dark">
                                             Project Details *
                                         </label>
                                         <textarea
@@ -183,7 +183,7 @@ export function ContactContent() {
                                             rows={5}
                                             value={formData.message}
                                             onChange={handleChange}
-                                            className="w-full resize-none rounded-sm border border-white/20 bg-white/5 px-4 py-3 text-white transition-colors focus:border-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green/20 placeholder:text-white/30"
+                                            className="w-full resize-none rounded-sm border border-steel-dark/20 bg-white/50 px-4 py-3 text-steel-dark transition-colors focus:border-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green/20 placeholder:text-concrete-dark/50"
                                             placeholder="Tell us about your project..."
                                         />
                                     </div>
@@ -210,8 +210,8 @@ export function ContactContent() {
                         </div>
 
                         {/* Contact Info */}
-                        <div className="order-1 lg:order-2 bg-black/40 backdrop-blur-md rounded-lg p-8 border border-white/10 h-fit">
-                            <div className="rounded-sm bg-steel-dark/80 p-8 text-white lg:p-10 border border-white/10">
+                        <div className="order-1 lg:order-2 bg-white/60 backdrop-blur-md rounded-lg p-8 border border-white/40 h-fit shadow-lg">
+                            <div className="rounded-sm bg-steel-dark p-8 text-white lg:p-10 border border-white/10">
                                 <h3 className="mb-6 font-display text-2xl font-bold">Contact Information</h3>
 
                                 {/* Founder */}

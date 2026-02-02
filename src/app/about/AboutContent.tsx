@@ -124,23 +124,23 @@ export function AboutContent() {
                                 <div className="absolute inset-0 bg-gradient-to-tr from-black/40 to-transparent" />
                             </div>
                             {/* Stats Float */}
-                            <div className="absolute -bottom-6 -right-6 hidden lg:block bg-black/60 backdrop-blur-md rounded-lg p-6 border border-white/10 shadow-xl max-w-xs">
+                            <div className="absolute -bottom-6 -right-6 hidden lg:block bg-white/90 backdrop-blur-md rounded-lg p-6 border border-white/40 shadow-xl max-w-xs">
                                 <p className="font-display text-4xl font-bold text-brand-red mb-1">30+</p>
-                                <p className="text-sm font-medium text-white/90">Years of Building Excellence in Yercaud & Salem</p>
+                                <p className="text-sm font-medium text-steel-dark">Years of Building Excellence in Yercaud & Salem</p>
                             </div>
                         </div>
 
-                        <div className="bg-black/40 backdrop-blur-md rounded-lg p-8 border border-white/10">
-                            <h2 className="heading-md mb-6 text-white">
-                                Our <span className="text-brand-red-light">Story</span>
+                        <div className="bg-white/60 backdrop-blur-md rounded-lg p-8 border border-white/40 shadow-lg">
+                            <h2 className="heading-md mb-6 text-steel-dark">
+                                Our <span className="text-brand-red">Story</span>
                             </h2>
-                            <p className="body-md mb-6 text-white/80">
-                                Founded by <span className="font-semibold text-white">G.Mathialagan</span>, Vijay Constructions has been a cornerstone of development in the Yercaud and Salem region for over three decades.
+                            <p className="body-md mb-6 text-concrete-dark">
+                                Founded by <span className="font-semibold text-steel-dark">G.Mathialagan</span>, Vijay Constructions has been a cornerstone of development in the Yercaud and Salem region for over three decades.
                             </p>
-                            <p className="body-md mb-6 text-white/80">
+                            <p className="body-md mb-6 text-concrete-dark">
                                 What started as a vision to provide quality homes has grown into a premier civil engineering and construction firm, known for our integrity, craftsmanship, and unwavering commitment to client satisfaction.
                             </p>
-                            <p className="body-md text-white/80">
+                            <p className="body-md text-concrete-dark">
                                 We specialize in both residential and commercial projects, bringing a blend of traditional values and modern engineering to every structure we build.
                             </p>
                         </div>
@@ -151,11 +151,11 @@ export function AboutContent() {
             {/* Core Values */}
             <AnimatedSection className="section">
                 <div className="container">
-                    <div className="mb-12 text-center lg:mb-16 bg-black/40 backdrop-blur-md rounded-lg p-6 border border-white/10 max-w-4xl mx-auto">
-                        <h2 className="heading-md mb-4 text-white">
-                            Core <span className="text-brand-red-light">Values</span>
+                    <div className="mb-12 text-center lg:mb-16 bg-white/60 backdrop-blur-md rounded-lg p-6 border border-white/40 max-w-4xl mx-auto shadow-sm">
+                        <h2 className="heading-md mb-4 text-steel-dark">
+                            Core <span className="text-brand-red">Values</span>
                         </h2>
-                        <p className="mx-auto max-w-2xl text-white/80">
+                        <p className="mx-auto max-w-2xl text-concrete-dark">
                             The principles that guide our every project and interaction
                         </p>
                     </div>
@@ -190,14 +190,14 @@ export function AboutContent() {
                                 )
                             }
                         ].map((value, index) => (
-                            <div key={index} className="group relative overflow-hidden rounded-sm bg-black/40 backdrop-blur-md p-8 shadow-lg border border-white/10 transition-transform duration-300 hover:-translate-y-1">
-                                <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-full bg-brand-green/20 text-brand-green-light group-hover:bg-brand-green group-hover:text-white transition-colors duration-300">
+                            <div key={index} className="group relative overflow-hidden rounded-sm bg-white/60 backdrop-blur-md p-8 shadow-lg border border-white/40 transition-transform duration-300 hover:-translate-y-1">
+                                <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-full bg-brand-red/10 text-brand-red group-hover:bg-brand-red group-hover:text-white transition-colors duration-300">
                                     {value.icon}
                                 </div>
-                                <h3 className="mb-3 font-display text-xl font-bold text-white group-hover:text-brand-green-light transition-colors">
+                                <h3 className="mb-3 font-display text-xl font-bold text-steel-dark group-hover:text-brand-red transition-colors">
                                     {value.title}
                                 </h3>
-                                <p className="text-white/70">
+                                <p className="text-concrete-dark">
                                     {value.description}
                                 </p>
                             </div>
@@ -209,29 +209,29 @@ export function AboutContent() {
             {/* Leadership */}
             <AnimatedSection className="section">
                 <div className="container">
-                    <div className="mx-auto max-w-4xl text-center mb-16 bg-black/40 backdrop-blur-md rounded-lg p-6 border border-white/10">
-                        <h2 className="heading-md mb-4 text-white">
-                            Our <span className="text-brand-red-light">Leadership</span>
+                    <div className="mx-auto max-w-4xl text-center mb-16 bg-white/60 backdrop-blur-md rounded-lg p-6 border border-white/40 shadow-sm">
+                        <h2 className="heading-md mb-4 text-steel-dark">
+                            Our <span className="text-brand-red">Leadership</span>
                         </h2>
-                        <p className="body-md text-white/80">
+                        <p className="body-md text-concrete-dark">
                             Guided by experienced visionaries
                         </p>
                     </div>
 
                     <div className="mx-auto max-w-lg">
-                        <div className="group relative overflow-hidden rounded-sm bg-black/40 backdrop-blur-md shadow-xl border border-white/10">
-                            <div className="aspect-[3/4] overflow-hidden">
-                                {/* Placeholder for founder image */}
-                                <div className="h-full w-full bg-brand-red/10 flex items-center justify-center">
-                                    <svg className="h-24 w-24 text-brand-red-light/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                    </svg>
-                                </div>
+                        <div className="group relative overflow-hidden rounded-sm bg-white/60 backdrop-blur-md shadow-xl border border-white/40">
+                            <div className="aspect-[3/4] overflow-hidden relative">
+                                <Image
+                                    src="/images/founder.jpg"
+                                    alt="G.Mathialagan - Founder"
+                                    fill
+                                    className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                                />
                             </div>
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent flex flex-col justify-end p-8 text-white">
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8 text-white">
                                 <h3 className="font-display text-2xl font-bold mb-1">G.Mathialagan</h3>
-                                <p className="text-brand-green-light font-medium tracking-wider text-sm uppercase mb-4">Founder & Civil Engineer</p>
-                                <p className="text-white/80 text-sm">
+                                <p className="text-brand-red-light font-medium tracking-wider text-sm uppercase mb-4">Founder & Civil Engineer</p>
+                                <p className="text-white/90 text-sm">
                                     With over 30 years of experience in civil engineering and construction, leading Vijay Constructions with a vision for quality and excellence.
                                 </p>
                             </div>

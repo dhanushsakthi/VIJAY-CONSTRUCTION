@@ -169,15 +169,15 @@ export default function HomePage() {
                         </div>
 
                         {/* Main Heading */}
-                        <h1 className="hero-animate heading-xl mb-6 text-white drop-shadow-[0_2px_15px_rgba(0,0,0,0.5)]">
+                        <h1 className="hero-animate heading-xl mb-6 text-white drop-shadow-[0_2px_15px_rgba(0,0,0,0.5)] font-extrabold">
                             U dream{" "}
-                            <span className="relative inline-block text-brand-green">
+                            <span className="relative inline-block text-brand-green font-extrabold">
                                 We build
                             </span>
                         </h1>
 
                         {/* Subheading */}
-                        <p className="hero-animate body-lg mb-8 max-w-2xl text-white/95 drop-shadow-[0_2px_12px_rgba(0,0,0,0.4)]">
+                        <p className="hero-animate body-lg mb-8 max-w-2xl text-white/95 drop-shadow-[0_2px_12px_rgba(0,0,0,0.4)] font-medium">
                             Premier civil engineering and construction company transforming
                             visions into reality. With{" "}
                             <span className="font-semibold text-brand-red-light">4.9★ rating</span>{" "}
@@ -329,9 +329,9 @@ export default function HomePage() {
             {/* Stats Section */}
             <section className="relative z-10 lg:-mt-20">
                 <div className="container relative z-10 py-12 lg:py-0">
-                    <div className="grid gap-4 rounded-sm bg-black/40 backdrop-blur-md border border-white/10 p-6 shadow-2xl sm:grid-cols-2 lg:grid-cols-4 lg:p-8">
+                    <div className="grid gap-4 rounded-sm bg-white/80 backdrop-blur-md border border-white/40 p-6 shadow-2xl sm:grid-cols-2 lg:grid-cols-4 lg:p-8">
                         {stats.map((stat, index) => (
-                            <StatsCounter key={index} {...stat} delay={index * 0.1} isHero />
+                            <StatsCounter key={index} {...stat} delay={index * 0.1} isHero={false} />
                         ))}
                     </div>
                 </div>
@@ -342,23 +342,23 @@ export default function HomePage() {
                 <div className="container">
                     <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
                         {/* Content */}
-                        <div className="flex flex-col justify-center bg-black/40 backdrop-blur-md rounded-lg p-8 border border-white/10">
-                            <span className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand-green-light">
+                        <div className="flex flex-col justify-center bg-white/60 backdrop-blur-md rounded-lg p-8 border border-white/40 shadow-lg">
+                            <span className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand-red">
                                 About Vijay Constructions
                             </span>
-                            <h2 className="heading-lg mb-2 text-white">
-                                G.MATHIALAGAN <span className="text-brand-red-light text-sm font-normal block mt-1">Founder</span>
+                            <h2 className="heading-lg mb-2 text-steel-dark">
+                                G.MATHIALAGAN <span className="text-brand-red text-sm font-normal block mt-1">Founder</span>
                             </h2>
-                            <h3 className="heading-md mb-6 text-white/90">
-                                Building Excellence in <span className="text-brand-green-light">Yercaud & Salem</span>
+                            <h3 className="heading-md mb-6 text-steel-dark/90">
+                                Building Excellence in <span className="text-brand-red">Yercaud & Salem</span>
                             </h3>
-                            <p className="body-md mb-6 text-white/80">
+                            <p className="body-md mb-6 text-concrete-dark">
                                 Vijay Constructions is a premier civil engineering and real
                                 estate construction company serving the Yercaud and Salem
                                 region. With years of expertise and a commitment to quality, we
                                 transform architectural visions into lasting structures.
                             </p>
-                            <p className="body-md mb-8 text-white/80">
+                            <p className="body-md mb-8 text-concrete-dark">
                                 Our team of skilled engineers and craftsmen combines traditional
                                 building wisdom with modern construction techniques to deliver
                                 projects that exceed expectations.
@@ -373,9 +373,9 @@ export default function HomePage() {
                                     "Transparent Pricing",
                                 ].map((feature) => (
                                     <div key={feature} className="flex items-center gap-3">
-                                        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-brand-green/20">
+                                        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-brand-red/10">
                                             <svg
-                                                className="h-4 w-4 text-brand-green-light"
+                                                className="h-4 w-4 text-brand-red"
                                                 fill="none"
                                                 stroke="currentColor"
                                                 viewBox="0 0 24 24"
@@ -388,7 +388,7 @@ export default function HomePage() {
                                                 />
                                             </svg>
                                         </span>
-                                        <span className="text-sm font-medium text-white/90">
+                                        <span className="text-sm font-medium text-concrete-dark">
                                             {feature}
                                         </span>
                                     </div>
@@ -397,7 +397,7 @@ export default function HomePage() {
 
                             <Link
                                 href="/about"
-                                className="group inline-flex items-center gap-2 font-display text-sm font-semibold uppercase tracking-wider text-brand-red-light transition-colors hover:text-white"
+                                className="group inline-flex items-center gap-2 font-display text-sm font-semibold uppercase tracking-wider text-brand-red transition-colors hover:text-brand-red-dark"
                             >
                                 Learn More About Us
                                 <svg
@@ -476,14 +476,14 @@ export default function HomePage() {
             {/* Services Section */}
             <AnimatedSection className="section">
                 <div className="container">
-                    <div className="mb-12 text-center lg:mb-16 bg-black/40 backdrop-blur-md rounded-lg p-6 border border-white/10 max-w-4xl mx-auto">
-                        <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green-light">
+                    <div className="mb-12 text-center lg:mb-16 bg-white/60 backdrop-blur-md rounded-lg p-6 border border-white/40 max-w-4xl mx-auto shadow-sm">
+                        <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">
                             What We Do
                         </span>
-                        <h2 className="heading-lg mb-4 text-white">
-                            Our <span className="text-brand-red-light">Services</span>
+                        <h2 className="heading-lg mb-4 text-steel-dark">
+                            Our <span className="text-brand-red">Services</span>
                         </h2>
-                        <p className="mx-auto max-w-2xl text-white/80">
+                        <p className="mx-auto max-w-2xl text-concrete-dark">
                             Comprehensive construction and civil engineering solutions
                             tailored to your needs
                         </p>
@@ -522,14 +522,14 @@ export default function HomePage() {
             {/* Process Section */}
             <AnimatedSection className="section">
                 <div className="container">
-                    <div className="mb-12 text-center lg:mb-16 bg-black/40 backdrop-blur-md rounded-lg p-6 border border-white/10 max-w-4xl mx-auto">
-                        <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green-light">
+                    <div className="mb-12 text-center lg:mb-16 bg-white/60 backdrop-blur-md rounded-lg p-6 border border-white/40 max-w-4xl mx-auto shadow-sm">
+                        <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">
                             How We Work
                         </span>
-                        <h2 className="heading-lg mb-4 text-white">
-                            Our <span className="text-brand-red-light">Process</span>
+                        <h2 className="heading-lg mb-4 text-steel-dark">
+                            Our <span className="text-brand-red">Process</span>
                         </h2>
-                        <p className="mx-auto max-w-2xl text-white/80">
+                        <p className="mx-auto max-w-2xl text-concrete-dark">
                             A systematic approach to delivering excellence in every project
                         </p>
                     </div>
@@ -549,18 +549,18 @@ export default function HomePage() {
             {/* Projects Section */}
             <AnimatedSection className="section">
                 <div className="container">
-                    <div className="mb-12 flex flex-col items-center justify-between gap-6 lg:mb-16 lg:flex-row bg-black/40 backdrop-blur-md rounded-lg p-6 border border-white/10">
+                    <div className="mb-12 flex flex-col items-center justify-between gap-6 lg:mb-16 lg:flex-row bg-white/60 backdrop-blur-md rounded-lg p-6 border border-white/40 shadow-sm">
                         <div>
-                            <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green-light">
+                            <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">
                                 Our Portfolio
                             </span>
-                            <h2 className="heading-lg text-white">
-                                Featured <span className="text-brand-red-light">Projects</span>
+                            <h2 className="heading-lg text-steel-dark">
+                                Featured <span className="text-brand-red">Projects</span>
                             </h2>
                         </div>
                         <Link
                             href="/projects"
-                            className="group inline-flex items-center gap-2 font-display text-sm font-semibold uppercase tracking-wider text-white/90 transition-colors hover:text-brand-red-light"
+                            className="group inline-flex items-center gap-2 font-display text-sm font-semibold uppercase tracking-wider text-steel-dark transition-colors hover:text-brand-red"
                         >
                             View All Projects
                             <svg
@@ -590,14 +590,14 @@ export default function HomePage() {
             {/* Testimonials Section */}
             <AnimatedSection className="section">
                 <div className="container">
-                    <div className="mb-12 text-center lg:mb-16 bg-black/40 backdrop-blur-md rounded-lg p-6 border border-white/10 max-w-4xl mx-auto">
-                        <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green-light">
+                    <div className="mb-12 text-center lg:mb-16 bg-white/60 backdrop-blur-md rounded-lg p-6 border border-white/40 max-w-4xl mx-auto shadow-sm">
+                        <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">
                             Testimonials
                         </span>
-                        <h2 className="heading-lg mb-4 text-white">
-                            What Our <span className="text-brand-red-light">Clients Say</span>
+                        <h2 className="heading-lg mb-4 text-steel-dark">
+                            What Our <span className="text-brand-red">Clients Say</span>
                         </h2>
-                        <p className="mx-auto max-w-2xl text-white/80">
+                        <p className="mx-auto max-w-2xl text-concrete-dark">
                             Don&apos;t just take our word for it - hear from our satisfied clients
                         </p>
                     </div>
