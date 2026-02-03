@@ -245,14 +245,14 @@ export function AboutContent() {
                             <div className="aspect-[3/4] overflow-hidden relative">
                                 <Image
                                     src="/images/ceo.jpg"
-                                    alt="Vijay Anand - CEO"
+                                    alt="Vijay Ananad - CEO"
                                     fill
                                     className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                                     sizes="(max-width: 768px) 100vw, 50vw"
                                 />
                             </div>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8 text-white">
-                                <h3 className="font-display text-2xl font-bold mb-1">Vijay Anand</h3>
+                                <h3 className="font-display text-2xl font-bold mb-1">Vijay Ananad</h3>
                                 <p className="text-brand-red-light font-medium tracking-wider text-sm uppercase mb-4">CEO</p>
                                 <p className="text-white/90 text-sm">
                                     Driving innovation and operational excellence, ensuring every project meets the highest standards of modern construction and client expectations.

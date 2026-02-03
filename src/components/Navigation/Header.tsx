@@ -225,7 +225,7 @@ export function Header() {
                                         Contact Us
                                     </p>
                                     <p className="mb-1 text-xs uppercase tracking-wider text-concrete">
-                                        CEO : VIJAY ANANDTH
+                                        CEO : VIJAY ANANAD
                                     </p>
                                     <a
                                         href="tel:+917695850762"
