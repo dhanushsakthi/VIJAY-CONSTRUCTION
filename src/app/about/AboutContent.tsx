@@ -219,7 +219,8 @@ export function AboutContent() {
                         </p>
                     </div>
 
-                    <div className="mx-auto max-w-lg">
+                    <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
+                        {/* Founder */}
                         <div className="group relative overflow-hidden rounded-sm bg-white/60 backdrop-blur-md shadow-xl border border-white/40">
                             <div className="aspect-[3/4] overflow-hidden relative">
                                 <Image
@@ -227,7 +228,7 @@ export function AboutContent() {
                                     alt="G.Mathialagan - Founder"
                                     fill
                                     className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    sizes="(max-width: 768px) 100vw, 50vw"
                                 />
                             </div>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8 text-white">
@@ -235,6 +236,26 @@ export function AboutContent() {
                                 <p className="text-brand-red-light font-medium tracking-wider text-sm uppercase mb-4">Founder & Civil Engineer</p>
                                 <p className="text-white/90 text-sm">
                                     With over 30 years of experience in civil engineering and construction, leading Vijay Constructions with a vision for quality and excellence.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* CEO */}
+                        <div className="group relative overflow-hidden rounded-sm bg-white/60 backdrop-blur-md shadow-xl border border-white/40">
+                            <div className="aspect-[3/4] overflow-hidden relative">
+                                <Image
+                                    src="/images/ceo.jpg"
+                                    alt="Vijay Anand - CEO"
+                                    fill
+                                    className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                />
+                            </div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8 text-white">
+                                <h3 className="font-display text-2xl font-bold mb-1">Vijay Anand</h3>
+                                <p className="text-brand-red-light font-medium tracking-wider text-sm uppercase mb-4">CEO</p>
+                                <p className="text-white/90 text-sm">
+                                    Driving innovation and operational excellence, ensuring every project meets the highest standards of modern construction and client expectations.
                                 </p>
                             </div>
                         </div>
