@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const images = [
-    "/images/backgrounds/yercaud-mountain-hq-1.png",
+    "/images/backgrounds/modern-villa-hq-1.png",
     "/images/backgrounds/construction-site-hq-1.png",
-    "/images/backgrounds/yercaud-mountain-hq-2.png",
+    "/images/backgrounds/yercaud-mountain-hq-1.png",
 ];
 
 export const BackgroundSlideshow = () => {
