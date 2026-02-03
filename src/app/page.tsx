@@ -238,7 +238,7 @@ export default function HomePage() {
                         <div className="hero-animate mt-12 flex flex-wrap items-center gap-8 border-t border-white/20 pt-8">
                             <a
                                 href="tel:+919443232172"
-                                className="group flex items-center gap-3 text-white transition-colors hover:text-brand-green-light"
+                                className="group flex items-start gap-3 text-white transition-colors hover:text-brand-green-light"
                             >
                                 <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 transition-colors group-hover:bg-brand-green/20">
                                     <svg
@@ -256,16 +256,16 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-white font-bold drop-shadow-sm">
+                                    <p className="font-display font-bold text-white text-lg">94432 32172</p>
+                                    <p className="text-[10px] uppercase tracking-wider text-white/80 font-bold drop-shadow-sm">
                                         FOUNDER: G.MATHIALAGAN
                                     </p>
-                                    <p className="font-display font-bold text-white">94432 32172</p>
                                 </div>
                             </a>
 
                             <a
                                 href="tel:+917695850762"
-                                className="group flex items-center gap-3 text-white transition-colors hover:text-brand-green-light"
+                                className="group flex items-start gap-3 text-white transition-colors hover:text-brand-green-light"
                             >
                                 <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 transition-colors group-hover:bg-brand-green/20">
                                     <svg
@@ -283,10 +283,10 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-white font-bold drop-shadow-sm">
+                                    <p className="font-display font-bold text-white text-lg">76958 50762</p>
+                                    <p className="text-[10px] uppercase tracking-wider text-white/80 font-bold drop-shadow-sm">
                                         CEO : M.VIJAYANAND
                                     </p>
-                                    <p className="font-display font-bold text-white">76958 50762</p>
                                 </div>
                             </a>
 
