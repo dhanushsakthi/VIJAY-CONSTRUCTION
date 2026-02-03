@@ -256,7 +256,7 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-white/70 font-bold drop-shadow-sm">
+                                    <p className="text-xs uppercase tracking-wider text-white font-bold drop-shadow-sm">
                                         FOUNDER: G.MATHIALAGAN
                                     </p>
                                     <p className="font-display font-bold text-white">94432 32172</p>
@@ -283,7 +283,7 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-white/70 font-bold drop-shadow-sm">
+                                    <p className="text-xs uppercase tracking-wider text-white font-bold drop-shadow-sm">
                                         Call Us
                                     </p>
                                     <p className="font-display font-bold text-white">76958 50762</p>
@@ -313,7 +313,7 @@ export default function HomePage() {
                                     </svg>
                                 </span>
                                 <div>
-                                    <p className="text-xs uppercase tracking-wider text-white/70 font-bold drop-shadow-sm">
+                                    <p className="text-xs uppercase tracking-wider text-white font-bold drop-shadow-sm">
                                         Location
                                     </p>
                                     <p className="font-display font-bold text-white">Yercaud, Salem</p>
