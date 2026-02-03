@@ -171,7 +171,7 @@ export default function HomePage() {
                         {/* Main Heading */}
                         <h1 className="hero-animate heading-xl mb-6 text-white drop-shadow-[0_2px_15px_rgba(0,0,0,0.5)] font-extrabold">
                             U dream{" "}
-                            <span className="relative inline-block text-brand-green font-extrabold drop-shadow-[0_2px_10px_rgba(255,255,255,0.5)]">
+                            <span className="relative inline-block text-brand-green font-extrabold drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] bg-black/10 backdrop-blur-[2px] px-4 py-1 rounded-sm mx-1">
                                 We build
                             </span>
                         </h1>
