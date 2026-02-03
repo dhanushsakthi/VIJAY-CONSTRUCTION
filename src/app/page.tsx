@@ -346,9 +346,14 @@ export default function HomePage() {
                             <span className="mb-4 text-sm font-semibold uppercase tracking-wider text-brand-red">
                                 About Vijay Constructions
                             </span>
-                            <h2 className="heading-lg mb-2 text-steel-dark">
-                                G.MATHIALAGAN <span className="text-brand-red text-sm font-normal block mt-1">Founder</span>
-                            </h2>
+                            <div className="mb-6 flex flex-wrap gap-x-12 gap-y-4">
+                                <h2 className="heading-lg text-steel-dark">
+                                    G.MATHIALAGAN <span className="text-brand-red text-sm font-normal block mt-1">Founder</span>
+                                </h2>
+                                <h2 className="heading-lg text-steel-dark">
+                                    VIJAY ANANAD <span className="text-brand-red text-sm font-normal block mt-1">CEO</span>
+                                </h2>
+                            </div>
                             <h3 className="heading-md mb-6 text-steel-dark/90">
                                 Building Excellence in <span className="text-brand-red">Yercaud & Salem</span>
                             </h3>

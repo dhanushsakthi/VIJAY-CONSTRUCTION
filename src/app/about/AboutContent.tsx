@@ -136,7 +136,7 @@ export function AboutContent() {
                                 Our <span className="text-brand-red">Story</span>
                             </h2>
                             <p className="body-md mb-6 text-concrete-dark">
-                                Founded by <span className="font-semibold text-steel-dark">G.Mathialagan</span>, Vijay Constructions has been a cornerstone of development in the Yercaud and Salem region for over three decades.
+                                Founded by <span className="font-semibold text-steel-dark">G.Mathialagan (Founder)</span> and led by <span className="font-semibold text-steel-dark">Vijay Ananad (CEO)</span>, Vijay Constructions has been a cornerstone of development in the Yercaud and Salem region for over three decades.
                             </p>
                             <p className="body-md mb-6 text-concrete-dark">
                                 What started as a vision to provide quality homes has grown into a premier civil engineering and construction firm, known for our integrity, craftsmanship, and unwavering commitment to client satisfaction.
