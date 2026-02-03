@@ -5,10 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const images = [
-    "/images/backgrounds/yercaud-village-vista.png",
-    "/images/backgrounds/yercaud-road-aerial.png",
-    "/images/backgrounds/yercaud-valley-landscape.png",
-    "/images/backgrounds/yercaud-township-view.jpg",
+    "/images/backgrounds/yercaud-mountain-hq-1.png",
+    "/images/backgrounds/yercaud-trees-hq-1.png",
+    "/images/backgrounds/yercaud-mountain-hq-2.png",
+    "/images/backgrounds/yercaud-trees-hq-2.png",
 ];
 
 export const BackgroundSlideshow = () => {
@@ -43,7 +43,7 @@ export const BackgroundSlideshow = () => {
                         priority={currentIndex === 0}
                         className="object-cover object-center"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
-                        quality={85}
+                        quality={95}
                     />
                 </motion.div>
             </AnimatePresence>
