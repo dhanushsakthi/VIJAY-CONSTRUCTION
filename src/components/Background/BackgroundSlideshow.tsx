@@ -5,10 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const images = [
-    "/images/hero-tree-house.jpg", // Tree and house - Yercaud featured image
-    "https://images.unsplash.com/photo-1533038590840-1cde6e668a91?q=80&w=2500&auto=format&fit=crop", // Lush Green Valley
-    "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=2500&auto=format&fit=crop", // Forest/Nature Close-up
-    "/images/hero-forest-house.jpg", // Forest with house - Yercaud style
+    "/images/backgrounds/yercaud-village-vista.png",
+    "/images/backgrounds/yercaud-road-aerial.png",
+    "/images/backgrounds/yercaud-valley-landscape.png",
+    "/images/backgrounds/yercaud-township-view.jpg",
 ];
 
 export const BackgroundSlideshow = () => {

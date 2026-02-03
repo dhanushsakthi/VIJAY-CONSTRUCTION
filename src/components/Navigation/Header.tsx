@@ -224,6 +224,9 @@ export function Header() {
                                     <p className="mb-3 font-display text-sm font-semibold uppercase tracking-wider text-brand-green">
                                         Contact Us
                                     </p>
+                                    <p className="mb-1 text-xs uppercase tracking-wider text-concrete">
+                                        CEO : VIJAY ANANDTH
+                                    </p>
                                     <a
                                         href="tel:+917695850762"
                                         className="mb-2 block text-2xl font-bold text-white hover:text-brand-red"

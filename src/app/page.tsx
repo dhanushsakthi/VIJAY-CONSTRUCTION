@@ -284,7 +284,7 @@ export default function HomePage() {
                                 </span>
                                 <div>
                                     <p className="text-xs uppercase tracking-wider text-white font-bold drop-shadow-sm">
-                                        Call Us
+                                        CEO : VIJAY ANANDTH
                                     </p>
                                     <p className="font-display font-bold text-white">76958 50762</p>
                                 </div>
