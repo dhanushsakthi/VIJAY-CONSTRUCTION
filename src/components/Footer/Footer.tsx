@@ -16,7 +16,7 @@ const footerLinks = {
     ],
     contact: [
         { href: "tel:+919443232172", label: "Founder: G.MATHIALAGAN (94432 32172)" },
-        { href: "tel:+917695850762", label: "CEO : VIJAY ANANAD (76958 50762)" },
+        { href: "tel:+917695850762", label: "CEO : M.VIJAYANAND (76958 50762)" },
         { href: "mailto:contact@vijayconstructions.in", label: "Email Us" },
         { href: "/contact", label: "Get in Touch" },
     ],
@@ -141,7 +141,7 @@ export function Footer() {
                                 href="tel:+917695850762"
                                 className="mb-3 block text-lg font-semibold text-white transition-colors hover:text-brand-red sm:text-xl"
                             >
-                                CEO : VIJAY ANANAD
+                                CEO : M.VIJAYANAND
                                 <br />
                                 76958 50762
                             </a>

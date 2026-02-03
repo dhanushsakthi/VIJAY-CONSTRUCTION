@@ -284,7 +284,7 @@ export default function HomePage() {
                                 </span>
                                 <div>
                                     <p className="text-xs uppercase tracking-wider text-white font-bold drop-shadow-sm">
-                                        CEO : VIJAY ANANAD
+                                        CEO : M.VIJAYANAND
                                     </p>
                                     <p className="font-display font-bold text-white">76958 50762</p>
                                 </div>
@@ -351,7 +351,7 @@ export default function HomePage() {
                                     G.MATHIALAGAN <span className="text-brand-red text-sm font-normal block mt-1">Founder</span>
                                 </h2>
                                 <h2 className="heading-lg text-steel-dark">
-                                    VIJAY ANANAD <span className="text-brand-red text-sm font-normal block mt-1">CEO</span>
+                                    M.VIJAYANAND <span className="text-brand-red text-sm font-normal block mt-1">CEO</span>
                                 </h2>
                             </div>
                             <h3 className="heading-md mb-6 text-steel-dark/90">
@@ -678,7 +678,7 @@ export default function HomePage() {
                                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                                     />
                                 </svg>
-                                CEO : VIJAY ANANAD (76958 50762)
+                                CEO : M.VIJAYANAND (76958 50762)
                             </a>
                         </div>
                     </div>

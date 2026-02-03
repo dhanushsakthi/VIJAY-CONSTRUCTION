@@ -136,7 +136,7 @@ export function AboutContent() {
                                 Our <span className="text-brand-red">Story</span>
                             </h2>
                             <p className="body-md mb-6 text-concrete-dark">
-                                Founded by <span className="font-semibold text-steel-dark">G.Mathialagan (Founder)</span> and led by <span className="font-semibold text-steel-dark">Vijay Ananad (CEO)</span>, Vijay Constructions has been a cornerstone of development in the Yercaud and Salem region for over three decades.
+                                Founded by <span className="font-semibold text-steel-dark">G.Mathialagan (Founder)</span> and led by <span className="font-semibold text-steel-dark">M.VIJAYANAND (CEO)</span>, Vijay Constructions has been a cornerstone of development in the Yercaud and Salem region for over three decades.
                             </p>
                             <p className="body-md mb-6 text-concrete-dark">
                                 What started as a vision to provide quality homes has grown into a premier civil engineering and construction firm, known for our integrity, craftsmanship, and unwavering commitment to client satisfaction.
@@ -245,14 +245,14 @@ export function AboutContent() {
                             <div className="aspect-[3/4] overflow-hidden relative">
                                 <Image
                                     src="/images/ceo.jpg"
-                                    alt="Vijay Ananad - CEO"
+                                    alt="M.VIJAYANAND - CEO"
                                     fill
                                     className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                                     sizes="(max-width: 768px) 100vw, 50vw"
                                 />
                             </div>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8 text-white">
-                                <h3 className="font-display text-2xl font-bold mb-1">Vijay Ananad</h3>
+                                <h3 className="font-display text-2xl font-bold mb-1">M.VIJAYANAND</h3>
                                 <p className="text-brand-red-light font-medium tracking-wider text-sm uppercase mb-4">CEO</p>
                                 <p className="text-white/90 text-sm">
                                     Driving innovation and operational excellence, ensuring every project meets the highest standards of modern construction and client expectations.
