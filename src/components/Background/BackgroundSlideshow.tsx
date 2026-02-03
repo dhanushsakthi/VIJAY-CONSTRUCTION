@@ -7,7 +7,7 @@ import Image from "next/image";
 const images = [
     "/images/backgrounds/forest-hq-1.jpg",
     "/images/backgrounds/modern-villa-hq-1.png",
-    "/images/backgrounds/construction-site-hq-1.png",
+    "/images/backgrounds/construction-site-hq-2.png",
     "/images/backgrounds/yercaud-mountain-hq-1.png",
 ];
 
