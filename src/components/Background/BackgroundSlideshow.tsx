@@ -9,7 +9,7 @@ const images = [
     "/images/backgrounds/bg-3.png",
     "/images/backgrounds/construction-site-hq-1.png",
     "/images/backgrounds/yercaud-mountain-hq-1.png",
-    "/images/backgrounds/modern-luxury-villa.png",
+    "/images/backgrounds/modern-luxury-villa-v2.png",
 ];
 
 export const BackgroundSlideshow = () => {
@@ -44,7 +44,7 @@ export const BackgroundSlideshow = () => {
                         priority={currentIndex === 0}
                         className="object-cover object-center"
                         sizes="100vw"
-                        quality={90}
+                        quality={100}
                     />
                 </motion.div>
             </AnimatePresence>
