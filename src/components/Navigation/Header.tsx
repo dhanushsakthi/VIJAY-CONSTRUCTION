@@ -224,8 +224,8 @@ export function Header() {
                                     <p className="mb-3 font-display text-sm font-semibold uppercase tracking-wider text-brand-green">
                                         Contact Us
                                     </p>
-                                    <p className="mb-1 text-xs uppercase tracking-wider text-concrete">
-                                        CEO : M.VIJAYANAND, M.E., Ph.D
+                                    <p className="mb-1 text-xs uppercase tracking-wider text-concrete whitespace-nowrap">
+                                        CEO : M.VIJAYANAND <span className="text-[10px] font-normal">M.E., Ph.D</span>
                                     </p>
                                     <a
                                         href="tel:+917695850762"

@@ -284,8 +284,8 @@ export default function HomePage() {
                                 </span>
                                 <div>
                                     <p className="font-display font-bold text-white text-lg">76958 50762</p>
-                                    <p className="text-[10px] uppercase tracking-wider text-white/80 font-bold drop-shadow-sm">
-                                        CEO : M.VIJAYANAND, M.E., Ph.D
+                                    <p className="text-[10px] uppercase tracking-wider text-white/80 font-bold drop-shadow-sm whitespace-nowrap">
+                                        CEO : M.VIJAYANAND <span className="text-[10px] font-normal">M.E., Ph.D</span>
                                     </p>
                                 </div>
                             </a>
@@ -350,8 +350,8 @@ export default function HomePage() {
                                 <h2 className="heading-lg text-steel-dark">
                                     G.MATHIALAGAN <span className="text-brand-red text-sm font-normal block mt-1">Founder</span>
                                 </h2>
-                                <h2 className="heading-lg text-steel-dark">
-                                    M.VIJAYANAND, M.E., Ph.D <span className="text-brand-red text-sm font-normal block mt-1">CEO</span>
+                                <h2 className="heading-lg text-steel-dark whitespace-nowrap">
+                                    M.VIJAYANAND <span className="text-xs font-normal opacity-80">M.E., Ph.D</span> <span className="text-brand-red text-sm font-normal block mt-1 text-right">CEO</span>
                                 </h2>
                             </div>
                             <h3 className="heading-md mb-6 text-steel-dark/90">
@@ -660,7 +660,7 @@ export default function HomePage() {
                                     />
                                 </svg>
                                 <span className="flex flex-col items-start leading-tight">
-                                    <span>Founder: G.MATHIALAGAN</span>
+                                    <span className="whitespace-nowrap">Founder: G.MATHIALAGAN</span>
                                     <span className="text-xs opacity-90">(94432 32172)</span>
                                 </span>
                             </a>
@@ -682,7 +682,9 @@ export default function HomePage() {
                                     />
                                 </svg>
                                 <span className="flex flex-col items-start leading-tight">
-                                    <span>CEO : M.VIJAYANAND, M.E., Ph.D</span>
+                                    <span className="whitespace-nowrap flex items-baseline gap-1">
+                                        CEO : M.VIJAYANAND <small className="text-[10px] font-normal">M.E., Ph.D</small>
+                                    </span>
                                     <span className="text-xs opacity-90">(76958 50762)</span>
                                 </span>
                             </a>

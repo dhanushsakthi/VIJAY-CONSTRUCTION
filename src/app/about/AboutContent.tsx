@@ -136,7 +136,7 @@ export function AboutContent() {
                                 Our <span className="text-brand-red">Story</span>
                             </h2>
                             <p className="body-md mb-6 text-concrete-dark">
-                                Founded by <span className="font-semibold text-steel-dark">G.Mathialagan (Founder)</span> and led by <span className="font-semibold text-steel-dark">M.VIJAYANAND, M.E., Ph.D (CEO)</span>, Vijay Constructions has been a cornerstone of development in the Yercaud and Salem region for over three decades.
+                                Founded by <span className="font-semibold text-steel-dark whitespace-nowrap">G.Mathialagan (Founder)</span> and led by <span className="font-semibold text-steel-dark whitespace-nowrap">M.VIJAYANAND <span className="text-xs font-normal opacity-80">M.E., Ph.D</span> (CEO)</span>, Vijay Constructions has been a cornerstone of development in the Yercaud and Salem region for over three decades.
                             </p>
                             <p className="body-md mb-6 text-concrete-dark">
                                 What started as a vision to provide quality homes has grown into a premier civil engineering and construction firm, known for our integrity, craftsmanship, and unwavering commitment to client satisfaction.
@@ -252,7 +252,7 @@ export function AboutContent() {
                                 />
                             </div>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8 text-white">
-                                <h3 className="font-display text-2xl font-bold mb-1">M.VIJAYANAND, M.E., Ph.D</h3>
+                                <h3 className="font-display text-2xl font-bold mb-1 whitespace-nowrap">M.VIJAYANAND <span className="text-sm font-normal opacity-80">M.E., Ph.D</span></h3>
                                 <p className="text-brand-red-light font-medium tracking-wider text-sm uppercase mb-4">CEO</p>
                                 <p className="text-white/90 text-sm">
                                     Driving innovation and operational excellence, ensuring every project meets the highest standards of modern construction and client expectations.

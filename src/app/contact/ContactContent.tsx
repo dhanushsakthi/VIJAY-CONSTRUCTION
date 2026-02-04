@@ -238,7 +238,7 @@ export function ContactContent() {
                                         </svg>
                                     </div>
                                     <div>
-                                        <p className="mb-1 text-sm uppercase tracking-wider text-concrete">CEO : M.VIJAYANAND, M.E., Ph.D</p>
+                                        <p className="mb-1 text-sm uppercase tracking-wider text-concrete whitespace-nowrap">CEO : M.VIJAYANAND <span className="text-[10px] font-normal">M.E., Ph.D</span></p>
                                         <a href="tel:+917695850762" className="text-xl font-semibold transition-colors hover:text-brand-green">
                                             76958 50762
                                         </a>

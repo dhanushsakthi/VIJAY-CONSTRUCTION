@@ -139,9 +139,9 @@ export function Footer() {
                             </a>
                             <a
                                 href="tel:+917695850762"
-                                className="mb-3 block text-lg font-semibold text-white transition-colors hover:text-brand-red sm:text-xl"
+                                className="mb-3 block text-lg font-semibold text-white transition-colors hover:text-brand-red sm:text-xl whitespace-nowrap"
                             >
-                                CEO : M.VIJAYANAND, M.E., Ph.D
+                                CEO : M.VIJAYANAND <span className="text-xs font-normal">M.E., Ph.D</span>
                                 <br />
                                 76958 50762
                             </a>
