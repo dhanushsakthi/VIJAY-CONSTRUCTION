@@ -9,6 +9,7 @@ const images = [
     "/images/backgrounds/bg-3.png",
     "/images/backgrounds/construction-site-hq-1.png",
     "/images/backgrounds/yercaud-mountain-hq-1.png",
+    "/images/backgrounds/modern-luxury-villa.png",
 ];
 
 export const BackgroundSlideshow = () => {
