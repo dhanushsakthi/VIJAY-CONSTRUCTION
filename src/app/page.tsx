@@ -351,7 +351,7 @@ export default function HomePage() {
                                     G.MATHIALAGAN <span className="text-brand-red text-sm font-normal block mt-1">Founder</span>
                                 </h2>
                                 <h2 className="heading-lg text-steel-dark whitespace-nowrap">
-                                    M.VIJAYANAND <span className="text-xs font-normal opacity-80">M.E., Ph.D</span> <span className="text-brand-red text-sm font-normal block mt-1 text-right">CEO</span>
+                                    M.VIJAYANAND <span className="text-xs font-normal opacity-80">M.E., Ph.D</span> <span className="text-brand-red text-sm font-normal block mt-1">CEO</span>
                                 </h2>
                             </div>
                             <h3 className="heading-md mb-6 text-steel-dark/90">
