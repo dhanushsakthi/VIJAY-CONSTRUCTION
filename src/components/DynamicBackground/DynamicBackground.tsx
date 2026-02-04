@@ -13,7 +13,7 @@ export function DynamicBackground({
     showGrid = true,
 }: DynamicBackgroundProps) {
     const overlays = {
-        hero: "bg-black/50",
+        hero: "bg-black/40",
         section: "bg-black/20 backdrop-blur-[2px]", // Significantly reduced opacity and blur
         overlay: "bg-black/60",
     };

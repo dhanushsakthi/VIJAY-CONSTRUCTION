@@ -148,7 +148,7 @@ export default function HomePage() {
     return (
         <>
             {/* Hero Section */}
-            <section ref={heroRef} className="relative min-h-[100dvh] lg:overflow-hidden bg-black/20">
+            <section ref={heroRef} className="relative min-h-[100dvh] lg:overflow-hidden">
                 <BackgroundSlideshow />
                 <DynamicBackground variant="hero" />
 
