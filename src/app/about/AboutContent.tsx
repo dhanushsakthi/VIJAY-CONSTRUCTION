@@ -233,7 +233,7 @@ export function AboutContent() {
                                 />
                             </div>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8 text-white">
-                                <h3 className="font-display text-2xl font-bold mb-1 text-brand-red">G.Mathialagan</h3>
+                                <h3 className="font-display text-2xl font-bold mb-1 text-white">G.Mathialagan</h3>
                                 <p className="text-brand-red-light font-medium tracking-wider text-sm uppercase mb-4">Founder & Civil Engineer</p>
                                 <p className="text-white/90 text-sm">
                                     With over 30 years of experience in civil engineering and construction, leading Vijay Constructions with a vision for quality and excellence.
@@ -253,7 +253,7 @@ export function AboutContent() {
                                 />
                             </div>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8 text-white">
-                                <h3 className="font-display text-2xl font-bold mb-1 whitespace-nowrap text-brand-red">M.VIJAYANAND <span className="text-sm font-normal opacity-80">M.E., Ph.D</span></h3>
+                                <h3 className="font-display text-2xl font-bold mb-1 whitespace-nowrap text-white">M.VIJAYANAND <span className="text-sm font-normal opacity-80">M.E., Ph.D</span></h3>
                                 <p className="text-brand-red-light font-medium tracking-wider text-sm uppercase mb-4">CEO</p>
                                 <p className="text-white/90 text-sm">
                                     Driving innovation and operational excellence, ensuring every project meets the highest standards of modern construction and client expectations.
