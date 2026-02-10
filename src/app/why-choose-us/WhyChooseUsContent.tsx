@@ -117,10 +117,10 @@ export function WhyChooseUsContent() {
                         <span className="hero-animate mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-green">
                             Why Choose Us
                         </span>
-                        <h1 className="hero-animate heading-xl mb-6 text-steel-dark">
+                        <h1 className="hero-animate heading-xl mb-6 text-white drop-shadow-sm">
                             The <span className="text-brand-green">Vijay Constructions</span> Difference
                         </h1>
-                        <p className="hero-animate body-lg text-concrete-dark">
+                        <p className="hero-animate body-lg text-white/90">
                             Discover what sets us apart and why we are the preferred construction
                             partner for families and businesses in Yercaud and Salem.
                         </p>
