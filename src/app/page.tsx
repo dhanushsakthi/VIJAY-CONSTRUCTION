@@ -342,7 +342,7 @@ export default function HomePage() {
                                 <h2 className="heading-lg text-steel-dark flex items-center gap-4">
                                     <div className="h-16 w-16 overflow-hidden rounded-full border-2 border-brand-red shadow-md flex-shrink-0">
                                         <Image
-                                            src="/images/mathialagan-founder.jpg"
+                                            src="/images/founder.jpg"
                                             alt="G.MATHIALAGAN"
                                             width={64}
                                             height={64}
