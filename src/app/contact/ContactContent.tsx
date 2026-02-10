@@ -234,13 +234,9 @@ export function ContactContent() {
                                 {/* Founder */}
                                 <div className="flex items-start gap-4">
                                     <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center overflow-hidden rounded-full border-2 border-brand-green bg-brand-green shadow-sm">
-                                        <Image
-                                            src="/images/founder-photo.jpg"
-                                            alt="Founder"
-                                            width={48}
-                                            height={48}
-                                            className="h-full w-full object-cover object-top"
-                                        />
+                                        <svg className="w-6 h-6 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                        </svg>
                                     </div>
                                     <div>
                                         <p className="mb-1 text-sm uppercase tracking-wider text-concrete">Founder</p>

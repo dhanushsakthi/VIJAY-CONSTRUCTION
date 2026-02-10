@@ -340,14 +340,10 @@ export default function HomePage() {
                             </span>
                             <div className="mb-6 flex flex-wrap gap-x-12 gap-y-4">
                                 <h2 className="heading-lg text-steel-dark flex items-center gap-4">
-                                    <div className="h-16 w-16 overflow-hidden rounded-full border-2 border-brand-red shadow-md flex-shrink-0">
-                                        <Image
-                                            src="/images/founder-photo.jpg"
-                                            alt="G.MATHIALAGAN"
-                                            width={64}
-                                            height={64}
-                                            className="h-full w-full object-cover object-top"
-                                        />
+                                    <div className="h-16 w-16 overflow-hidden rounded-full border-2 border-brand-red shadow-md flex-shrink-0 bg-brand-red/5 flex items-center justify-center">
+                                        <svg className="w-8 h-8 text-brand-red/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                        </svg>
                                     </div>
                                     <span className="flex flex-col">
                                         G.MATHIALAGAN <span className="text-brand-red text-sm font-normal">Founder</span>

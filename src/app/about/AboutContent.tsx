@@ -223,14 +223,10 @@ export function AboutContent() {
                     <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
                         {/* Founder */}
                         <div className="group relative overflow-hidden rounded-sm bg-white/60 backdrop-blur-md shadow-xl border border-white/40">
-                            <div className="aspect-[3/4] overflow-hidden relative">
-                                <Image
-                                    src="/images/founder-photo.jpg"
-                                    alt="G.Mathialagan - Founder & Civil Engineer"
-                                    fill
-                                    className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                                    sizes="(max-width: 768px) 100vw, 50vw"
-                                />
+                            <div className="aspect-[3/4] overflow-hidden relative bg-brand-red/5 flex items-center justify-center">
+                                <svg className="w-24 h-24 text-brand-red/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                </svg>
                             </div>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8 text-white">
                                 <h3 className="font-display text-2xl font-bold mb-1 text-white">G.Mathialagan</h3>
