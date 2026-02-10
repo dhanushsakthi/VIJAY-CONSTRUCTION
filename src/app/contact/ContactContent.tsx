@@ -80,8 +80,8 @@ export function ContactContent() {
                     <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
                         {/* Contact Form */}
                         <div className="order-2 lg:order-1 bg-white/60 backdrop-blur-md rounded-lg p-8 border border-white/40 shadow-lg">
-                            <h2 className="heading-md mb-6 text-steel-dark">
-                                Get a <span className="text-brand-red">Free Quote</span>
+                            <h2 className="heading-md mb-6 text-steel-dark flex items-center gap-2">
+                                Get a <span className="text-brand-red">Free Quote via WhatsApp</span>
                             </h2>
                             <p className="body-md mb-8 text-concrete-dark">
                                 Fill out the form below and our team will get back to you within 24 hours.
