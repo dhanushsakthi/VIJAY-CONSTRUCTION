@@ -235,7 +235,7 @@ export function ContactContent() {
                                 <div className="flex items-start gap-4">
                                     <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center overflow-hidden rounded-full border-2 border-brand-green bg-brand-green shadow-sm">
                                         <Image
-                                            src="/images/founder-photo.jpg"
+                                            src="/images/founder.jpg"
                                             alt="Founder"
                                             width={48}
                                             height={48}
