@@ -339,8 +339,19 @@ export default function HomePage() {
                                 About Vijay Constructions
                             </span>
                             <div className="mb-6 flex flex-wrap gap-x-12 gap-y-4">
-                                <h2 className="heading-lg text-steel-dark">
-                                    G.MATHIALAGAN <span className="text-brand-red text-sm font-normal block mt-1">Founder</span>
+                                <h2 className="heading-lg text-steel-dark flex items-center gap-4">
+                                    <div className="h-16 w-16 overflow-hidden rounded-full border-2 border-brand-red shadow-md flex-shrink-0">
+                                        <Image
+                                            src="/images/founder.jpg"
+                                            alt="G.MATHIALAGAN"
+                                            width={64}
+                                            height={64}
+                                            className="h-full w-full object-cover object-top"
+                                        />
+                                    </div>
+                                    <span className="flex flex-col">
+                                        G.MATHIALAGAN <span className="text-brand-red text-sm font-normal">Founder</span>
+                                    </span>
                                 </h2>
                                 <h2 className="heading-lg text-steel-dark whitespace-nowrap">
                                     M.VIJAYANAND <span className="text-xs font-normal opacity-80">M.E., Ph.D</span> <span className="text-brand-red text-sm font-normal block mt-1">CEO</span>

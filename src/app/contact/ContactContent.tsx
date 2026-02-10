@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { DynamicBackground } from "@/components/DynamicBackground/DynamicBackground";
 import { BackgroundSlideshow } from "@/components/Background/BackgroundSlideshow";
 import { AnimatedSection } from "@/components/UI/AnimatedSection";
+import Image from "next/image";
 
 export function ContactContent() {
     const heroContentRef = useRef<HTMLDivElement>(null);
@@ -232,10 +233,14 @@ export function ContactContent() {
 
                                 {/* Founder */}
                                 <div className="flex items-start gap-4">
-                                    <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-brand-green">
-                                        <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                        </svg>
+                                    <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center overflow-hidden rounded-full border-2 border-brand-green bg-brand-green shadow-sm">
+                                        <Image
+                                            src="/images/founder.jpg"
+                                            alt="Founder"
+                                            width={48}
+                                            height={48}
+                                            className="h-full w-full object-cover object-top"
+                                        />
                                     </div>
                                     <div>
                                         <p className="mb-1 text-sm uppercase tracking-wider text-concrete">Founder</p>
