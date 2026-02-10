@@ -39,8 +39,24 @@ export function ContactContent() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
-        // Simulate form submission
-        await new Promise((resolve) => setTimeout(resolve, 1500));
+
+        // Construct WhatsApp message
+        const message = `*New Inquiry from Website*
+*Name:* ${formData.name}
+*Phone:* ${formData.phone}
+*Email:* ${formData.email || "Not provided"}
+*Service:* ${formData.service}
+*Details:* ${formData.message}`;
+
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/917695850762?text=${encodedMessage}`;
+
+        // Simulate a small delay for better UX before redirecting
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+
+        // Open WhatsApp in a new tab
+        window.open(whatsappUrl, "_blank");
+
         setIsSubmitting(false);
         setIsSubmitted(true);
         setFormData({ name: "", email: "", phone: "", service: "", message: "" });
