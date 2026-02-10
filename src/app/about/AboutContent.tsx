@@ -225,7 +225,7 @@ export function AboutContent() {
                         <div className="group relative overflow-hidden rounded-sm bg-white/60 backdrop-blur-md shadow-xl border border-white/40">
                             <div className="aspect-[3/4] overflow-hidden relative">
                                 <Image
-                                    src="/images/founder.jpg"
+                                    src="/images/founder-photo.jpg"
                                     alt="G.Mathialagan - Founder & Civil Engineer"
                                     fill
                                     className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
