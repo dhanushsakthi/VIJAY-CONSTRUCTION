@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import Image from "next/image";
 import { DynamicBackground } from "@/components/DynamicBackground/DynamicBackground";
+import { BackgroundSlideshow } from "@/components/Background/BackgroundSlideshow";
 import { AnimatedSection } from "@/components/UI/AnimatedSection";
 import { projects } from "@/lib/data/projects";
 
@@ -66,17 +67,18 @@ export function ProjectsContent() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative min-h-[60vh] overflow-hidden">
+            <section className="relative min-h-[60vh] overflow-hidden bg-asphalt-dark">
+                <BackgroundSlideshow />
                 <DynamicBackground variant="hero" />
                 <div className="container relative flex min-h-[60vh] items-center">
                     <div ref={heroContentRef} className="max-w-3xl pb-16 pt-32 lg:pt-40">
                         <span className="hero-animate mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-brand-red">
                             Our Portfolio
                         </span>
-                        <h1 className="hero-animate heading-xl mb-6 text-steel-dark">
+                        <h1 className="hero-animate heading-xl mb-6 text-white drop-shadow-sm">
                             Projects That <span className="text-brand-red">Speak</span> Quality
                         </h1>
-                        <p className="hero-animate body-lg text-concrete-dark">
+                        <p className="hero-animate body-lg text-white/90">
                             Explore our collection of completed projects across residential, commercial,
                             and renovation categories in Yercaud and Salem region.
                         </p>

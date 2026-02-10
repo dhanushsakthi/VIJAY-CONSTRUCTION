@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import { DynamicBackground } from "@/components/DynamicBackground/DynamicBackground";
+import { BackgroundSlideshow } from "@/components/Background/BackgroundSlideshow";
 import { AnimatedSection } from "@/components/UI/AnimatedSection";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -108,7 +109,8 @@ export function WhyChooseUsContent() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative min-h-[60vh] overflow-hidden">
+            <section className="relative min-h-[60vh] overflow-hidden bg-asphalt-dark">
+                <BackgroundSlideshow />
                 <DynamicBackground variant="hero" />
                 <div className="container relative flex min-h-[60vh] items-center">
                     <div ref={heroContentRef} className="max-w-3xl pb-16 pt-32 lg:pt-40">
